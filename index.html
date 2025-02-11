@@ -12,7 +12,7 @@
 <body>
 <header>
     <h1 class="hidden">Mon cv</h1>
-    <nav>
+    <nav class="nav">
         <h2 class="hidden">Navigation</h2>
         <ul>
             <li>
@@ -32,85 +32,82 @@
             </li>
         </ul>
     </nav>
-    <div>
+    <div class="menu">
         <div>
             <a href="#">PORTFOLIO</a>
         </div>
         <div>
-            <ul>
-                <li><a href="index.html">FR</a></li>
-                <li><a href="index.html">EN</a></li>
-                <li><a href="index.html">NL</a></li>
-            </ul>
+            <select name="language" id="language">
+                <option value="Français">
+                    <a href="index.html">FR</a>
+                </option>
+                <option value="English">
+                    <a href="index.html">EN</a>
+                </option>
+                <option value="Nederlands">
+                    <a href="index.html">NL</a>
+                </option>
+            </select>
         </div>
     </div>
 </header>
 <main>
-    <section>
-        <div> <!--Bloc presentation 1-->
+    <section class="introduction">
+        <div id="presentation"> <!--Bloc presentation 1-->
             <h2>ÉTUDIANT EN DEUXIÈME INFOGRAPHIE OPTION WEB</h2>
             <a href="index.html"><img src="img/logo.jpg" alt="Logo de Delvenne Gauthier" width="399" height=162"></a>
             <div>
                 <div>
+                    <video autoplay="" muted="" loop="" width="456" height="264" title="Vidéo de présentation">
+                        <source src="video/videotest.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
                     <img src="img/video-intro/frame.png" width="460" height="264">
                 </div>
                 <div>
-                    <video autoplay="" muted="" loop="" width="460" height="264" title="Vidéo de présentation">
-                        <source src="video/videotest.mp4" type="video/mp4">
-                    </video>
-                    <div>
-                        <img src="img/video-intro/play.svg" width="86" height="86">
-                    </div>
+                    <img src="img/video-intro/play.svg" width="86" height="86">
                 </div>
             </div>
         </div>
-        <div> <!--Bloc Disponible sur -->
-            <p>Disponible sur</p>
+        <div id="disponible"> <!--Bloc Disponible sur -->
+            <p><img  class="line" src="img/main-line-left.png" alt="">Disponible sur<img class="line" src="img/main-line-right.png" alt=""></p>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
                         <img src="img/compte/linkedin.webp" alt="Le logo de Linkedin" srcset="" width="58"
                              title="Linkedin">
-                    </a>
-                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
                         <p>LINKEDIN</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/GauthierDelvenne">
                         <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58">
-                    </a>
-                    <a href="https://github.com/GauthierDelvenne">
                         <p>GITHUB</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
                         <img src="img/compte/stack-overflow.png" alt="Le logo de Stack Overflow" srcset="" width="58">
-                    </a>
-                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
                         <p>STACK OVERFLOW</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
                         <img src="img/compte/X.webp" alt="Le logo de X" srcset="" width="58">
-                    </a>
-                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
                         <p>X</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/gauthier.delvenne">
                         <img src="img/compte/facebook.png" alt="Le logo de Facebook" srcset="" width="58">
-                    </a>
-                    <a href="https://www.facebook.com/gauthier.delvenne">
                         <p>FACEBOOK</p>
                     </a>
                 </li>
             </ul>
         </div>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section>
         <h2>Édition</h2>
         <div>
@@ -187,13 +184,15 @@
             </div>
         </div>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="parcours">
         <h2>PARCOURS SCOLAIRE</h2>
         <p>À propos</p>
         <ul>
             <li>
                 <a href="https://www.liege1.be/">
-                    <img src="img/parcours-scolaire/secondaire.png" alt="Logo de l’Athénée Royal Charles Rogier" srcset="">
+                    <img src="img/parcours-scolaire/secondaire.png" alt="Logo de l’Athénée Royal Charles Rogier"
+                         srcset="">
                     <p>De
                         <time datetime="2013">2013</time>
                         à
@@ -204,7 +203,8 @@
             </li>
             <li>
                 <a href="https://www.hepl.be/fr/techniques-infographiques/design-graphique">
-                    <img src="img/parcours-scolaire/design.jpg" alt="Illustration évoquant le design graphique" srcset="">
+                    <img src="img/parcours-scolaire/design.jpg" alt="Illustration évoquant le design graphique"
+                         srcset="">
                     <p>De
                         <time datetime="2021">2021</time>
                         à
@@ -215,7 +215,8 @@
             </li>
             <li>
                 <a href="https://www.hepl.be/fr/techniques-infographiques/web">
-                    <img src="img/parcours-scolaire/web-design.webp" alt="Illustration évoquant le web design" srcset="">
+                    <img src="img/parcours-scolaire/web-design.webp" alt="Illustration évoquant le web design"
+                         srcset="">
                     <p>De
                         <time datetime="2024">2024</time>
                         jusqu’à
@@ -226,6 +227,7 @@
             </li>
         </ul>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="hobbies">
         <h2>Mes hobbies</h2>
         <div>
@@ -304,6 +306,7 @@
             <li><a href=""></a></li> <!-- Page 3 -->
         </ul>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="experience">
         <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
         <p>Les expériences qui ont contribué à me façonner et à développer mes compétences, mon caractère et ma vision.
@@ -367,11 +370,12 @@
             <img src="img/experience-pro/jysk.png" alt="" srcset="" width="714">
         </article>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="competence">
         <h2>COMPÉTENCE</h2>
         <div>
             <div>
-                <img src="" alt="" srcset="">
+                <img src="img/competence/css-html.webp" alt="Logo de HTML et CSS" srcset="" width="1153">
                 <p>UNE MAITRISE DU HYPERTEXT
                     MARKUP LANGUAGE ET DU
                     CASCADING STYLE SHEET</p>
@@ -380,7 +384,7 @@
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="" alt="" srcset="">
+                <img src="img/competence/ai-ps.jpg" alt="Logo illustrator et photoshop" srcset="" width="1153">
                 <p>UN AS DE PHOTOSHOP ET
                     D’ILLUSTRATOR</p>
             </div>
@@ -388,7 +392,7 @@
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="" alt="" srcset="">
+                <img src="img/competence/php-js.jpg" alt="Logo javascript et php" srcset="" width="1153">
                 <p>UN DÉBUT DANS JAVASCRIPT ET
                     HYPERTEXTE PREPROCESSOR</p>
             </div>
@@ -397,16 +401,18 @@
         <button></button>
         <button></button>
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="qualites">
         <h2>QUALITÉS ET DÉFAUTS</h2>
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
-        <img src="" alt="" srcset="">
+        <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/anxieux.avif" alt="Défaut anxieux" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/curieux.jpg" alt="Qualité curieux" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/impatient.jpg" alt="Défaut impatient" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/organise.avif" alt="Qualité organisé" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605" height="340">
     </section>
+    <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section>
         <div>
             <h2>VOUS VOULEZ EN SAVOIR PLUS À MON
@@ -418,13 +424,15 @@
                     <label for="email">
                         Saisir votre adresse e-mail
                     </label>
-                    <input type="email" name="email" id="email" placeholder="votreadresse@e-mail.com"
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="votreadresse@email.com"
                            title="Veuillez inscrire votre email">
                 </div>
                 <div>
                     <label for="com">
-
+                        Saisir votre message
                     </label>
+                    <br>
                     <textarea name="com" id="com" cols="30" rows="10" placeholder="Votre message"
                               title="Veuillez inscrire votre message"></textarea>
                 </div>
@@ -445,24 +453,45 @@
         <div>
             <ul>
                 <li>
-                    <img src="" alt="" srcset="">
-                    <p>LINKEDIN</p>
+                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
+                        <img src="img/compte/linkedin.webp" alt="Le logo de Linkedin" srcset="" width="58"
+                             title="Linkedin">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
+                        <p>LINKEDIN</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="" srcset="">
-                    <p>GITHUB</p>
+                    <a href="https://github.com/GauthierDelvenne">
+                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58">
+                    </a>
+                    <a href="https://github.com/GauthierDelvenne">
+                        <p>GITHUB</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="" srcset="">
-                    <p>STACK OVERFLOW</p>
+                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
+                        <img src="img/compte/stack-overflow.png" alt="Le logo de Stack Overflow" srcset="" width="58">
+                    </a>
+                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
+                        <p>STACK OVERFLOW</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="" srcset="">
-                    <p>X</p>
+                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
+                        <img src="img/compte/X.webp" alt="Le logo de X" srcset="" width="58">
+                    </a>
+                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
+                        <p>X</p>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="" srcset="">
-                    <p>FACEBOOK</p>
+                    <a href="https://www.facebook.com/gauthier.delvenne">
+                        <img src="img/compte/facebook.png" alt="Le logo de Facebook" srcset="" width="58">
+                    </a>
+                    <a href="https://www.facebook.com/gauthier.delvenne">
+                        <p>FACEBOOK</p>
+                    </a>
                 </li>
             </ul>
         </div>

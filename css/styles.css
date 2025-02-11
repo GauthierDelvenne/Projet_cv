@@ -1,0 +1,115 @@
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.divider img{
+    height: 79px;
+    width: 100vw;
+}
+body {
+    font-family: "TT Supermolot Neue Trl Variable", sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10em;
+    height: 100px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.625em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2.625em;
+}
+
+.menu div:first-child {
+    background-color: green;
+    padding: 0.5em;
+}
+
+select {
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.introduction {
+    display: flex;
+    height: 575px;
+    padding: 68px 30px 107px 30px;
+    margin-top: -100px;
+    gap: 82px;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation h2 {
+    order: 1;
+    max-width: 499px;
+    text-align: center;
+}
+
+#presentation div {
+    order: 2;
+    position: absolute;
+    top: 200px;
+}
+
+#presentation div:nth-of-type(1) {
+    left: 19px;
+}
+
+#presentation div:nth-of-type(2) {
+    left: 17px;
+}
+
+#presentation div:nth-of-type(3) {
+    left: 187px;
+    padding-top: 89px;
+}
+
+#disponible ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+#disponible{
+    width: 659px;
+    align-self: flex-end;
+    height: 274px;
+}
+#disponible p:first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+}
+ul li:nth-of-type(3) a img{
+    padding: 0 34px 0 34px;
+}
+.line{
+    width: 232px;
+}
