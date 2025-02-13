@@ -37,17 +37,17 @@
             <a href="#">PORTFOLIO</a>
         </div>
         <div>
-            <select name="language" id="language">
-                <option value="Français">
+            <ul>
+                <li>
                     <a href="index.html">FR</a>
-                </option>
-                <option value="English">
+                </li>
+                <li class="hidden">
                     <a href="index.html">EN</a>
-                </option>
-                <option value="Nederlands">
+                </li>
+                <li class="hidden">
                     <a href="index.html">NL</a>
-                </option>
-            </select>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
@@ -55,7 +55,7 @@
     <section class="introduction">
         <div id="presentation"> <!--Bloc presentation 1-->
             <h2>ÉTUDIANT EN DEUXIÈME INFOGRAPHIE OPTION WEB</h2>
-            <a href="index.html"><img src="img/logo.jpg" alt="Logo de Delvenne Gauthier" width="399" height=162"></a>
+            <a href="index.html"><img src="img/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height=162"></a>
             <div>
                 <div>
                     <video autoplay="" muted="" loop="" width="456" height="264" title="Vidéo de présentation">
@@ -63,19 +63,21 @@
                     </video>
                 </div>
                 <div>
-                    <img src="img/video-intro/frame.png" width="460" height="264">
+                    <img src="img/video-intro/frame.png" alt="" width="460" height="264">
                 </div>
                 <div>
-                    <img src="img/video-intro/play.svg" width="86" height="86">
+                    <img src="img/video-intro/play.svg" alt="" width="86" height="86">
                 </div>
             </div>
         </div>
         <div id="disponible"> <!--Bloc Disponible sur -->
-            <p><img  class="line" src="img/main-line-left.png" alt="">Disponible sur<img class="line" src="img/main-line-right.png" alt=""></p>
+            <p><img class="line" src="img/main-line-left.png" alt=""><span>Disponible sur</span><img class="line"
+                                                                                        src="img/main-line-right.png"
+                                                                                        alt=""></p>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
-                        <img src="img/compte/linkedin.webp" alt="Le logo de Linkedin" srcset="" width="58"
+                        <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
                              title="Linkedin">
                         <p>LINKEDIN</p>
                     </a>
@@ -88,19 +90,19 @@
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.png" alt="Le logo de Stack Overflow" srcset="" width="58">
+                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58">
                         <p>STACK OVERFLOW</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/X.webp" alt="Le logo de X" srcset="" width="58">
+                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58">
                         <p>X</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.png" alt="Le logo de Facebook" srcset="" width="58">
+                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58">
                         <p>FACEBOOK</p>
                     </a>
                 </li>
@@ -116,23 +118,23 @@
                 <div>
                     <ul>
                         <li>
-                            <img src="/img/logiciel/css.png" title="Logo de CSS" alt="Logo de CSS" width="128">
+                            <img src="/img/logiciel/css.svg" title="Logo de CSS" alt="Logo de CSS" width="128">
                             <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>
                         </li>
                         <li>
-                            <img src="/img/logiciel/html.png" title="Logo de HTML" alt="Logo de HTML" width="128">
+                            <img src="/img/logiciel/html.svg" title="Logo de HTML" alt="Logo de HTML" width="128">
                             <abbr lang="en" title="HyperText Markup Language">HTML</abbr>
                         </li>
                         <li> <!--Hidden-->
-                            <img src="/img/logiciel/js.webp" title="Logo de JS" alt="Logo de JS" width="128">
+                            <img src="/img/logiciel/js.svg" title="Logo de JS" alt="Logo de JS" width="128">
                             <abbr lang="en" title="JavaScript">JS</abbr>
                         </li>
                         <li> <!--Hidden-->
-                            <img src="/img/logiciel/mysql.png" title="Logo de MYSQL" alt="Logo de MySQL" width="128">
+                            <img src="/img/logiciel/mysql.svg" title="Logo de MYSQL" alt="Logo de MySQL" width="128">
                             <abbr lang="en" title="My Structured Query Language">MYSQL</abbr>
                         </li>
                         <li> <!-- Hidden -->
-                            <img src="/img/logiciel/php.png" title="Logo de PHP" alt="Logo de PHP" width="128">
+                            <img src="/img/logiciel/php.svg" title="Logo de PHP" alt="Logo de PHP" width="128">
                             <abbr lang="en" title="Hypertext Preprocessor">PHP</abbr>
                         </li>
                     </ul>
@@ -146,23 +148,23 @@
                 <div>
                     <ul>
                         <li>
-                            <img src="/img/logiciel/css.png" title="Logo de CSS" alt="Logo de CSS" width="128">
+                            <img src="/img/logiciel/css.svg" title="Logo de CSS" alt="Logo de CSS" width="128">
                             <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>
                         </li>
                         <li>
-                            <img src="/img/logiciel/html.png" title="Logo de HTML" alt="Logo de HTML" width="128">
+                            <img src="/img/logiciel/html.svg" title="Logo de HTML" alt="Logo de HTML" width="128">
                             <abbr lang="en" title="HyperText Markup Language">HTML</abbr>
                         </li>
                         <li>
-                            <img src="/img/logiciel/js.webp" title="Logo de JS" alt="Logo de JS" width="128">
+                            <img src="/img/logiciel/js.svg" title="Logo de JS" alt="Logo de JS" width="128">
                             <abbr lang="en" title="JavaScript">JS</abbr>
                         </li>
                         <li>
-                            <img src="/img/logiciel/mysql.png" title="Logo de MYSQL" alt="Logo de MySQL" width="128">
+                            <img src="/img/logiciel/mysql.svg" title="Logo de MYSQL" alt="Logo de MySQL" width="128">
                             <abbr lang="en" title="My Structured Query Language">MYSQL</abbr>
                         </li>
                         <li>
-                            <img src="/img/logiciel/php.png" title="Logo de PHP" alt="Logo de PHP" width="128">
+                            <img src="/img/logiciel/php.svg" title="Logo de PHP" alt="Logo de PHP" width="128">
                             <abbr lang="en" title="Hypertext Preprocessor">PHP</abbr>
                         </li>
                     </ul>
@@ -191,7 +193,7 @@
         <ul>
             <li>
                 <a href="https://www.liege1.be/">
-                    <img src="img/parcours-scolaire/secondaire.png" alt="Logo de l’Athénée Royal Charles Rogier"
+                    <img src="img/parcours-scolaire/secondaire.jpg" alt="Logo de l’Athénée Royal Charles Rogier"
                          srcset="">
                     <p>De
                         <time datetime="2013">2013</time>
@@ -215,7 +217,7 @@
             </li>
             <li>
                 <a href="https://www.hepl.be/fr/techniques-infographiques/web">
-                    <img src="img/parcours-scolaire/web-design.webp" alt="Illustration évoquant le web design"
+                    <img src="img/parcours-scolaire/web-design.jpg" alt="Illustration évoquant le web design"
                          srcset="">
                     <p>De
                         <time datetime="2024">2024</time>
@@ -228,75 +230,72 @@
         </ul>
     </section>
     <div class="divider"><img src="img/divider.jpg" alt=""></div>
-    <section id="hobbies">
-        <h2>Mes hobbies</h2>
+    <section id="experience">
+        <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
         <div>
             <!-- PART 1 -->
-            <button>
-                <img src="img/hobbies-structure/sign-1.png" alt="" srcset=""> <!-- logo cliquable -->
-            </button>
-            <div>
-                <img src="img/hobbies-structure/shadow-1.png" alt="" srcset="">
-                <!-- ombre sous le logo -->
-            </div>
-            <div>
-                <img src="img/hobbies-structure/line-1.svg" alt="" srcset="">
-                <!-- ligne entre les logos -->
-            </div>
+            <a href=""><img src="img/experience-pro/delhaize.svg" alt="Logo de delhaize" srcset="" width="255"></a>
+                <!-- logo cliquable -->
+
             <article>
                 <h3>
-                    JEUX VIDÉO
+                    PROXY DELHAIZE FEXHE
                 </h3>
                 <p>
-                    J'aime les jeux vidéo, car ils offrent une évasion immersive, me permettant de vivre des aventures
-                    captivantes, d'explorer des mondes fantastiques et de relever des défis stimulants. Ils favorisent
-                    également la créativité, la réflexion stratégique et la connexion avec d'autres joueurs à travers le
-                    monde.
+                    J’ai travaillé pendant 5ans dans un Delhaize en tant que réassortisseur
                 </p>
+                <p>Travailler comme réassortisseur au Delhaize développe des compétences clés telles que l'organisation,
+                    la
+                    rigueur, la gestion du stress, le service client, le travail en équipe, et l'adaptabilité, tout en
+                    renforçant le respect des procédures et la résistance physique. Ces atouts sont précieux et
+                    transférables à divers secteurs professionnels.</p>
             </article>
             <!-- PART 2 -->
-            <button>
-                <img src="img/hobbies-structure/sign-2.png" alt="" srcset=""> <!-- logo cliquable -->
-            </button>
-            <div>
-                <img src="img/hobbies-structure/shadow-2.png" alt="" srcset="">
-                <!-- ombre sous le logo -->
-            </div>
-            <div>
-                <img src="img/hobbies-structure/line-2.svg" alt="" srcset="">
-                <!-- ligne entre les logos -->
-            </div>
+                <a href=""><img src="img/experience-pro/embourg.jpeg" alt="Photo de la piscine d’Embourg" srcset="" width="255"></a>
+                <!-- logo cliquable -->
             <article>
                 <h3>
-                    PEINTURE DE FIGURINE
+                    PISCINE D’EMBOURG
                 </h3>
-                <p>
-                    J'aime la peinture de figurine, car elle combine créativité et minutie, me permettant d'apporter vie
-                    et
-                    personnalité à de petits personnages. C'est une activité relaxante qui stimule mon imagination, tout
-                    en
-                    me donnant une grande satisfaction lorsque je vois mes créations prendre forme et raconter leur
-                    propre
-                    histoire.
-                </p>
+                <p>J’ai travaillé pendant 2ans dans une piscine en tant que homme d’entretien</p>
+                <p>Travailler comme technicien d'entretien dans une piscine permet de développer des compétences
+                    techniques
+                    telles que la maintenance des équipements (filtration, chauffage, circulation), le respect des
+                    normes de
+                    sécurité et d'hygiène, ainsi que la gestion des plannings d'entretien. Ce poste demande également
+                    une
+                    grande organisation, de la vigilance pour repérer les anomalies, et une capacité d'adaptation face
+                    aux
+                    imprévus. Le technicien doit aussi savoir communiquer efficacement, que ce soit avec l'équipe ou les
+                    usagers. Ces compétences sont transférables à d'autres secteurs de maintenance et de gestion
+                    d'équipements.</p>
             </article>
             <!-- PART 3 -->
-            <button>
-                <img src="img/hobbies-structure/sign-2.png" alt="" srcset=""> <!-- logo cliquable -->
-            </button>
-            <div>
-                <img src="img/hobbies-structure/shadow-2.png" alt="" srcset="">
-                <!-- ombre sous le logo -->
-            </div>
+            <a href=""><img src="img/experience-pro/jysk.svg" alt="Logo de Jysk" srcset="" width="255"></a>
             <article>
                 <h3>
-                    PHOTOGRAPHIE
+                    JYSK HOGNOUL
                 </h3>
-                <p>
-                    J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des émotions et des
-                    histoires dans le temps. À travers l'objectif, je découvre la beauté dans les détails du quotidien,
-                    explore des perspectives uniques et partage ma vision du monde avec les autres. C'est une forme
-                    d'expression artistique qui me connecte à mon environnement et nourrit ma créativité.
+                <p>J’ai travaillé pendant 1ans chez JYSK en tant que vendeur, assistant logistique</p>
+                <p>Vendeur chez JYSK :
+                    <br>
+                    Travailler en tant que vendeur chez JYSK permet de développer des compétences en
+                    service client, en vente et en gestion des stocks. Le vendeur doit être capable de conseiller les
+                    clients sur les produits, répondre à leurs besoins, et assurer la mise en valeur des articles en
+                    magasin. Une bonne organisation est nécessaire pour maintenir l’espace de vente propre et bien
+                    agencé.
+                    Ce poste développe également des compétences en gestion de caisse et en traitement des retours
+                    clients,
+                    tout en respectant les objectifs de vente.
+                    <br>
+                    Assistant logistique chez JYSK :
+                    <br>
+                    En tant qu'assistant logistique chez JYSK, on acquiert des compétences en gestion des stocks, en
+                    réception et en expédition des marchandises. Le rôle exige de suivre les flux de produits, d'assurer
+                    leur rangement et d'optimiser l'espace de stockage. L'organisation et la rigueur sont essentielles
+                    pour
+                    garantir une bonne gestion des inventaires. Ce poste permet aussi de développer des compétences en
+                    travail d'équipe, tout en respectant les procédures de sécurité et les délais de livraison.
                 </p>
             </article>
         </div>
@@ -307,96 +306,135 @@
         </ul>
     </section>
     <div class="divider"><img src="img/divider.jpg" alt=""></div>
-    <section id="experience">
-        <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
-        <p>Les expériences qui ont contribué à me façonner et à développer mes compétences, mon caractère et ma vision.
-            Elles ont joué un rôle déterminant dans mon parcours, m’aidant à surmonter des défis, à grandir
-            personnellement et professionnellement, et à devenir la personne que je suis aujourd’hui.</p>
+    <section id="competence">
+        <h2>COMPÉTENCE</h2>
+        <p>Mes compétences ont contribué à me façonner et me développer. Au fil des années d’études j’ai acquérie de
+            nombreuse compétence</p>
         <ul>
             <li>
-                <img src="img/experience-pro/tab-border.png" alt="" srcset="">
-                <img src="img/experience-pro/delhaize.png" alt="" srcset="" width="155">
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour active">
+                <img src="img/competence/ai.svg" alt="Logo d’illustrator" srcset="" width="115">
             </li>
             <li>
-                <img src="img/experience-pro/tab-border.png" alt="" srcset="">
-                <img src="img/experience-pro/embourg.jpeg" alt="" srcset="" width="155">
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/competence/ps.svg" alt="Logo de photoshop" srcset="" width="115">
             </li>
             <li>
-                <img src="img/experience-pro/tab-border.png" alt="" srcset="">
-                <img src="img/experience-pro/jysk.png" alt="" srcset="" width="155">
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/competence/indd.svg" alt="Logo de indesign" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175"class="contour">
+                <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="115">
+            </li>
+            <li>
+                <img src="img/competence/border.svg" alt="Contour du logo" srcset="" width="175" class="contour">
+                <img src="img/competence/figma.svg" alt="Logo de figma" srcset="" width="115">
             </li>
         </ul>
         <article>
-            <h3>PROXY DELHAIZE FEXHE</h3>
-            <p>J’ai travaillé pendant 5ans dans un Delhaize en tant que réassortisseur</p>
-            <p>Travailler comme réassortisseur au Delhaize développe des compétences clés telles que l'organisation, la
-                rigueur, la gestion du stress, le service client, le travail en équipe, et l'adaptabilité, tout en
-                renforçant le respect des procédures et la résistance physique. Ces atouts sont précieux et
-                transférables à divers secteurs professionnels.</p>
-            <img src="img/experience-pro/delhaize.png" alt="" srcset="" width="714">
+            <h3>ADOBE ILLUSTRATOR</h3>
+            <p></p>
+            <p></p>
+            <img src="img/competence/ai.svg" alt="Logo d’illustrator" srcset="" width="714">
         </article>
         <article> <!-- hidden -->
-            <h3>PISCINE D’EMBOURG</h3>
-            <p>J’ai travaillé pendant 2ans dans une piscine en tant que homme d’entretien</p>
-            <p>Travailler comme technicien d'entretien dans une piscine permet de développer des compétences techniques
-                telles que la maintenance des équipements (filtration, chauffage, circulation), le respect des normes de
-                sécurité et d'hygiène, ainsi que la gestion des plannings d'entretien. Ce poste demande également une
-                grande organisation, de la vigilance pour repérer les anomalies, et une capacité d'adaptation face aux
-                imprévus. Le technicien doit aussi savoir communiquer efficacement, que ce soit avec l'équipe ou les
-                usagers. Ces compétences sont transférables à d'autres secteurs de maintenance et de gestion
-                d'équipements.</p>
-            <img src="img/experience-pro/embourg.jpeg" alt="" srcset="" width="714">
+            <h3>PHOTOSHOP</h3>
+            <p></p>
+            <p></p>
+            <img src="img/competence/ps.svg" alt="Logo de photoshop" srcset="" width="714">
         </article>
         <article> <!-- hidden -->
-            <h3>JYSK HOGNOUL</h3>
-            <p>J’ai travaillé pendant 1ans chez JYSK en tant que vendeur, assistant logistique</p>
-            <p>Vendeur chez JYSK :
-                <br>
-                Travailler en tant que vendeur chez JYSK permet de développer des compétences en
-                service client, en vente et en gestion des stocks. Le vendeur doit être capable de conseiller les
-                clients sur les produits, répondre à leurs besoins, et assurer la mise en valeur des articles en
-                magasin. Une bonne organisation est nécessaire pour maintenir l’espace de vente propre et bien agencé.
-                Ce poste développe également des compétences en gestion de caisse et en traitement des retours clients,
-                tout en respectant les objectifs de vente.
-                <br>
-                Assistant logistique chez JYSK :
-                <br>
-                En tant qu'assistant logistique chez JYSK, on acquiert des compétences en gestion des stocks, en
-                réception et en expédition des marchandises. Le rôle exige de suivre les flux de produits, d'assurer
-                leur rangement et d'optimiser l'espace de stockage. L'organisation et la rigueur sont essentielles pour
-                garantir une bonne gestion des inventaires. Ce poste permet aussi de développer des compétences en
-                travail d'équipe, tout en respectant les procédures de sécurité et les délais de livraison.
-            </p>
-            <img src="img/experience-pro/jysk.png" alt="" srcset="" width="714">
+            <h3>INDESIGN</h3>
+            <p></p>
+            <p></p>
+            <img src="img/competence/indd.svg" alt="Logo de indesign" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>HYPERTEXT MARKUP LANGUAGE</h3>
+            <p></p>
+            <p></p>
+            <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>CASCADING STYLE SHEETS</h3>
+            <p></p>
+            <p></p>
+            <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>JAVASCRIPT</h3>
+            <p></p>
+            <p></p>
+            <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>MY STRUCTURED QUERY LANGUAGE</h3>
+            <p></p>
+            <p></p>
+            <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>HYPERTEXT PREPROCESSOR</h3>
+            <p></p>
+            <p></p>
+            <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="714">
+        </article>
+        <article> <!-- hidden -->
+            <h3>FIGMA</h3>
+            <p></p>
+            <p></p>
+            <img src="img/competence/figma.svg" alt="Logo de figma" srcset="" width="714">
         </article>
     </section>
     <div class="divider"><img src="img/divider.jpg" alt=""></div>
-    <section id="competence">
-        <h2>COMPÉTENCE</h2>
+    <section id="hobbies">
+        <h2>MES HOBBIES</h2>
         <div>
             <div>
-                <img src="img/competence/css-html.webp" alt="Logo de HTML et CSS" srcset="" width="1153">
-                <p>UNE MAITRISE DU HYPERTEXT
-                    MARKUP LANGUAGE ET DU
-                    CASCADING STYLE SHEET</p>
+                <img src="" alt="" srcset="" width="1153">
+                <p>JEUX VIDÉOS</p>
             </div>
-            <p>Je maitrise le css et l’html comme ma poche</p>
+            <p>J'aime les jeux vidéo car ils offrent une évasion immersive, me permettant de vivre des aventures
+                captivantes, d'explorer des mondes fantastiques et de relever des défis stimulants. Ils favorisent
+                également la créativité, la réflexion stratégique et la connexion avec d'autres joueurs à travers le
+                monde.</p>
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="img/competence/ai-ps.jpg" alt="Logo illustrator et photoshop" srcset="" width="1153">
-                <p>UN AS DE PHOTOSHOP ET
-                    D’ILLUSTRATOR</p>
+                <img src="" alt="" srcset="" width="1153">
+                <p>PEINTURE DE FIGURINE</p>
             </div>
-            <p>Je maitrise photoshop et illustrator comme un champion</p>
+            <p>J'aime la peinture de figurine car elle combine créativité et minutie, me permettant d'apporter vie et
+                personnalité à de petits personnages. C'est une activité relaxante qui stimule mon imagination, tout en
+                me donnant une grande satisfaction lorsque je vois mes créations prendre forme et raconter leur propre
+                histoire.</p>
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="img/competence/php-js.jpg" alt="Logo javascript et php" srcset="" width="1153">
-                <p>UN DÉBUT DANS JAVASCRIPT ET
-                    HYPERTEXTE PREPROCESSOR</p>
+                <img src="" alt="" srcset="" width="1153">
+                <p>PHOTOGRAPHIE</p>
             </div>
-            <p>J’ai un début d’apprentissage dans JS et en PHP</p>
+            <p>J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des émotions et des
+                histoires dans le temps. À travers l'objectif, je découvre la beauté dans les détails du quotidien,
+                explore des perspectives uniques et partage ma vision du monde avec les autres. C'est une forme
+                d'expression artistique qui me connecte à mon environnement et nourrit ma créativité.</p>
         </div>
         <button></button>
         <button></button>
@@ -404,13 +442,13 @@
     <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section id="qualites">
         <h2>QUALITÉS ET DÉFAUTS</h2>
-        <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/autonome.jpg" alt="Qualité autonome" srcset="" width="605" height="340">
         <img src="img/qualites-defauts/anxieux.avif" alt="Défaut anxieux" srcset="" width="605" height="340">
         <img src="img/qualites-defauts/curieux.jpg" alt="Qualité curieux" srcset="" width="605" height="340">
         <img src="img/qualites-defauts/impatient.jpg" alt="Défaut impatient" srcset="" width="605" height="340">
         <img src="img/qualites-defauts/organise.avif" alt="Qualité organisé" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/indecis.jpg" alt="Défaut indécis" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/rigueur.jpg" alt="Qualité rigueur" srcset="" width="605" height="340">
     </section>
     <div class="divider"><img src="img/divider.jpg" alt=""></div>
     <section>
@@ -447,14 +485,14 @@
 <footer>
     <div>
         <div>
-            <a href=""><img src="img/logo.jpg" alt="Logo de Delvenne Gauthier" width="399" height=162,2"></a>
+            <a href=""><img src="img/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height=162,2"></a>
             <a href=""><img src="" alt="Logo de la Haute Ecole de la Province de Liege"></a>
         </div>
         <div>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
-                        <img src="img/compte/linkedin.webp" alt="Le logo de Linkedin" srcset="" width="58"
+                        <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
                              title="Linkedin">
                     </a>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
@@ -471,7 +509,7 @@
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.png" alt="Le logo de Stack Overflow" srcset="" width="58">
+                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58">
                     </a>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
                         <p>STACK OVERFLOW</p>
@@ -479,7 +517,7 @@
                 </li>
                 <li>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/X.webp" alt="Le logo de X" srcset="" width="58">
+                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58">
                     </a>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
                         <p>X</p>
@@ -487,7 +525,7 @@
                 </li>
                 <li>
                     <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.png" alt="Le logo de Facebook" srcset="" width="58">
+                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58">
                     </a>
                     <a href="https://www.facebook.com/gauthier.delvenne">
                         <p>FACEBOOK</p>

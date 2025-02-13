@@ -16,20 +16,26 @@ body {
     background-color: black;
     color: white;
 }
-
+ul{
+    list-style: none;
+}
 header {
     display: flex;
     align-items: center;
     gap: 10em;
     height: 100px;
+    padding: 0 92px 0 92px ;
 }
 
 .nav ul {
-    list-style: none;
     display: flex;
     gap: 2.625em;
 }
-
+.nav ul li{
+    align-content: center;
+    text-align: center;
+    font-weight: 600;
+}
 a {
     text-decoration: none;
     color: white;
@@ -93,9 +99,10 @@ select {
 }
 
 #disponible ul {
-    list-style: none;
     display: flex;
     gap: 30px;
+    justify-content: center;
+    margin-top: 28px;
 }
 #disponible{
     width: 659px;
@@ -107,9 +114,29 @@ select {
     flex-direction: row;
     gap: 9px;
 }
+#disponible p:first-child span{
+    font-weight: 600;
+    font-size: 33px;
+    min-width: 207px;
+}
+
 ul li:nth-of-type(3) a img{
     padding: 0 34px 0 34px;
 }
 .line{
     width: 232px;
+}
+.contour{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.active{
+    position: unset;
+    overflow: unset;
+    height: unset;
+    width: 175px;
 }
