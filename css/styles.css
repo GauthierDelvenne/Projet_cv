@@ -6,36 +6,47 @@
     height: 1px;
     overflow: hidden;
 }
-.divider img{
+
+.divider img {
     height: 79px;
-    width: 100vw;
+    width: 100%;
 }
+
 body {
     font-family: "TT Supermolot Neue Trl Variable", sans-serif;
     font-size: 16px;
     background-color: black;
     color: white;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 header {
     display: flex;
     align-items: center;
     gap: 10em;
     height: 100px;
-    padding: 0 92px 0 92px ;
+    padding: 0 92px 0 92px;
+    justify-content: space-between;
 }
 
 .nav ul {
     display: flex;
-    gap: 2.625em;
+    gap: 1.3em;
 }
-.nav ul li{
+
+.nav ul li {
     align-content: center;
     text-align: center;
     font-weight: 600;
 }
+
+.nav ul li a:hover {
+    color: palegreen;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -71,12 +82,14 @@ select {
 #presentation {
     display: flex;
     flex-direction: column;
+    width: 499px;
 }
 
 #presentation h2 {
     order: 1;
-    max-width: 499px;
     text-align: center;
+    font-size: 33px;
+    margin-top: 40px;
 }
 
 #presentation div {
@@ -101,32 +114,44 @@ select {
 #disponible ul {
     display: flex;
     gap: 30px;
-    justify-content: center;
     margin-top: 28px;
+    justify-content: space-evenly;
 }
-#disponible{
-    width: 659px;
+
+#disponible ul li {
+    filter:grayscale(1);
+}
+
+#disponible {
+    width: 784px;
     align-self: flex-end;
     height: 274px;
 }
-#disponible p:first-child{
+
+#disponible p:first-child {
     display: flex;
     flex-direction: row;
     gap: 9px;
+    justify-content: center;
+    align-items: center;
 }
-#disponible p:first-child span{
+
+#disponible p:first-child span {
     font-weight: 600;
     font-size: 33px;
     min-width: 207px;
 }
 
-ul li:nth-of-type(3) a img{
-    padding: 0 34px 0 34px;
+ul li a img {
+    padding: 0 34px 15px 34px;
 }
-.line{
+
+.line {
     width: 232px;
+    height: 12px;
 }
-.contour{
+
+.contour {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -134,9 +159,18 @@ ul li:nth-of-type(3) a img{
     height: 1px;
     overflow: hidden;
 }
-.active{
+
+.active {
     position: unset;
     overflow: unset;
     height: unset;
     width: 175px;
+}
+.edition{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 200px 671px;
+}
+.art-edition{
+
 }
