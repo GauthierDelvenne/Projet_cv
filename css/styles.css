@@ -267,14 +267,83 @@ h2{
     height: 160px;
 }
 #competence{
-    padding: 73px 0 126px;
+    padding: 73px 90px 126px;
+}
+#competence h2{
+    margin-bottom: 36px;
 }
 #competence ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin-top: 74px;
 }
 #competence p {
     text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+#competence article{
+    margin-top: 144px;
+    display: flex;
+    justify-content: space-between;
+}
+#competence article div{
+    max-width: 615px;
+}
+#competence article p{
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+}
+#competence article p:first-of-type{
+    text-align: justify;
+    font-size: 25px;
+    margin-bottom: 63px;
+    font-style: italic;
+}
+h3{
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+#hobbies{
+    position: relative;
+    padding: 74px 126px 126px 126px;
+}
+#hobbies button{
+    position: absolute;
+    top: 494px;
+}
+#hobbies button:first-of-type{
+    left: 20px;
+}
+#hobbies button:nth-of-type(2){
+    left: 1400px;
+}
+#hobbies h2{
+    margin-bottom: 52px;
+}
+#hobbies article{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#hobbies article div{
+    align-self: center;
+}
+#hobbies article div h3{
+    position: absolute;
+    top: 550px;
+    left: 50px;
+}
+#hobbies article p{
+    max-width: 1188px;
+    align-self: center;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 29px 18px 0 33px;
+
 }
