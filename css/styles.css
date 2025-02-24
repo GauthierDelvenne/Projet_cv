@@ -144,12 +144,12 @@ select {
     min-width: 207px;
 }
 
-ul li a img {
+#disponible ul li a img {
     padding: 0 34px 15px 34px;
 }
 
 .line {
-    width: 232px;
+    max-width: 232px;
     height: 12px;
 }
 
@@ -166,14 +166,15 @@ ul li a img {
     position: unset;
     overflow: unset;
     height: unset;
-    width: 175px;
+    max-width: 175px;
 }
 .edition{
     display: grid;
     grid-template-columns: repeat(6, 202px);
     grid-template-rows: 200px 671px;
     grid-gap: 10px;
-    padding: 80px 100px 109px;
+    justify-content: center;
+    padding: 80px 0 109px;
 }
 
 .art-edition:nth-of-type(1){
@@ -193,7 +194,7 @@ ul li a img {
     font-size: 29px;
     font-weight: 600;
 }
-.acquis__unliste{
+.acquis__ul__liste{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -223,4 +224,57 @@ ul li a img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+h2{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+#parcours{
+    padding: 64.8px;
+}
+#parcours p {
+    text-align: right;
+    margin-bottom: 19.8px;
+}
+.parcours__ul__liste{
+    display: flex;
+    gap: 70px;
+    max-width: 385px;
+}
+#parcours .parcours__ul__liste p {
+    text-align: left;
+    line-height: 20px;
+}
+#parcours img{
+    max-height: 229.5px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+#experience{
+    padding: 65px 0 85px;
+}
+#experience div{
+    display: flex;
+}
+#experience article{
+    padding: calc((35) * (100vw / 1600)) calc((50) * (100vw / 1600)) calc((40) * (100vw / 1600)) calc((39) * (100vw / 1600));
+    max-width: 460px;
+    text-align: justify;
+}
+#experience img{
+    max-width: 160px;
+    height: 160px;
+}
+#competence{
+    padding: 73px 0 126px;
+}
+#competence ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#competence p {
+    text-align: center;
 }

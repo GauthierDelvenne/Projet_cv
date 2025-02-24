@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta name="description"
           content="Une vitrine interactive de mes compétences, expériences professionnelles et scolaire.">
-    <meta name="keywords" content="CV, Présentation, Parcours scolaire, hobbies, expérience professionnelle,Compétence">
+    <meta name="keywords"
+          content="CV, Présentation, Parcours scolaire, hobbies, expérience professionnelle, Compétences">
     <meta name="author" content="Delvenne Gauthier">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>CV de Delvenne Gauthier</title>
 </head>
 <body>
-<header>
-    <h1 class="hidden">Mon cv</h1>
-    <nav class="nav">
+<header itemscope itemtype="https://schema.org/WPHeader">
+    <h1 class="hidden" itemprop="headline">Mon cv</h1>
+    <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <h2 class="hidden">Navigation</h2>
         <ul>
-            <li>
-                <a href="#parcours">PARCOURS SCOLAIRE</a>
-            </li>
-            <li>
-                <a href="#hobbies">MES HOBBIES</a>
-            </li>
-            <li>
-                <a href="#experience">EXPÉRIENCE PROFESSIONNELLE</a>
-            </li>
-            <li>
-                <a href="#competence">COMPÉTENCE</a>
-            </li>
-            <li>
-                <a href="#qualites">QUALITÉS ET DÉFAUTS</a>
-            </li>
+            <li><a href="#parcours" itemprop="url">PARCOURS SCOLAIRE</a></li>
+            <li><a href="#hobbies" itemprop="url">MES HOBBIES</a></li>
+            <li><a href="#experience" itemprop="url">EXPÉRIENCE PROFESSIONNELLE</a></li>
+            <li><a href="#competence" itemprop="url">COMPÉTENCE</a></li>
+            <li><a href="#qualites" itemprop="url">QUALITÉS ET DÉFAUTS</a></li>
         </ul>
     </nav>
-    <div class="menu">
+    <div class="menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div>
-            <a href="#">PORTFOLIO</a>
+            <a href="#" itemprop="url">PORTFOLIO</a>
         </div>
         <div>
             <ul>
-                <li>
-                    <a href="index.html">FR</a>
-                </li>
-                <li class="hidden">
-                    <a href="index.html">EN</a>
-                </li>
-                <li class="hidden">
-                    <a href="index.html">NL</a>
-                </li>
+                <li><a href="index.html" itemprop="url">FR</a></li>
+                <li class="hidden"><a href="index.html" itemprop="url">EN</a></li>
+                <li class="hidden"><a href="index.html" itemprop="url">NL</a></li>
             </ul>
         </div>
     </div>
@@ -56,21 +41,22 @@
     <section class="introduction">
         <div id="presentation"> <!--Bloc presentation 1-->
             <h2>ÉTUDIANT EN DEUXIÈME INFOGRAPHIE OPTION WEB</h2>
-            <a href="index.html"><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height=162"></a>
+            <a href="index.html"><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399"
+                                      height="162"/></a>
             <div>
                 <div>
-                    <video autoplay="" muted="" loop="" width="456" height="264" title="Vidéo de présentation">
-                        <source src="video/videotest.mp4" type="video/mp4">
+                    <video autoplay muted loop width="456" height="264" title="Vidéo de présentation">
+                        <source src="video/video-test.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div>
-                    <img src="img/video-intro/frame.webp" alt="" width="460" height="264">
+                    <img src="img/video-intro/frame.webp" alt="" width="460" height="264"/>
                 </div>
                 <div>
-                    <svg width="96" height="96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="96" height="96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Mettre en pause">
                         <title>Mettre en pause</title>
-                        <desc>Un boutton pause qui permet de stopper la vidéo</desc>
-                        <g filter="url(#filter0_d_1_2442)" fill="#fff">
+                        <desc>Un bouton pause qui permet de stopper la vidéo</desc>
+                        <g fill="#fff">
                             <path d="M91 43.177l-.137-.001c-.1-.412-1.198-1.765-3.801-2.35a4.938 4.938 0 00-.839-.102C85.167 21.51 69.726 6.069 50.513 5.01a4.985 4.985 0 00-.1-.835c-.587-2.603-1.941-3.701-2.353-3.8V.352l-.06.01c-.038-.007-.06-.125-.06-.125s0 .124-.002.138c-.411.099-1.764 1.197-2.35 3.801a5 5 0 00-.103.896c-18.835 1.443-33.863 16.715-34.9 35.661-.581-.04-1.142-.02-1.647.093-2.603.585-3.7 1.938-3.8 2.35h-.022s.002.022.01.06c-.008.04-.126.061-.126.061h.139c.1.412 1.196 1.766 3.8 2.35.523.118 1.105.135 1.709.09 1.417 18.573 16.28 33.434 34.855 34.851-.047.604-.03 1.186.087 1.71.586 2.604 1.938 3.701 2.35 3.801l.002.022s.021-.002.06-.01c.039.008.06.126.06.126v-.138c.412-.1 1.766-1.197 2.351-3.801.114-.506.132-1.068.092-1.65C69.45 79.61 84.718 64.585 86.163 45.752c.312-.013.616-.04.9-.104 2.604-.585 3.702-1.939 3.802-2.351h.022s-.002-.021-.01-.06c.007-.039.123-.06.123-.06zm-41.128 34.49c-.653-1.963-1.594-3.59-1.855-3.633-.005-.001-.011.002-.016.005-.006-.003-.013-.006-.017-.005-.259.042-1.186 1.644-1.84 3.588-17.429-1.122-31.408-15.1-32.532-32.528 1.944-.653 3.548-1.582 3.591-1.84a.047.047 0 00-.004-.017c.002-.006.005-.012.004-.018-.043-.26-1.67-1.203-3.636-1.856C14.304 23.646 28.32 9.31 45.901 8.055c.636 2.283 1.79 4.336 2.082 4.385a.042.042 0 00.018-.004c.005.003.01.005.017.004.295-.05 1.465-2.136 2.097-4.442 17.873.867 32.256 15.252 33.121 33.125-2.304.632-4.39 1.801-4.439 2.097a.04.04 0 00.005.018.027.027 0 00-.005.017c.05.292 2.1 1.445 4.383 2.081-1.258 17.58-15.592 31.592-33.308 32.33z"/>
                             <path d="M63.78 41.073c-6.964-4.048-13.893-8.15-20.831-12.24-1.13-.654-2.496-.416-3.27.58-.355.461-.483.99-.483 1.571V55.46c.003 1.28.736 2.205 1.978 2.495.607.138 1.168 0 1.698-.303 1.317-.787 2.637-1.558 3.96-2.34 5.65-3.32 11.287-6.669 16.955-9.95 1.623-.944 1.623-3.34-.008-4.288z"/>
                         </g>
@@ -78,76 +64,77 @@
                 </div>
             </div>
         </div>
-        <div id="disponible"> <!--Bloc Disponible sur -->
-            <p><img class="line" src="img/utilitaire/main-line-left.png" alt=""><span>Disponible sur</span><img class="line"
-                                                                                                                src="img/utilitaire/main-line-right.png"
-                                                                                                                alt=""></p>
+        <div id="disponible"> <!--Bloc Disponible sur-->
+            <p><img class="line" src="img/utilitaire/main-line-left.png" alt=""/><span>Disponible sur</span><img
+                    class="line"
+                    src="img/utilitaire/main-line-right.png"
+                    alt=""/></p>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
                         <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
-                             title="Linkedin">
+                             title="Linkedin"/>
                         <p>LINKEDIN</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/GauthierDelvenne">
-                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58">
+                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58"/>
                         <p>GITHUB</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58">
+                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"/>
                         <p>STACK OVERFLOW</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58">
+                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58"/>
                         <p>X</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58">
+                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"/>
                         <p>FACEBOOK</p>
                     </a>
                 </li>
             </ul>
         </div>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section class="edition">
         <h2 class="hidden">Édition</h2>
         <article class="art-edition">
             <h3>ÉDITION PREMIÈRE</h3>
             <div class="acquis__div">
                 <div>
-                    <ul class="acquis__unliste">
+                    <ul class="acquis__ul__liste">
                         <li class="acquis">
                             <img src="/img/logiciel/ai.svg" title="Logo illustrator" alt="Logo illustrator"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="Adobe Illustrator">AI</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/ps.svg" title="Logo de Photoshop" alt="Logo de Photoshop"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="Photoshop">PS</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/css.svg" title="Logo de Cascading Style Sheets"
-                                 alt="Logo de Cascading Style Sheets" width="128">
+                                 alt="Logo de Cascading Style Sheets" width="128"/>
                             <p><abbr lang="en" title="Cascading Style Sheets">CSS</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/html.svg" title="Logo de HyperText Markup Language"
-                                 alt="Logo de HyperText Markup Language" width="128">
+                                 alt="Logo de HyperText Markup Language" width="128"/>
                             <p><abbr lang="en" title="HyperText Markup Language">HTML</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/indd.svg" title="Logo d’InDesign" alt="Logo d’InDesign"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="InDesign">INDD</abbr></p>
                         </li>
                     </ul>
@@ -159,29 +146,29 @@
             <h3>ÉDITION DEUXIÈME</h3>
             <div class="acquis__div">
                 <div>
-                    <ul class="acquis__unliste">
+                    <ul class="acquis__ul__liste">
                         <li class="acquis">
                             <img src="/img/logiciel/js.svg" title="Logo de JavaScript" alt="Logo de JavaScript"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="JavaScript">JS</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/mysql.svg" title="Logo de My Structured Query Language"
-                                 alt="Logo de My Structured Query Language" width="128">
+                                 alt="Logo de My Structured Query Language" width="128"/>
                             <p><abbr lang="en" title="My Structured Query Language">MYSQL</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/php.svg" title="Logo de Hypertext Preprocessor"
-                                 alt="Logo de Hypertext Preprocessor" width="128">
+                                 alt="Logo de Hypertext Preprocessor" width="128"/>
                             <p><abbr lang="en" title="Hypertext Preprocessor">PHP</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/wordpress.svg" title="Logo de WordPress" alt="Logo de WordPress"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="WordPress">WP</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/figma.svg" title="Logo de Figma" alt="Logo de Figma" width="128">
+                            <img src="/img/logiciel/figma.svg" title="Logo de Figma" alt="Logo de Figma" width="128"/>
                             <p lang="en">FIGMA</p>
                         </li>
                     </ul>
@@ -193,30 +180,30 @@
             <h3>ÉDITION TROISIÈME</h3>
             <div class="acquis__div">
                 <div>
-                    <ul class="acquis__unliste">
+                    <ul class="acquis__ul__liste">
                         <li class="acquis">
                             <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
-                                 width="128">
+                                 width="128"/>
                             <p lang="en">Laravel</p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/typescript.svg" title="Logo de Typescript" alt="Logo de Typescript"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="Typescript">TP</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
-                                 width="128">
+                                 width="128"/>
                             <p lang="en">Laravel</p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/typescript.svg" title="Logo de Typescript" alt="Logo de Typescript"
-                                 width="128">
+                                 width="128"/>
                             <p><abbr lang="en" title="Typescript">TP</abbr></p>
                         </li>
                         <li class="acquis">
                             <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
-                                 width="128">
+                                 width="128"/>
                             <p lang="en">Laravel</p>
                         </li>
                     </ul>
@@ -225,117 +212,73 @@
             </div>
         </article>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="parcours">
         <h2>PARCOURS SCOLAIRE</h2>
-        <p>À propos</p>
-        <ul>
+        <p >À propos</p>
+        <ul class="parcours__ul__liste">
             <li>
                 <a href="https://www.liege1.be/">
                     <img src="img/parcours-scolaire/secondaire.webp" alt="Logo de l’Athénée Royal Charles Rogier"
-                         srcset="" width="386">
-                    <p>De
-                        <time datetime="2013">2013</time>
-                        à
-                        <time datetime="2020">2020</time>
-                    </p>
-                    <p>Le secondaire&nbsp;!</p>
+                         srcset="" width="386"/>
+                    <p>De <time datetime="2013">2013 </time>à <time datetime="2020">2020</time></p>
+                    <p>Le secondaire&nbsp;: J’y ai passé sept ans dans l’enseignement général en science forte. </p>
                 </a>
             </li>
             <li>
                 <a href="https://www.hepl.be/fr/techniques-infographiques/design-graphique">
                     <img src="img/parcours-scolaire/design.webp" alt="Illustration évoquant le design graphique"
-                         srcset="" width="386">
-                    <p>De
-                        <time datetime="2021">2021</time>
-                        à
-                        <time datetime="2024">2024</time>
-                    </p>
-                    <p>Le design graphique&nbsp;!</p>
+                         srcset="" width="386"/>
+                    <p>De <time datetime="2021">2021 </time>à <time datetime="2024">2024</time></p>
+                    <p>Le design graphique&nbsp;: J’ai d’abord fait deux ans en design graphique.</p>
                 </a>
             </li>
             <li>
                 <a href="https://www.hepl.be/fr/techniques-infographiques/web">
                     <img src="img/parcours-scolaire/web-design.webp" alt="Illustration évoquant le web design"
-                         srcset="" width="386">
-                    <p>De
-                        <time datetime="2024">2024</time>
-                        jusqu’à
-                        <time datetime="2026">2026</time>
-                    </p>
-                    <p>Le web développment&nbsp;!</p>
+                         srcset="" width="386"/>
+                    <p>De <time datetime="2024">2024 </time>jusqu’à <time datetime="2026">2026</time></p>
+                    <p>Le web développment&nbsp;: Où j’en suis actuellement, bientôt la fin.</p>
                 </a>
             </li>
         </ul>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="experience">
         <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
         <div>
-            <!-- PART 1 -->
-            <a href=""><img src="img/experience-pro/delhaize.svg" alt="Logo de delhaize" srcset="" width="255"></a>
+            <!-- PART 1-->
+            <a href=""><img src="img/experience-pro/delhaize.svg" alt="Logo de delhaize" srcset="" width="160"/></a>
             <!-- logo cliquable -->
 
             <article>
                 <h3>
                     PROXY DELHAIZE FEXHE
                 </h3>
-                <p>
-                    J’ai travaillé pendant 5ans dans un Delhaize en tant que réassortisseur
-                </p>
+                <p>J’ai travaillé pendant 5ans dans un Delhaize en tant que réassortisseur.</p>
                 <p>Travailler comme réassortisseur au Delhaize développe des compétences clés telles que l'organisation,
-                    la
-                    rigueur, la gestion du stress, le service client, le travail en équipe, et l'adaptabilité, tout en
-                    renforçant le respect des procédures et la résistance physique. Ces atouts sont précieux et
-                    transférables à divers secteurs professionnels.</p>
+                    la rigueur, la gestion du stress, le service client, le travail en équipe, et l'adaptabilité, tout en
+                    renforçant le respect des procédures et la résistance physique. Ces atouts sont précieux et transférables à divers secteurs professionnels.</p>
             </article>
             <!-- PART 2 -->
             <a href=""><img src="img/experience-pro/embourg.webp" alt="Photo de la piscine d’Embourg" srcset=""
-                            width="255"></a>
-            <!-- logo cliquable -->
+                            width="255"/></a>
+            <!-- logo cliquable-->
             <article>
                 <h3>
                     PISCINE D’EMBOURG
                 </h3>
-                <p>J’ai travaillé pendant 2ans dans une piscine en tant que homme d’entretien</p>
-                <p>Travailler comme technicien d'entretien dans une piscine permet de développer des compétences
-                    techniques
-                    telles que la maintenance des équipements (filtration, chauffage, circulation), le respect des
-                    normes de
-                    sécurité et d'hygiène, ainsi que la gestion des plannings d'entretien. Ce poste demande également
-                    une
-                    grande organisation, de la vigilance pour repérer les anomalies, et une capacité d'adaptation face
-                    aux
-                    imprévus. Le technicien doit aussi savoir communiquer efficacement, que ce soit avec l'équipe ou les
-                    usagers. Ces compétences sont transférables à d'autres secteurs de maintenance et de gestion
-                    d'équipements.</p>
+                <p>J’ai travaillé pendant 2ans dans une piscine en tant qu’homme d’entretien.</p>
+                <p>Travailler comme technicien d'entretien dans une piscine permet de développer des compétences techniques telles que la maintenance des équipements (filtration, chauffage, circulation), le respect des normes de sécurité et d'hygiène, ainsi que la gestion des plannings d'entretien. Ce poste demande également une grande organisation, de la vigilance pour repérer les anomalies, et une capacité d'adaptation face aux imprévus. Le technicien doit aussi savoir communiquer efficacement, que ce soit avec l'équipe ou les usagers. Ces compétences sont transférables à d'autres secteurs de maintenance et de gestion d'équipements.</p>
             </article>
             <!-- PART 3 -->
-            <a href=""><img src="img/experience-pro/jysk.svg" alt="Logo de Jysk" srcset="" width="255"></a>
+            <a href=""><img src="img/experience-pro/jysk.svg" alt="Logo de Jysk" srcset="" width="255"/></a>
             <article>
                 <h3>
                     JYSK HOGNOUL
                 </h3>
-                <p>J’ai travaillé pendant 1ans chez JYSK en tant que vendeur, assistant logistique</p>
-                <p>Vendeur chez JYSK :
-                    <br>
-                    Travailler en tant que vendeur chez JYSK permet de développer des compétences en
-                    service client, en vente et en gestion des stocks. Le vendeur doit être capable de conseiller les
-                    clients sur les produits, répondre à leurs besoins, et assurer la mise en valeur des articles en
-                    magasin. Une bonne organisation est nécessaire pour maintenir l’espace de vente propre et bien
-                    agencé.
-                    Ce poste développe également des compétences en gestion de caisse et en traitement des retours
-                    clients,
-                    tout en respectant les objectifs de vente.
-                    <br>
-                    Assistant logistique chez JYSK :
-                    <br>
-                    En tant qu'assistant logistique chez JYSK, on acquiert des compétences en gestion des stocks, en
-                    réception et en expédition des marchandises. Le rôle exige de suivre les flux de produits, d'assurer
-                    leur rangement et d'optimiser l'espace de stockage. L'organisation et la rigueur sont essentielles
-                    pour
-                    garantir une bonne gestion des inventaires. Ce poste permet aussi de développer des compétences en
-                    travail d'équipe, tout en respectant les procédures de sécurité et les délais de livraison.
+                <p>J’ai travaillé pendant 1ans chez JYSK en tant qu’assistant logistique.</p>
+                <p>En tant qu'assistant logistique chez JYSK, on acquiert des compétences en gestion des stocks, en réception et en expédition des marchandises. Le rôle exige de suivre les flux de produits, d'assurer leur rangement et d'optimiser l'espace de stockage. L'organisation et la rigueur sont essentielles pour garantir une bonne gestion des inventaires. Ce poste permet aussi de développer des compétences en travail d'équipe, tout en respectant les procédures de sécurité et les délais de livraison.
                 </p>
             </article>
         </div>
@@ -345,131 +288,122 @@
             <li><a href=""></a></li> <!-- Page 3 -->
         </ul>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="competence">
         <h2>COMPÉTENCE</h2>
         <p>Mes compétences ont contribué à me façonner et me développer. Au fil des années d’études j’ai acquérie de
             nombreuse compétence</p>
         <ul>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390"
-                     class="contour active">
-                <img src="img/logiciel/ai.svg" alt="Logo d’illustrator" srcset="" width="115">
+
+                <img src="img/logiciel/ai.svg" alt="Logo d’illustrator" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/ps.svg" alt="Logo de photoshop" srcset="" width="115">
+                <img src="img/logiciel/ps.svg" alt="Logo de photoshop" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/indd.svg" alt="Logo de indesign" srcset="" width="115">
+                <img src="img/logiciel/indd.svg" alt="Logo de indesign" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="115">
+                <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="115">
+                <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="115">
+                <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="115">
+                <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="115">
+                <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="115"/>
             </li>
             <li>
-                <img src="img/utilitaire/tab-border.webp" alt="Contour du logo" srcset="" width="390" class="contour">
-                <img src="img/logiciel/figma.svg" alt="Logo de figma" srcset="" width="115">
+                <img src="img/logiciel/figma.svg" alt="Logo de figma" srcset="" width="115"/>
             </li>
         </ul>
         <article>
             <h3>ADOBE ILLUSTRATOR</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/ai.svg" alt="Logo d’illustrator" srcset="" width="714">
+            <img src="img/logiciel/ai.svg" alt="Logo d’illustrator" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>PHOTOSHOP</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/ps.svg" alt="Logo de photoshop" srcset="" width="714">
+            <img src="img/logiciel/ps.svg" alt="Logo de photoshop" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>INDESIGN</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/indd.svg" alt="Logo de indesign" srcset="" width="714">
+            <img src="img/logiciel/indd.svg" alt="Logo de indesign" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>HYPERTEXT MARKUP LANGUAGE</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="714">
+            <img src="img/logiciel/html.svg" alt="Logo de html" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>CASCADING STYLE SHEETS</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="714">
+            <img src="img/logiciel/css.svg" alt="Logo de css" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>JAVASCRIPT</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="714">
+            <img src="img/logiciel/js.svg" alt="Logo de js" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>MY STRUCTURED QUERY LANGUAGE</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="714">
+            <img src="img/logiciel/mysql.svg" alt="Logo de mysql" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>HYPERTEXT PREPROCESSOR</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="714">
+            <img src="img/logiciel/php.svg" alt="Logo de php" srcset="" width="714"/>
         </article>
-        <article> <!-- hidden -->
+        <article class="hidden"> <!-- hidden -->
             <h3>FIGMA</h3>
             <p></p>
             <p></p>
-            <img src="img/logiciel/figma.svg" alt="Logo de figma" srcset="" width="714">
+            <img src="img/logiciel/figma.svg" alt="Logo de figma" srcset="" width="714"/>
         </article>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="hobbies">
         <h2>MES HOBBIES</h2>
         <div>
             <div>
-                <img src="" alt="" srcset="" width="1153">
+                <img src="" alt="" srcset="" width="1153"/>
                 <p>JEUX VIDÉOS</p>
             </div>
-            <p>J'aime les jeux vidéo car ils offrent une évasion immersive, me permettant de vivre des aventures
+            <p>J'aime les jeux vidéo, car ils offrent une évasion immersive, me permettant de vivre des aventures
                 captivantes, d'explorer des mondes fantastiques et de relever des défis stimulants. Ils favorisent
                 également la créativité, la réflexion stratégique et la connexion avec d'autres joueurs à travers le
                 monde.</p>
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="" alt="" srcset="" width="1153">
+                <img src="" alt="" srcset="" width="1153"/>
                 <p>PEINTURE DE FIGURINE</p>
             </div>
-            <p>J'aime la peinture de figurine car elle combine créativité et minutie, me permettant d'apporter vie et
+            <p>J'aime la peinture de figurine, car elle combine créativité et minutie, me permettant d'apporter vie et
                 personnalité à de petits personnages. C'est une activité relaxante qui stimule mon imagination, tout en
                 me donnant une grande satisfaction lorsque je vois mes créations prendre forme et raconter leur propre
                 histoire.</p>
         </div>
         <div> <!-- hidden -->
             <div>
-                <img src="" alt="" srcset="" width="1153">
+                <img src="" alt="" srcset="" width="1153"/>
                 <p>PHOTOGRAPHIE</p>
             </div>
             <p>J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des émotions et des
@@ -480,18 +414,18 @@
         <button></button>
         <button></button>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="qualites">
         <h2>QUALITÉS ET DÉFAUTS</h2>
-        <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/anxieux.webp" alt="Défaut anxieux" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/curieux.webp" alt="Qualité curieux" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/impatient.webp" alt="Défaut impatient" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/organise.webp" alt="Qualité organisé" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605" height="340">
-        <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605" height="340">
+        <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605"/>
+        <img src="img/qualites-defauts/anxieux.webp" alt="Défaut anxieux" srcset="" width="605"/>
+        <img src="img/qualites-defauts/curieux.webp" alt="Qualité curieux" srcset="" width="605"/>
+        <img src="img/qualites-defauts/impatient.webp" alt="Défaut impatient" srcset="" width="605"/>
+        <img src="img/qualites-defauts/organise.webp" alt="Qualité organisé" srcset="" width="605"/>
+        <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605"/>
+        <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605"/>
     </section>
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section>
         <div>
             <h2>VOUS VOULEZ EN SAVOIR PLUS À MON
@@ -503,15 +437,15 @@
                     <label for="email">
                         Saisir votre adresse e-mail
                     </label>
-                    <br>
+                    <br/>
                     <input type="email" name="email" id="email" placeholder="votreadresse@email.com"
-                           title="Veuillez inscrire votre email">
+                           title="Veuillez inscrire votre email"/>
                 </div>
                 <div>
                     <label for="com">
                         Saisir votre message
                     </label>
-                    <br>
+                    <br/>
                     <textarea name="com" id="com" cols="30" rows="10" placeholder="Votre message"
                               title="Veuillez inscrire votre message"></textarea>
                 </div>
@@ -526,15 +460,15 @@
 <footer>
     <div>
         <div>
-            <a href=""><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height=162,2"></a>
-            <a href=""><img src="" alt="Logo de la Haute Ecole de la Province de Liege"></a>
+            <a href=""><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height=162,2"/></a>
+            <a href=""><img src="" alt="Logo de la Haute Ecole de la Province de Liege"/></a>
         </div>
         <div>
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
                         <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
-                             title="Linkedin">
+                             title="Linkedin"/>
                     </a>
                     <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
                         <p>LINKEDIN</p>
@@ -542,7 +476,7 @@
                 </li>
                 <li>
                     <a href="https://github.com/GauthierDelvenne">
-                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58">
+                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58"/>
                     </a>
                     <a href="https://github.com/GauthierDelvenne">
                         <p>GITHUB</p>
@@ -550,7 +484,7 @@
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58">
+                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"/>
                     </a>
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
                         <p>STACK OVERFLOW</p>
@@ -558,7 +492,7 @@
                 </li>
                 <li>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58">
+                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58"/>
                     </a>
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
                         <p>X</p>
@@ -566,7 +500,7 @@
                 </li>
                 <li>
                     <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58">
+                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"/>
                     </a>
                     <a href="https://www.facebook.com/gauthier.delvenne">
                         <p>FACEBOOK</p>
