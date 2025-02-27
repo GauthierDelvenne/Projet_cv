@@ -9,20 +9,28 @@
     <meta name="author" content="Delvenne Gauthier">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="src/js/main.js" defer></script>
     <title>CV de Delvenne Gauthier</title>
 </head>
 <body>
-<header itemscope itemtype="https://schema.org/WPHeader">
-    <h1 class="hidden" itemprop="headline">Mon cv</h1>
+<header id="header" itemscope itemtype="https://schema.org/WPHeader">
+    <h1 class="hidden" itemprop="headline">Mon Curriculum vitæ</h1>
     <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <h2 class="hidden">Navigation</h2>
-        <ul>
-            <li><a href="#parcours" itemprop="url">PARCOURS SCOLAIRE</a></li>
-            <li><a href="#hobbies" itemprop="url">MES HOBBIES</a></li>
-            <li><a href="#experience" itemprop="url">EXPÉRIENCES PROFESSIONNELLES</a></li>
-            <li><a href="#competence" itemprop="url">COMPÉTENCES</a></li>
-            <li><a href="#qualites" itemprop="url">QUALITÉS ET DÉFAUTS</a></li>
-        </ul>
+        <div>
+            <input type="checkbox" id="menuCheckbox"/>
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+                <li><a href="#parcours" itemprop="url">PARCOURS SCOLAIRE</a></li>
+                <li><a href="#hobbies" itemprop="url">MES HOBBIES</a></li>
+                <li><a href="#experience" itemprop="url">EXPÉRIENCES PROFESSIONNELLES</a></li>
+                <li><a href="#competence" itemprop="url">COMPÉTENCES</a></li>
+                <li><a href="#qualites" itemprop="url">QUALITÉS ET DÉFAUTS</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div>
@@ -31,8 +39,6 @@
         <div>
             <ul>
                 <li><a href="index.html" itemprop="url">FR</a></li>
-                <li class="hidden"><a href="index.html" itemprop="url">EN</a></li>
-                <li class="hidden"><a href="index.html" itemprop="url">NL</a></li>
             </ul>
         </div>
     </div>
@@ -43,26 +49,22 @@
             <h2>ÉTUDIANT EN DEUXIÈME INFOGRAPHIE OPTION WEB</h2>
             <a href="index.html"><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399"
                                       height="162"/></a>
-            <div>
-                <div>
-                    <video autoplay muted loop width="456" height="264" title="Vidéo de présentation">
-                        <source src="video/video-test.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div>
-                    <img src="img/video-intro/frame.webp" alt="" width="460" height="264"/>
-                </div>
-                <div>
-                    <svg width="96" height="96" fill="none" xmlns="http://www.w3.org/2000/svg"
-                         aria-label="Mettre en pause">
-                        <title>Mettre en pause</title>
-                        <desc>Un bouton pause qui permet de stopper la vidéo</desc>
-                        <g fill="#fff">
-                            <path d="M91 43.177l-.137-.001c-.1-.412-1.198-1.765-3.801-2.35a4.938 4.938 0 00-.839-.102C85.167 21.51 69.726 6.069 50.513 5.01a4.985 4.985 0 00-.1-.835c-.587-2.603-1.941-3.701-2.353-3.8V.352l-.06.01c-.038-.007-.06-.125-.06-.125s0 .124-.002.138c-.411.099-1.764 1.197-2.35 3.801a5 5 0 00-.103.896c-18.835 1.443-33.863 16.715-34.9 35.661-.581-.04-1.142-.02-1.647.093-2.603.585-3.7 1.938-3.8 2.35h-.022s.002.022.01.06c-.008.04-.126.061-.126.061h.139c.1.412 1.196 1.766 3.8 2.35.523.118 1.105.135 1.709.09 1.417 18.573 16.28 33.434 34.855 34.851-.047.604-.03 1.186.087 1.71.586 2.604 1.938 3.701 2.35 3.801l.002.022s.021-.002.06-.01c.039.008.06.126.06.126v-.138c.412-.1 1.766-1.197 2.351-3.801.114-.506.132-1.068.092-1.65C69.45 79.61 84.718 64.585 86.163 45.752c.312-.013.616-.04.9-.104 2.604-.585 3.702-1.939 3.802-2.351h.022s-.002-.021-.01-.06c.007-.039.123-.06.123-.06zm-41.128 34.49c-.653-1.963-1.594-3.59-1.855-3.633-.005-.001-.011.002-.016.005-.006-.003-.013-.006-.017-.005-.259.042-1.186 1.644-1.84 3.588-17.429-1.122-31.408-15.1-32.532-32.528 1.944-.653 3.548-1.582 3.591-1.84a.047.047 0 00-.004-.017c.002-.006.005-.012.004-.018-.043-.26-1.67-1.203-3.636-1.856C14.304 23.646 28.32 9.31 45.901 8.055c.636 2.283 1.79 4.336 2.082 4.385a.042.042 0 00.018-.004c.005.003.01.005.017.004.295-.05 1.465-2.136 2.097-4.442 17.873.867 32.256 15.252 33.121 33.125-2.304.632-4.39 1.801-4.439 2.097a.04.04 0 00.005.018.027.027 0 00-.005.017c.05.292 2.1 1.445 4.383 2.081-1.258 17.58-15.592 31.592-33.308 32.33z"/>
-                            <path d="M63.78 41.073c-6.964-4.048-13.893-8.15-20.831-12.24-1.13-.654-2.496-.416-3.27.58-.355.461-.483.99-.483 1.571V55.46c.003 1.28.736 2.205 1.978 2.495.607.138 1.168 0 1.698-.303 1.317-.787 2.637-1.558 3.96-2.34 5.65-3.32 11.287-6.669 16.955-9.95 1.623-.944 1.623-3.34-.008-4.288z"/>
-                        </g>
-                    </svg>
-                </div>
+            <div id="video">
+
+                <img src="img/video-intro/hello.gif" alt="GIF qui provient d’un dessin animé American" width="456"
+                     height="264">
+
+                <img src="img/video-intro/frame.webp" alt="" width="460" height="264"/>
+
+                <svg width="96" height="96" fill="none" xmlns="http://www.w3.org/2000/svg"
+                     aria-label="Mettre en pause">
+                    <title>Mettre en pause</title>
+                    <desc>Un bouton pause qui permet de stopper la vidéo</desc>
+                    <g fill="#fff">
+                        <path d="M91 43.177l-.137-.001c-.1-.412-1.198-1.765-3.801-2.35a4.938 4.938 0 00-.839-.102C85.167 21.51 69.726 6.069 50.513 5.01a4.985 4.985 0 00-.1-.835c-.587-2.603-1.941-3.701-2.353-3.8V.352l-.06.01c-.038-.007-.06-.125-.06-.125s0 .124-.002.138c-.411.099-1.764 1.197-2.35 3.801a5 5 0 00-.103.896c-18.835 1.443-33.863 16.715-34.9 35.661-.581-.04-1.142-.02-1.647.093-2.603.585-3.7 1.938-3.8 2.35h-.022s.002.022.01.06c-.008.04-.126.061-.126.061h.139c.1.412 1.196 1.766 3.8 2.35.523.118 1.105.135 1.709.09 1.417 18.573 16.28 33.434 34.855 34.851-.047.604-.03 1.186.087 1.71.586 2.604 1.938 3.701 2.35 3.801l.002.022s.021-.002.06-.01c.039.008.06.126.06.126v-.138c.412-.1 1.766-1.197 2.351-3.801.114-.506.132-1.068.092-1.65C69.45 79.61 84.718 64.585 86.163 45.752c.312-.013.616-.04.9-.104 2.604-.585 3.702-1.939 3.802-2.351h.022s-.002-.021-.01-.06c.007-.039.123-.06.123-.06zm-41.128 34.49c-.653-1.963-1.594-3.59-1.855-3.633-.005-.001-.011.002-.016.005-.006-.003-.013-.006-.017-.005-.259.042-1.186 1.644-1.84 3.588-17.429-1.122-31.408-15.1-32.532-32.528 1.944-.653 3.548-1.582 3.591-1.84a.047.047 0 00-.004-.017c.002-.006.005-.012.004-.018-.043-.26-1.67-1.203-3.636-1.856C14.304 23.646 28.32 9.31 45.901 8.055c.636 2.283 1.79 4.336 2.082 4.385a.042.042 0 00.018-.004c.005.003.01.005.017.004.295-.05 1.465-2.136 2.097-4.442 17.873.867 32.256 15.252 33.121 33.125-2.304.632-4.39 1.801-4.439 2.097a.04.04 0 00.005.018.027.027 0 00-.005.017c.05.292 2.1 1.445 4.383 2.081-1.258 17.58-15.592 31.592-33.308 32.33z"/>
+                        <path d="M63.78 41.073c-6.964-4.048-13.893-8.15-20.831-12.24-1.13-.654-2.496-.416-3.27.58-.355.461-.483.99-.483 1.571V55.46c.003 1.28.736 2.205 1.978 2.495.607.138 1.168 0 1.698-.303 1.317-.787 2.637-1.558 3.96-2.34 5.65-3.32 11.287-6.669 16.955-9.95 1.623-.944 1.623-3.34-.008-4.288z"/>
+                    </g>
+                </svg>
             </div>
         </div>
         <div id="disponible"> <!--Bloc Disponible sur-->
@@ -72,33 +74,36 @@
                     alt=""/></p>
             <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
+                    <a href="https://www.linkedin.com/in/gauthier-delvenne" target="_blank">
                         <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
-                             title="Linkedin"/>
+                             aria-label="Linkedin"/>
                         <p>LINKEDIN</p>
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/GauthierDelvenne">
-                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58"/>
+                    <a href="https://github.com/GauthierDelvenne" target="_blank">
+                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58"
+                             aria-label="Github"/>
                         <p>GITHUB</p>
                     </a>
                 </li>
                 <li>
-                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"/>
+                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier" target="_blank">
+                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"
+                             aria-label="Stack Overflow"/>
                         <p>STACK OVERFLOW</p>
                     </a>
                 </li>
                 <li>
-                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58"/>
+                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit" target="_blank">
+                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58" aria-label="X"/>
                         <p>X</p>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"/>
+                    <a href="https://www.facebook.com/gauthier.delvenne" target="_blank">
+                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"
+                             aria-label="Facebook"/>
                         <p>FACEBOOK</p>
                     </a>
                 </li>
@@ -114,33 +119,33 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis">
-                            <img src="/img/logiciel/ai.svg" title="Logo illustrator" alt="Logo illustrator"
+                            <img src="/img/logiciel/ai.svg" aria-label="Logo illustrator" alt="Logo illustrator"
                                  width="128"/>
                             <p><abbr lang="en" title="Adobe Illustrator">AI</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/ps.svg" title="Logo de Photoshop" alt="Logo de Photoshop"
+                            <img src="/img/logiciel/ps.svg" aria-label="Logo de Photoshop" alt="Logo de Photoshop"
                                  width="128"/>
                             <p><abbr lang="en" title="Photoshop">PS</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/css.svg" title="Logo de Cascading Style Sheets"
+                            <img src="/img/logiciel/css.svg" aria-label="Logo de Cascading Style Sheets"
                                  alt="Logo de Cascading Style Sheets" width="128"/>
                             <p><abbr lang="en" title="Cascading Style Sheets">CSS</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/html.svg" title="Logo de HyperText Markup Language"
+                            <img src="/img/logiciel/html.svg" aria-label="Logo de HyperText Markup Language"
                                  alt="Logo de HyperText Markup Language" width="128"/>
                             <p><abbr lang="en" title="HyperText Markup Language">HTML</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/indd.svg" title="Logo d’InDesign" alt="Logo d’InDesign"
+                            <img src="/img/logiciel/indd.svg" aria-label="Logo d’InDesign" alt="Logo d’InDesign"
                                  width="128"/>
                             <p><abbr lang="en" title="InDesign">INDD</abbr></p>
                         </li>
                     </ul>
                 </div>
-                <button type="button">ACQUIS</button>
+                <div class="button" role="button" tabindex="0">ACQUIS</div>
             </div>
         </article>
         <article class="art-edition">
@@ -149,32 +154,34 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis">
-                            <img src="/img/logiciel/js.svg" title="Logo de JavaScript" alt="Logo de JavaScript"
+                            <img src="/img/logiciel/js.svg" aria-label="Logo de JavaScript" alt="Logo de JavaScript"
                                  width="128"/>
                             <p><abbr lang="en" title="JavaScript">JS</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/mysql.svg" title="Logo de My Structured Query Language"
+                            <img src="/img/logiciel/mysql.svg" aria-label="Logo de My Structured Query Language"
                                  alt="Logo de My Structured Query Language" width="128"/>
                             <p><abbr lang="en" title="My Structured Query Language">MYSQL</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/php.svg" title="Logo de Hypertext Preprocessor"
+                            <img src="/img/logiciel/php.svg" aria-label="Logo de Hypertext Preprocessor"
                                  alt="Logo de Hypertext Preprocessor" width="128"/>
                             <p><abbr lang="en" title="Hypertext Preprocessor">PHP</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/wordpress.svg" title="Logo de WordPress" alt="Logo de WordPress"
+                            <img src="/img/logiciel/wordpress.svg" aria-label="Logo de WordPress"
+                                 alt="Logo de WordPress"
                                  width="128"/>
                             <p><abbr lang="en" title="WordPress">WP</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/figma.svg" title="Logo de Figma" alt="Logo de Figma" width="128"/>
+                            <img src="/img/logiciel/figma.svg" aria-label="Logo de Figma" alt="Logo de Figma"
+                                 width="128"/>
                             <p lang="en">FIGMA</p>
                         </li>
                     </ul>
                 </div>
-                <button type="button">ACQUIS</button>
+                <div class="button" role="button" tabindex="0">ACQUIS</div>
             </div>
         </article>
         <article class="art-edition">
@@ -183,35 +190,42 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis">
-                            <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
+                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel" alt="Logo de Laravel"
                                  width="128"/>
-                            <p lang="en">Laravel</p>
+                            <p>Laravel</p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/typescript.svg" title="Logo de Typescript" alt="Logo de Typescript"
+                            <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
+                                 alt="Logo de Typescript"
                                  width="128"/>
                             <p><abbr lang="en" title="Typescript">TP</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
+                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel" alt="Logo de Laravel"
                                  width="128"/>
-                            <p lang="en">Laravel</p>
+                            <p>Laravel</p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/typescript.svg" title="Logo de Typescript" alt="Logo de Typescript"
+                            <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
+                                 alt="Logo de Typescript"
                                  width="128"/>
                             <p><abbr lang="en" title="Typescript">TP</abbr></p>
                         </li>
                         <li class="acquis">
-                            <img src="/img/logiciel/laravel.svg" title="Logo de Laravel" alt="Logo de Laravel"
+                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel" alt="Logo de Laravel"
                                  width="128"/>
-                            <p lang="en">Laravel</p>
+                            <p>Laravel</p>
                         </li>
                     </ul>
                 </div>
-                <button type="button">ACQUIS</button>
+                <div class="button" role="button" tabindex="0">ACQUIS</div>
             </div>
         </article>
+        <div class="hidden div_button_edition">
+            <span class="button__edition " role="button"></span>
+            <span class="button__edition " role="button"></span>
+            <span class="button__edition hidden" role="button"></span>
+        </div>
     </section>
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="parcours">
@@ -251,7 +265,7 @@
                         jusqu’à
                         <time datetime="2026">2026</time>
                     </p>
-                    <p>Le web développment&nbsp;: Où j’en suis actuellement, bientôt la fin.</p>
+                    <p>Le web développement&nbsp;: Où j’en suis actuellement, bientôt la fin.</p>
                 </a>
             </li>
         </ul>
@@ -261,7 +275,7 @@
         <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
         <div>
             <!-- PART 1-->
-            <a href=""><img src="img/experience-pro/delhaize.svg" alt="Logo de delhaize" srcset="" width="160"/></a>
+            <a href="" class="exp_pro"><img src="img/experience-pro/delhaize.svg" alt="Logo de delhaize" srcset="" width="160"/></a>
             <!-- logo cliquable -->
 
             <article>
@@ -276,7 +290,7 @@
                     transférables à divers secteurs professionnels.</p>
             </article>
             <!-- PART 2 -->
-            <a href=""><img src="img/experience-pro/embourg.webp" alt="Photo de la piscine d’Embourg" srcset=""
+            <a href="" class="exp_pro"><img src="img/experience-pro/embourg.webp" alt="Photo de la piscine d’Embourg" srcset=""
                             width="255"/></a>
             <!-- logo cliquable-->
             <article>
@@ -293,8 +307,8 @@
                     maintenance et de gestion d'équipements.</p>
             </article>
             <!-- PART 3 -->
-            <a href=""><img src="img/experience-pro/jysk.svg" alt="Logo de Jysk" srcset="" width="255"/></a>
-            <article>
+            <a href="" class="hidden exp_pro"><img src="img/experience-pro/jysk.svg" alt="Logo de Jysk" srcset="" width="255"/></a>
+            <article class="hidden exp">
                 <h3>
                     JYSK HOGNOUL
                 </h3>
@@ -308,15 +322,15 @@
             </article>
         </div>
         <ul>
-            <li><a href=""></a></li> <!-- Page 1 -->
-            <li><a href=""></a></li> <!-- Page 2 -->
-            <li><a href=""></a></li> <!-- Page 3 -->
+            <li><a href="#"></a></li> <!-- Page 1 -->
+            <li><a href="#"></a></li> <!-- Page 2 -->
+            <li><a href="#"></a></li> <!-- Page 3 -->
         </ul>
     </section>
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="competence">
         <h2>COMPÉTENCES</h2>
-        <p>Mes compétences ont contribué à me façonner et me développer. Au fil des années d’études j’ai acquérie de
+        <p>Mes compétences ont contribué à me façonner et me développer. Au fil des années d’études j’ai acquéri de
             nombreuse compétence</p>
         <ul>
             <li>
@@ -565,7 +579,8 @@
         <h2>MES HOBBIES</h2>
         <article>
             <div>
-                <img src="img/hobbies-structure/games.webp" alt="Photo avec plein de personnages principaux de jeux vidéo" srcset="" width="1188"/>
+                <img src="img/hobbies-structure/games.webp"
+                     alt="Photo avec plein de personnages principaux de jeux vidéo" srcset="" width="1188"/>
                 <h3>JEUX VIDÉOS</h3>
             </div>
             <p>J'aime les jeux vidéo, car ils offrent une évasion immersive, me permettant de vivre des aventures
@@ -575,7 +590,8 @@
         </article>
         <article class="hidden"> <!-- hidden -->
             <div>
-                <img src="img/hobbies-structure/peinture.webp" alt="Photo d’une armée de Votann, dans l'univers Warhammer" srcset="" width="1188"/>
+                <img src="img/hobbies-structure/peinture.webp"
+                     alt="Photo d’une armée de Votann, dans l'univers Warhammer" srcset="" width="1188"/>
                 <h3>PEINTURE DE FIGURINE</h3>
             </div>
             <p>J'aime la peinture de figurine, car elle combine créativité et minutie, me permettant d'apporter vie et
@@ -585,7 +601,8 @@
         </article>
         <article class="hidden"> <!-- hidden -->
             <div>
-                <img src="img/hobbies-structure/photographie.webp" alt="Photo d'un appareil photo devant la mer" srcset="" width="1188"/>
+                <img src="img/hobbies-structure/photographie.webp" alt="Photo d'un appareil photo devant la mer"
+                     srcset="" width="1188"/>
                 <h3>PHOTOGRAPHIE</h3>
             </div>
             <p>J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des émotions et des
@@ -593,28 +610,42 @@
                 explore des perspectives uniques et partage ma vision du monde avec les autres. C'est une forme
                 d'expression artistique qui me connecte à mon environnement et nourrit ma créativité.</p>
         </article>
-        <button> <= </button>
-        <button> => </button>
+        <button> &lt;=</button>
+        <button> =&gt;</button>
     </section>
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
     <section id="qualites">
         <h2>QUALITÉS ET DÉFAUTS</h2>
-        <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605"/>
-        <img src="img/qualites-defauts/anxieux.webp" alt="Défaut anxieux" srcset="" width="605"/>
-        <img src="img/qualites-defauts/curieux.webp" alt="Qualité curieux" srcset="" width="605"/>
-        <img src="img/qualites-defauts/impatient.webp" alt="Défaut impatient" srcset="" width="605"/>
-        <img src="img/qualites-defauts/organise.webp" alt="Qualité organisé" srcset="" width="605"/>
-        <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605"/>
-        <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605"/>
+        <div>
+            <img src="img/qualites-defauts/autonome.webp" alt="Qualité autonome" srcset="" width="605"/>
+            <img src="img/qualites-defauts/anxieux.webp" alt="Défaut anxieux" srcset="" width="605"/>
+            <img src="img/qualites-defauts/curieux.webp" alt="Qualité curieux" srcset="" width="605"/>
+            <img src="img/qualites-defauts/impatient.webp" alt="Défaut impatient" srcset="" width="605"/>
+            <img src="img/qualites-defauts/organise.webp" alt="Qualité organisé" srcset="" width="605"/>
+            <img src="img/qualites-defauts/indecis.webp" alt="Défaut indécis" srcset="" width="605"/>
+            <img src="img/qualites-defauts/rigueur.webp" alt="Qualité rigueur" srcset="" width="605"/>
+        </div>
     </section>
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
-    <section>
-        <div>
+    <section id="formulaire">
+        <div class="formulaire_item">
             <h2>VOUS VOULEZ EN SAVOIR PLUS À MON
                 SUJET ?</h2>
+            <p>N’hésitez pas à me contacter via différents moyens :</p>
+            <ul>
+                <li>
+                    Téléphone : +32 497 54 69 43
+                </li>
+                <li>
+                    Email : gauthierdelvenne@gmail.com
+                </li>
+                <li>
+                    Ou via le formulaire
+                </li>
+            </ul>
         </div>
-        <div>
-            <form action="" method="post">
+        <div class="formulaire_item">
+            <form action="#" method="post">
                 <div>
                     <label for="email">
                         Saisir votre adresse e-mail
@@ -640,57 +671,43 @@
     </section>
 </main>
 <footer>
-    <div>
+    <div class="footer">
         <div>
-            <a href=""><img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399"
-                            height=162,2"/></a>
-            <a href=""><img src="" alt="Logo de la Haute Ecole de la Province de Liege"/></a>
+            <a href="#header">
+                <img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier" width="399" height="162"/>
+            </a>
+            <a href=""><img src="img/hepl.svg" alt="Logo de la Haute Ecole de la Province de Liege" width="190"/></a>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
-                        <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
-                             title="Linkedin"/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gauthier-delvenne-9b022a22a/">
-                        <p>LINKEDIN</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/GauthierDelvenne">
-                        <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58"/>
-                    </a>
-                    <a href="https://github.com/GauthierDelvenne">
-                        <p>GITHUB</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"/>
-                    </a>
-                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
-                        <p>STACK OVERFLOW</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58"/>
-                    </a>
-                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
-                        <p>X</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/gauthier.delvenne">
-                        <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"/>
-                    </a>
-                    <a href="https://www.facebook.com/gauthier.delvenne">
-                        <p>FACEBOOK</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/gauthier-delvenne/">
+                    <img src="img/compte/linkedin.svg" alt="Le logo de Linkedin" srcset="" width="58"
+                         aria-label="Linkedin"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/GauthierDelvenne">
+                    <img src="img/compte/github.svg" alt="Le logo de Github" srcset="" width="58" aria-label="Github"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier">
+                    <img src="img/compte/stack-overflow.svg" alt="Le logo de Stack Overflow" srcset="" width="58"
+                         aria-label="Stack Overflow"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://about.x.com/fr/who-we-are/brand-toolkit">
+                    <img src="img/compte/x.svg" alt="Le logo de X" srcset="" width="58" aria-label="X"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/gauthier.delvenne">
+                    <img src="img/compte/facebook.svg" alt="Le logo de Facebook" srcset="" width="58"
+                         aria-label="Facebook"/>
+                </a>
+            </li>
+        </ul>
     </div>
     <p>
         Projet CV réaliser intégralement par Delvenne Gauthier dans le cadre de son cursus de Web à l’HEPL de Seraing
