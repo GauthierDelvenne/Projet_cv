@@ -7,18 +7,19 @@
     <meta name="keywords"
           content="CV, Présentation, Parcours scolaire, hobbies, expérience professionnelle, Compétences">
     <meta name="author" content="Delvenne Gauthier">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <script src="src/js/main.js" defer></script>
     <title>CV de Delvenne Gauthier</title>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Passer la navigation</a>
 <p class="no-js__message">
     Pour accéder à toutes les fonctionnalités de ce site, vous devez activer JavaScript.
     Voici les <a href="https://www.enable-javascript.com/fr/">
     instructions pour activer JavaScript dans votre navigateur Web</a>.
 </p>
-<a href="#main-content" class="skip-link">Passer la navigation</a>
 
 <header id="header" itemscope itemtype="https://schema.org/WPHeader">
     <h1 class="hidden" itemprop="headline">Mon Curriculum vitæ</h1>
@@ -30,21 +31,21 @@
             <span></span>
             <span></span>
             <ul>
-                <li><a href="#parcours" itemprop="name">PARCOURS SCOLAIRE</a></li>
-                <li><a href="#hobbies" itemprop="name">MES HOBBIES</a></li>
-                <li><a href="#experience" itemprop="name">EXPÉRIENCES PROFESSIONNELLES</a></li>
-                <li><a href="#competence" itemprop="name">COMPÉTENCES</a></li>
-                <li><a href="#qualites" itemprop="name">QUALITÉS ET DÉFAUTS</a></li>
+                <li><a href="#parcours" itemprop="name">Parcours scolaire</a></li>
+                <li><a href="#hobbies" itemprop="name">Mes hobbies</a></li>
+                <li><a href="#experience" itemprop="name">Expériences professionnelles</a></li>
+                <li><a href="#competence" itemprop="name">Compétences</a></li>
+                <li><a href="#qualites" itemprop="name">Qualités et défauts</a></li>
             </ul>
         </div>
     </nav>
     <div class="menu" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div>
-            <a href="#" itemprop="url">PORTFOLIO</a>
+            <a href="#" itemprop="url">Portfolio</a>
         </div>
         <div>
             <ul>
-                <li><a href="index.html" itemprop="name">FR</a></li>
+                <li><a href="index.html" itemprop="name"><abbr title="Français">FR</abbr></a></li>
             </ul>
         </div>
     </div>
@@ -52,12 +53,13 @@
 <main id="main-content">
     <section class="introduction" itemscope itemtype="https://schema.org/Person">
         <div id="presentation"> <!-- Bloc présentation 1 -->
-            <h2>ÉTUDIANT EN DEUXIÈME <span itemprop="jobTitle">INFOGRAPHIE OPTION WEB</span></h2>
+            <h2>Étudiant en deuxième <span itemprop="jobTitle">infographie option web</span></h2>
             <div class="container__link">
                 <a href="index.html" itemprop="url" class="a__link"><span class="sro">Rafraîchir la page</span></a>
-                <img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
+                <img class="monLogo" src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
                      height="162"
-                     itemprop="image"/>
+                     itemprop="image"
+                />
             </div>
 
             <div id="video" itemscope
@@ -101,7 +103,7 @@
                     <img src="img/compte/linkedin.svg" alt="Profil LinkedIn de Gauthier Delvenne, développeur web"
                          width="58" aria-label="Linkedin"
                          itemprop="logo"/>
-                    <p itemprop="name">LINKEDIN</p>
+                    <p itemprop="name">Linkedin</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
                     <a href="https://github.com/GauthierDelvenne" target="_blank" itemprop="url" class="a__link"><span
@@ -109,7 +111,7 @@
                     <img src="img/compte/github.svg" alt="Profil Github de Gauthier Delvenne, développeur web"
                          width="58" aria-label="Github"
                          itemprop="logo"/>
-                    <p itemprop="name">GITHUB</p>
+                    <p itemprop="name">Github</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier" target="_blank"
@@ -117,7 +119,7 @@
                     <img src="img/compte/stack-overflow.svg"
                          alt="Profil Stack Overflow de Gauthier Delvenne, développeur web" width="58"
                          aria-label="Stack Overflow" itemprop="logo"/>
-                    <p itemprop="name">STACK OVERFLOW</p>
+                    <p itemprop="name">Stack Overflow</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit" target="_blank" itemprop="url"
@@ -133,7 +135,7 @@
                     <img src="img/compte/facebook.svg" alt="Profil Facebook de Gauthier Delvenne, développeur web"
                          width="58" aria-label="Facebook"
                          itemprop="logo"/>
-                    <p itemprop="name">FACEBOOK</p>
+                    <p itemprop="name">Facebook</p>
                 </li>
             </ul>
         </div>
@@ -145,87 +147,87 @@
         <h2 class="hidden">Édition</h2>
 
         <article class="art-edition " itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
-            <h3>ÉDITION PREMIÈRE</h3>
+            <h3>Édition première</h3>
             <div class="acquis__div">
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/ai.svg" aria-label="Logo d'Adobe Illustrator"
                                  alt="Logo d'Adobe Illustrator, logiciel de création graphique vectorielle"
-                                 width="128"/>
-                            <abbr lang="en" title="Adobe Illustrator" itemprop="name">AI</abbr>
+                                 width="128"loading="lazy"/>
+                            <abbr lang="en" title="Adobe Illustrator" itemprop="name">ai</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/ps.svg" aria-label="Logo de Photoshop"
-                                 alt="Logo de Photoshop, logiciel de retouche et de création d'images" width="128"/>
-                            <abbr lang="en" title="Photoshop" itemprop="name">PS</abbr>
+                                 alt="Logo de Photoshop, logiciel de retouche et de création d'images" width="128"loading="lazy"/>
+                            <abbr lang="en" title="Photoshop" itemprop="name">ps</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/css.svg" aria-label="Logo de Cascading Style Sheets"
-                                 alt="Logo de CSS, langage de mise en forme pour les pages web" width="128"/>
-                            <abbr lang="en" title="Cascading Style Sheets" itemprop="name">CSS</abbr>
+                                 alt="Logo de CSS, langage de mise en forme pour les pages web" width="128"loading="lazy"/>
+                            <abbr lang="en" title="Cascading Style Sheets" itemprop="name">css</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/html.svg" aria-label="Logo de HyperText Markup Language"
-                                 alt="Logo de HTML, langage de balisage pour structurer les pages web" width="128"/>
-                            <abbr lang="en" title="HyperText Markup Language" itemprop="name">HTML</abbr>
+                                 alt="Logo de HTML, langage de balisage pour structurer les pages web" width="128"loading="lazy"/>
+                            <abbr lang="en" title="HyperText Markup Language" itemprop="name">html</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/indd.svg" aria-label="Logo d'InDesign"
                                  alt="Logo d'InDesign, logiciel de mise en page"
-                                 width="128"/>
-                            <abbr lang="en" title="InDesign" itemprop="name">INDD</abbr>
+                                 width="128"loading="lazy"/>
+                            <abbr lang="en" title="InDesign" itemprop="name">ind</abbr>
                         </li>
                     </ul>
                 </div>
                 <div class="button" role="button" tabindex="0" itemprop="additionalType"
-                     content="http://schema.org/Action">ACQUIS
+                     content="http://schema.org/Action">Acquis
                 </div>
             </div>
         </article>
 
         <article class="art-edition " itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
-            <h3>ÉDITION DEUXIÈME</h3>
+            <h3>Édition deuxième</h3>
             <div class="acquis__div">
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/js.svg" aria-label="Logo de JavaScript"
-                                 alt="Logo de JavaScript, langage de programmation pour le web dynamique" width="128"/>
-                            <abbr lang="en" title="JavaScript" itemprop="name">JS</abbr>
+                                 alt="Logo de JavaScript, langage de programmation pour le web dynamique" width="128"loading="lazy"/>
+                            <abbr lang="en" title="JavaScript" itemprop="name">js</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/mysql.svg" aria-label="Logo de MySQL"
-                                 alt="Logo de MySQL, système de gestion de base de données relationnelle" width="128"/>
-                            <abbr lang="en" title="My Structured Query Language" itemprop="name">MYSQL</abbr>
+                                 alt="Logo de MySQL, système de gestion de base de données relationnelle" width="128"loading="lazy"/>
+                            <abbr lang="en" title="My Structured Query Language" itemprop="name">MySQL</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/php.svg" aria-label="Logo de PHP"
-                                 alt="Logo de PHP, langage de programmation pour le développement web" width="128"/>
-                            <abbr lang="en" title="Hypertext Preprocessor" itemprop="name">PHP</abbr>
+                                 alt="Logo de PHP, langage de programmation pour le développement web" width="128"loading="lazy"/>
+                            <abbr lang="en" title="Hypertext Preprocessor" itemprop="name">php</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/wordpress.svg" aria-label="Logo de WordPress"
                                  alt="Logo de WordPress, système de gestion de contenu pour créer des sites web"
-                                 width="128"/>
-                            <abbr lang="en" title="WordPress" itemprop="name">WP</abbr>
+                                 width="128"loading="lazy"/>
+                            <abbr lang="en" title="WordPress" itemprop="name">wp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/figma.svg" aria-label="Logo de Figma"
                                  alt="Logo de Figma, outil de design collaboratif"
-                                 width="128"/>
-                            <span lang="en" itemprop="name">FIGMA</span>
+                                 width="128"loading="lazy"/>
+                            <span lang="en" itemprop="name">Figma</span>
                         </li>
                     </ul>
                 </div>
                 <div class="button" role="button" tabindex="0" itemprop="additionalType"
-                     content="http://schema.org/Action">ACQUIS
+                     content="http://schema.org/Action">Acquis
                 </div>
             </div>
         </article>
 
         <article class="art-edition troisieme " itemprop="hasPart" itemscope itemtype="http://schema.org/CreativeWork">
-            <h3>ÉDITION TROISIÈME</h3>
+            <h3>Édition troisième</h3>
             <div class="acquis__div">
                 <div>
                     <ul class="acquis__ul__liste">
@@ -237,7 +239,7 @@
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
                                  alt="Logo de Typescript, surensemble JavaScript avec typage statique" width="128"/>
-                            <abbr lang="en" title="Typescript" itemprop="name">TP</abbr>
+                            <abbr lang="en" title="Typescript" itemprop="name">tp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel"
@@ -247,7 +249,7 @@
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
                                  alt="Logo de Typescript, surensemble JavaScript avec typage statique" width="128"/>
-                            <abbr lang="en" title="Typescript" itemprop="name">TP</abbr>
+                            <abbr lang="en" title="Typescript" itemprop="name">tp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
                             <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel"
@@ -257,7 +259,7 @@
                     </ul>
                 </div>
                 <div class="button" role="button" tabindex="0" itemprop="additionalType"
-                     content="http://schema.org/Action">ACQUIS
+                     content="http://schema.org/Action">Acquis
                 </div>
             </div>
         </article>
@@ -265,15 +267,14 @@
         <div class="hidden div_button_edition">
             <span id="button__edition1" role="button" aria-label="Page 1"></span>
             <span id="button__edition2" role="button" aria-label="Page 2"></span>
-            <span id="button__edition3 hidden" role="button" aria-label="Page 3"></span>
+            <span id="button__edition3" class="hidden" role="button" aria-label="Page 3"></span>
         </div>
     </section>
-
 
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
 
     <section id="parcours" itemscope itemtype="https://schema.org/Person">
-        <h2>PARCOURS SCOLAIRE</h2>
+        <h2>Parcours scolaire</h2>
         <p>À propos</p>
         <ul class="parcours__ul__liste">
             <li class="container__link" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -288,7 +289,7 @@
                     à
                     <time datetime="2020">2020</time>
                 </p>
-                <p>Le secondaire : J’y ai passé sept ans dans l’enseignement général en science forte. </p>
+                <p>Le secondaire&nbsp;: J’y ai passé sept ans dans l’enseignement général en science forte. </p>
             </li>
             <li class="container__link" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
                 <a href="https://www.hepl.be/fr/techniques-infographiques/design-graphique" class="a__link"><span
@@ -303,7 +304,7 @@
                     à
                     <time datetime="2024">2024</time>
                 </p>
-                <p>Le design graphique : J’ai d’abord fait deux ans en design graphique.</p>
+                <p>Le design graphique&nbsp;: J’ai d’abord fait deux ans en design graphique.</p>
 
             </li>
             <li class="container__link" itemprop="alumniOf" itemscope itemtype="https://schema.org/Organization">
@@ -318,17 +319,16 @@
                     jusqu’à
                     <time datetime="2026">2026</time>
                 </p>
-                <p>Le web développement : Où j’en suis actuellement, bientôt la fin.</p>
+                <p>Le web développement&nbsp;: Où j’en suis actuellement, bientôt la fin.</p>
 
             </li>
         </ul>
     </section>
 
-
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
 
     <section id="experience" itemscope itemtype="https://schema.org/Person">
-        <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+        <h2>Expériences professionnelles</h2>
         <div class="div__exp">
             <div class="exp__active div__exp">
                 <!-- PART 1 -->
@@ -339,10 +339,10 @@
 
                 <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
                     <h3>
-                        PROXY DELHAIZE FEXHE
+                        Proxy Delhaize
                     </h3>
-                    <p><strong>Rôle :</strong> <span itemprop="roleName">Réassortisseur</span></p>
-                    <p><strong>Période :</strong>
+                    <p><strong>Rôle&nbsp;:</strong> <span itemprop="roleName">Réassortisseur</span></p>
+                    <p><strong>Période&nbsp;:</strong>
                         <time datetime="2017-01-01" itemprop="startDate">2017</time>
                         -
                         <time datetime="2022-01-01" itemprop="endDate">2022</time>
@@ -367,10 +367,10 @@
                 </div>
                 <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
                     <h3>
-                        PISCINE D’EMBOURG
+                        Piscine d’Embourg
                     </h3>
-                    <p><strong>Rôle :</strong> <span itemprop="roleName">Technicien d'entretien</span></p>
-                    <p><strong>Période :</strong>
+                    <p><strong>Rôle&nbsp;:</strong> <span itemprop="roleName">Technicien d'entretien</span></p>
+                    <p><strong>Période&nbsp;:</strong>
                         <time datetime="2015-01-01" itemprop="startDate">2015</time>
                         -
                         <time datetime="2017-01-01" itemprop="endDate">2017</time>
@@ -397,10 +397,10 @@
                 <article class="exp" itemprop="hasOccupation" itemscope
                          itemtype="https://schema.org/OrganizationRole">
                     <h3>
-                        JYSK HOGNOUL
+                        Jysk
                     </h3>
-                    <p><strong>Rôle :</strong> <span itemprop="roleName">Assistant logistique</span></p>
-                    <p><strong>Période :</strong>
+                    <p><strong>Rôle&nbsp;:</strong> <span itemprop="roleName">Assistant logistique</span></p>
+                    <p><strong>Période&nbsp;:</strong>
                         <time datetime="2023-01-01" itemprop="startDate">2023</time>
                         -
                         <time datetime="2024-01-01" itemprop="endDate">2024</time>
@@ -428,7 +428,7 @@
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
 
     <section id="competence" itemscope itemtype="https://schema.org/Person">
-        <h2>COMPÉTENCES</h2>
+        <h2>Compétences</h2>
         <p>Mes compétences ont contribué à me façonner et me développer. Au fil des années d’études j’ai acquis de
             nombreuses compétences.</p>
         <ul>
@@ -464,9 +464,9 @@
         <!-- Adobe Illustrator -->
         <article class="competence_article" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">ADOBE ILLUSTRATOR</h3>
+                <h3 lang="en" itemprop="name">Adobe illustrator</h3>
                 <p>"Un simple tracé peut donner vie à une idée, une composition maîtrisée peut tout transformer."</p>
-                <p itemprop="description">Adobe Illustrator est bien plus qu’un simple logiciel : c’est une compétence
+                <p itemprop="description">Adobe Illustrator est bien plus qu’un simple logiciel&nbsp;: c’est une compétence
                     clé qui me permet de
                     créer avec précision et efficacité. Maîtriser Illustrator, c’est savoir transformer une vision en
                     une image nette et impactante, qu’il s’agisse d’illustrations, de logos, d’infographies ou de mises
@@ -478,7 +478,7 @@
                     les couleurs et la typographie pour concevoir des créations harmonieuses et professionnelles.
                 </p>
                 <p itemprop="description">
-                    Cette compétence est un véritable atout dans mon travail : elle me permet d’allier créativité et
+                    Cette compétence est un véritable atout dans mon travail&nbsp;: elle me permet d’allier créativité et
                     rigueur technique, d’optimiser mes flux de production et de répondre aux exigences graphiques les
                     plus élevées. Que ce soit pour donner une identité forte à un projet ou pour perfectionner des
                     éléments visuels, Illustrator est un outil que je maîtrise avec assurance et que j’exploite pour
@@ -490,7 +490,7 @@
         <!-- Photoshop -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">PHOTOSHOP</h3>
+                <h3 lang="en" itemprop="name">Photoshop</h3>
                 <p>"Sculpter l’image, retoucher la réalité, sublimer chaque détail."</p>
                 <p itemprop="description">Adobe Photoshop est bien plus qu’un logiciel de retouche, c’est une compétence
                     essentielle qui me
@@ -516,7 +516,7 @@
         <!-- InDesign -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">INDESIGN</h3>
+                <h3 lang="en" itemprop="name">InDesign</h3>
                 <p>"Une mise en page réussie, c’est l’art d’équilibrer le fond et la forme avec précision."</p>
                 <p itemprop="description">Adobe InDesign est une compétence essentielle qui me permet de structurer et
                     d’organiser du contenu
@@ -531,7 +531,7 @@
                     l’impression ou le digital.
                 </p>
                 <p itemprop="description">
-                    Cette compétence est un véritable atout dans mon travail : elle me permet d’organiser l’information
+                    Cette compétence est un véritable atout dans mon travail&nbsp;: elle me permet d’organiser l’information
                     efficacement, d’assurer une cohérence visuelle sur l’ensemble d’un projet et de répondre aux
                     standards professionnels du design éditorial. Avec InDesign, je donne vie aux contenus en leur
                     offrant une présentation soignée et percutante.</p>
@@ -542,12 +542,12 @@
         <!-- HTML -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">HYPERTEXT MARKUP LANGUAGE</h3>
+                <h3 lang="en" itemprop="name">HyperText Markup Language</h3>
                 <p>"Derrière chaque page web se cache une structure bien pensée, un équilibre entre contenu et
                     présentation."</p>
-                <p itemprop="description">HTML (HyperText Markup Language) est une compétence essentielle qui me permet
+                <p itemprop="description"><abbr lang="en" title="HyperText Markup Language">HTML</abbr> est une compétence essentielle qui me permet
                     de structurer et
-                    d’organiser le contenu d’un site web avec précision. Maîtriser HTML, c’est comprendre la logique de
+                    d’organiser le contenu d’un site web avec précision. Maîtriser <abbr lang="en" title="HyperText Markup Language">HTML</abbr>, c’est comprendre la logique de
                     construction des pages, savoir comment afficher du texte, des images, des liens et d’autres éléments
                     interactifs de manière efficace et optimisée.
                 </p>
@@ -557,9 +557,9 @@
                     compréhensible, bien référencée et adaptable aux différents écrans et navigateurs.
                 </p>
                 <p itemprop="description">
-                    Cette compétence me permet de travailler en synergie avec CSS et JavaScript, assurant ainsi une
+                    Cette compétence me permet de travailler en synergie avec <abbr lang="en" title="Cascading Style Sheet">CSS</abbr> et JavaScript, assurant ainsi une
                     expérience utilisateur fluide et agréable. Que ce soit pour concevoir une page statique, intégrer du
-                    contenu dynamique ou optimiser un site pour le référencement, HTML est un langage que je maîtrise et
+                    contenu dynamique ou optimiser un site pour le référencement, <abbr lang="en" title="HyperText Markup Language">HTML</abbr> est un langage que je maîtrise et
                     exploite pour donner vie à des interfaces web fonctionnelles et bien construites.</p>
             </div>
             <img src="img/logiciel/html.svg" alt="Logo de HTML" width="515" itemprop="image"/>
@@ -568,19 +568,19 @@
         <!-- CSS -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">CASCADING STYLE SHEETS</h3>
+                <h3 lang="en" itemprop="name">Cascading Style Sheets</h3>
                 <p>"L’harmonie visuelle ne tient pas qu’au contenu, mais à la façon dont il est présenté."</p>
-                <p itemprop="description">Maîtriser CSS, c’est bien plus que simplement styliser une page web : c’est
+                <p itemprop="description">Maîtriser <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>, c’est bien plus que simplement styliser une page web&nbsp;: c’est
                     savoir structurer,
                     embellir et optimiser l’affichage d’un site pour une expérience utilisateur fluide et agréable.
-                    Grâce à cette compétence, je peux transformer un simple HTML brut en une interface moderne et
+                    Grâce à cette compétence, je peux transformer un simple <abbr lang="en" title="HyperText Markup Language">HTML</abbr> brut en une interface moderne et
                     engageante, en jouant sur les couleurs, les typographies, les animations et la disposition des
                     éléments.
                 </p>
                 <p itemprop="description">
-                    Avec CSS, je sais adapter un design à tous les écrans grâce aux media queries et aux techniques de
+                    Avec <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>, je sais adapter un design à tous les écrans grâce aux media queries et aux techniques de
                     mise en page comme Flexbox et Grid, garantissant ainsi un rendu responsive et accessible sur tous
-                    les appareils. Je maîtrise également les animations et transitions CSS, ajoutant des effets subtils
+                    les appareils. Je maîtrise également les animations et transitions <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>, ajoutant des effets subtils
                     qui rendent l’interaction plus intuitive et dynamique.
                 </p>
                 <p itemprop="description">
@@ -595,7 +595,7 @@
         <!-- JavaScript -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">JAVASCRIPT</h3>
+                <h3 lang="en" itemprop="name">Javascript</h3>
                 <p>"Donner de l’interactivité, créer des expériences dynamiques et fluides sur le web."</p>
                 <p itemprop="description">JavaScript est un langage de programmation fondamental pour créer des sites et
                     applications
@@ -606,9 +606,10 @@
                     de recharger la page.
                 </p>
                 <p itemprop="description">
-                    Je maîtrise JavaScript pour intégrer des comportements dynamiques, pour manipuler le DOM (Document
-                    Object Model) et
-                    pour interagir avec les API afin de rendre l'expérience utilisateur plus fluide et plus riche.</p>
+                    Je maîtrise JavaScript pour intégrer des comportements dynamiques, pour manipuler le <abbr
+                        title="Document
+                    Object Model">DOM</abbr> et
+                    pour interagir avec les <abbr lang="en" title="Application Programming Interface">API</abbr> afin de rendre l'expérience utilisateur plus fluide et plus riche.</p>
             </div>
             <img src="img/logiciel/js.svg" alt="Logo de JavaScript" width="515" itemprop="image"/>
         </article>
@@ -616,11 +617,11 @@
         <!-- MySQL -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">MYSQL</h3>
+                <h3 lang="en" itemprop="name">My Structured Query Language</h3>
                 <p>"Stocker et gérer les données de manière efficace et optimisée."</p>
-                <p itemprop="description">MySQL est une compétence essentielle qui me permet de gérer des bases de
+                <p itemprop="description"><abbr lang="en" title="My Structured Query Language">MySQL</abbr> est une compétence essentielle qui me permet de gérer des bases de
                     données relationnelles.
-                    Grâce à MySQL, je peux concevoir et maintenir des systèmes de gestion de bases de données, réaliser
+                    Grâce à <abbr lang="en" title="My Structured Query Language">MySQL</abbr>, je peux concevoir et maintenir des systèmes de gestion de bases de données, réaliser
                     des
                     requêtes complexes pour extraire ou modifier des informations, et optimiser les performances des
                     bases
@@ -638,16 +639,17 @@
         <!-- PHP -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">PHP</h3>
+                <h3 lang="en" itemprop="name">Hypertext Preprocessor</h3>
                 <p>"Dynamiser les sites web et créer des applications robustes."</p>
-                <p itemprop="description">PHP est un langage de programmation côté serveur qui me permet de créer des
+                <p itemprop="description"><abbr lang="en" title="Hypertext Preprocessor">PHP</abbr> est un langage de programmation côté serveur qui me permet de créer des
                     sites et des
-                    applications web dynamiques. Grâce à PHP, je suis capable de gérer des sessions, des formulaires,
+                    applications web dynamiques. Grâce à <abbr lang="en" title="Hypertext Preprocessor">PHP</abbr>, je suis capable de gérer des sessions, des formulaires,
                     d’interagir avec des bases de données et de générer du contenu en temps réel selon les actions de
                     l’utilisateur.
                 </p>
                 <p itemprop="description">
-                    PHP est essentiel pour le développement web backend. Je sais l'utiliser pour construire des APIs,
+                    <abbr lang="en" title="Hypertext Preprocessor">PHP</abbr> est essentiel pour le développement web backend. Je sais l'utiliser pour construire des
+                    <abbr title="Application Programming Interface">API</abbr>,
                     gérer la sécurité et l'authentification, et permettre une interaction fluide avec les utilisateurs
                     via des formulaires et des traitements de données.
                 </p>
@@ -658,7 +660,7 @@
         <!-- Figma -->
         <article class="competence_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
-                <h3 itemprop="name">FIGMA</h3>
+                <h3 lang="en" itemprop="name">Figma</h3>
                 <p>"Le design collaboratif et la prototypisation à portée de main."</p>
                 <p itemprop="description">Figma est un outil de conception graphique en ligne qui permet de créer des
                     interfaces
@@ -679,14 +681,14 @@
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
 
     <section id="hobbies" itemscope itemtype="https://schema.org/Thing">
-        <h2>MES HOBBIES</h2>
+        <h2>Mes hobbies</h2>
 
         <!-- Jeux Vidéo -->
         <article class="hobbies_article show" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
                 <img src="img/hobbies-structure/games.webp"
                      alt="Photo avec plein de personnages principaux de jeux vidéo" srcset="" width="1188"/>
-                <h3 itemprop="name">JEUX VIDÉOS</h3>
+                <h3 itemprop="name">Jeux vidéos</h3>
             </div>
             <p itemprop="description">J'aime les jeux vidéo, car ils offrent une évasion immersive, me permettant de
                 vivre des aventures captivantes, d'explorer des mondes fantastiques et de relever des défis stimulants.
@@ -699,7 +701,7 @@
             <div>
                 <img src="img/hobbies-structure/peinture.webp"
                      alt="Photo d’une armée de Votann, dans l'univers Warhammer" srcset="" width="1188"/>
-                <h3 itemprop="name">PEINTURE DE FIGURINE</h3>
+                <h3 itemprop="name">Peinture de figurine</h3>
             </div>
             <p itemprop="description">J'aime la peinture de figurine, car elle combine créativité et minutie, me
                 permettant d'apporter vie et personnalité à de petits personnages. C'est une activité relaxante qui
@@ -712,7 +714,7 @@
             <div>
                 <img src="img/hobbies-structure/photographie.webp" alt="Photo d'un appareil photo devant la mer"
                      srcset="" width="1188"/>
-                <h3 itemprop="name">PHOTOGRAPHIE</h3>
+                <h3 itemprop="name">PHhotographie</h3>
             </div>
             <p itemprop="description">J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des
                 émotions et des histoires dans le temps. À travers l'objectif, je découvre la beauté dans les détails du
@@ -730,7 +732,7 @@
     <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
 
     <section id="qualites">
-        <h2>QUALITÉS ET DÉFAUTS</h2>
+        <h2>Qualités et défauts</h2>
         <div class="slider-container">
             <div class="slider">
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
@@ -783,14 +785,14 @@
 
     <section id="formulaire" itemscope itemtype="http://schema.org/ContactPage">
         <div class="formulaire_item">
-            <h2 itemprop="about">VOUS VOULEZ EN SAVOIR PLUS À MON SUJET ?</h2>
-            <p>Contactez-moi via différents moyens :</p>
+            <h2 itemprop="about">Voulez-vous en savoir plus à mon sujet&nbsp;?</h2>
+            <p>Contactez-moi via différents moyens&nbsp;:</p>
             <ul>
                 <li itemscope itemtype="http://schema.org/Person">
-                    Téléphone : <span itemprop="telephone">+32 497 54 69 43</span>
+                    Téléphone&nbsp;: <span itemprop="telephone">+32 497 54 69 43</span>
                 </li>
                 <li itemscope itemtype="http://schema.org/Person">
-                    Email : <a href="mailto:gauthierdelvenne@gmail.com" itemprop="email">gauthierdelvenne@gmail.com</a>
+                    Email&nbsp;: <a href="mailto:gauthierdelvenne@gmail.com" itemprop="email">gauthierdelvenne@gmail.com</a>
                 </li>
                 <li>Ou via le formulaire ci-joint</li>
             </ul>
@@ -823,7 +825,7 @@
         <div>
             <div class="container__link">
                 <a href="#header" class="a__link"><span class="sro">Lien vers le haut de la page</span></a>
-                <img src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
+                <img class="monLogo" src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
                      height="162"/>
             </div>
 

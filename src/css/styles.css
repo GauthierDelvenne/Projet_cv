@@ -19,7 +19,7 @@
 .js-enabled .no-js__message {
     display: none
 }
-    .no-js__message a:hover, .no-js__message a:focus{
+.no-js__message a:hover, .no-js__message a:focus{
     color: #000000;
 }
 .skip-link {
@@ -54,6 +54,7 @@
 }
 .li__element{
     filter: grayscale(100%) opacity(70%);
+    text-transform: uppercase;
 }
 .li__element:hover, .li__element:focus{
     filter: grayscale(0%) opacity(100%);
@@ -83,6 +84,7 @@ body {
     font-size: 16px;
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 ul {
@@ -107,10 +109,12 @@ header {
     align-content: center;
     text-align: center;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .nav ul li a:hover, .nav ul li a:focus {
     color: #000000;
+    transition: color 0.3s ease;
 }
 
 a {
@@ -128,6 +132,7 @@ a {
 .menu div:first-child {
     background-color: #72a846;
     padding: 0.5em;
+    text-transform: uppercase;
 }
 
 select {
@@ -198,11 +203,13 @@ select {
     gap: 9px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #disponible p:first-child span {
     font-weight: 600;
     font-size: clamp(18px, 26px, 33px);
+width: 37vw;
 }
 
 #disponible ul li img {
@@ -213,8 +220,13 @@ select {
     max-width: 232px;
     height: 12px;
     width: 100%;
+    box-sizing: border-box;
 }
-
+@supports (-webkit-appearance: none) {
+    .line {
+        max-width: calc(100vw - 80%);
+    }
+}
 .contour {
     position: absolute;
     left: -10000px;
@@ -289,6 +301,7 @@ select {
     border-radius: 16px;
     color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .acquis {
@@ -297,12 +310,14 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: clamp(24px, 5vw, 60px);
     font-weight: 600;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #parcours {
@@ -479,6 +494,7 @@ h3 {
     font-weight: 600;
     font-size: clamp(24px, 5vw, 48px);
     margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 #hobbies {
@@ -574,9 +590,6 @@ h3 {
     }
     100% {
         transform: translateX(-250%); /* Fait défiler le carrousel vers la gauche */
-    }
-    0% {
-        transform: translateX(0);
     }
 }
 
@@ -676,6 +689,9 @@ a {
         padding: 0;
         border: 0;
     }
+    #disponible ul {
+        padding: 0;
+    }
 
     .div_button_edition {
         position: static;
@@ -691,7 +707,7 @@ a {
     .introduction {
         flex-wrap: wrap;
         gap: 300px;
-        padding: 68px 30px 207px 30px;
+        height: auto;
     }
 
     .edition {
@@ -866,11 +882,11 @@ a {
 
 @media (max-width: 874px) {
     .container__hobbies__button {
-    display: flex;
+        display: flex;
         justify-content: center;
     }
     #hobbies span {
-    position: static;
+        position: static;
     }
 }
 
@@ -947,6 +963,7 @@ a {
     .introduction {
         gap: 100px;
         text-align: center;
+        padding: 68px 30px 215px 30px;
     }
 
 }
@@ -971,6 +988,35 @@ a {
 
 @media (max-width: 500px) {
     #disponible ul {
-        gap: 5.2px;
+        gap: 5px;
+    }
+}
+@media (max-width: 410px) {
+    .monLogo {
+        width: 100%;
+    }
+    .edition {
+        grid-template-columns: 100px 150px;
+        padding: 10px;
+    }
+    footer {
+        padding: 9px 12px 9px;
+    }
+    footer ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .acquis img {
+        max-width: 50px;
+    }
+    #disponible ul li img{
+        max-width: 50px;
+    }
+
+    .acquis{
+        height: 70px;
+    }
+    .acquis__div .button {
+        width: 100%;
     }
 }
