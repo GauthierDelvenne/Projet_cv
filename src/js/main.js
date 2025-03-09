@@ -79,5 +79,28 @@ document.documentElement.classList.add('js-enabled');
 
         hobbiesArticleSwitch.init();
     })();
+(
+    function () {
+        const gifLoader = {
+            init() {
+                document.addEventListener("DOMContentLoaded", () => {
+                    this.gifToggle = document.getElementById("gifPlaceholder");
+                    this.playButton = document.getElementById("playButton");
+                    this.playButton.addEventListener("click", () => this.applies());
+                });
+            },
+            applies() {
+                const currentSrc = this.gifToggle.getAttribute("src");
+                const gifSrc = this.gifToggle.getAttribute("data-gif");
+                const staticSrc = this.gifToggle.getAttribute("data-static");
+
+                this.gifToggle.setAttribute("src", currentSrc === staticSrc ? gifSrc : staticSrc);
+            }
+        };
+        gifLoader.init();
+    })();
+
+
+
 
 

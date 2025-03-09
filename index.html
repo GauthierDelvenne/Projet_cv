@@ -20,7 +20,6 @@
     Voici les <a href="https://www.enable-javascript.com/fr/">
     instructions pour activer JavaScript dans votre navigateur Web</a>.
 </p>
-
 <header id="header" itemscope itemtype="https://schema.org/WPHeader">
     <h1 class="hidden" itemprop="headline">Mon Curriculum vitæ</h1>
     <nav class="nav" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -56,16 +55,12 @@
             <h2>Étudiant en deuxième <span itemprop="jobTitle">infographie option web</span></h2>
             <div class="container__link">
                 <a href="index.html" itemprop="url" class="a__link"><span class="sro">Rafraîchir la page</span></a>
-                <img class="monLogo" src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
-                     height="162"
-                     itemprop="image"
-                />
+                <img class="monLogo" src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399" height="162" itemprop="image"/>
             </div>
 
             <div id="video" itemscope
                  itemtype="https://schema.org/VideoObject">
-                <a href="https://giphy.com/gifs/abcnetwork-abc-the-goldbergs-H3U4DrXzz3VqdJlvN5"
-                   class="hidden button__video" itemprop="video">
+                <a href="https://giphy.com/gifs/abcnetwork-abc-the-goldbergs-H3U4DrXzz3VqdJlvN5" class="hidden button__video" itemprop="video">
                     <meta itemprop="url" content="URL de la vidéo ou du GIF"/>
                     <meta itemprop="name" content="Regarder le GIF"/>
                     <meta itemprop="description" content="GIF d'un dessin animé"/>
@@ -73,11 +68,10 @@
                     <meta itemprop="uploadDate" content="2025-03-01"/>
                     Regarder le GIF
                 </a>
-                <img src="img/video-intro/hello.gif" alt="Un homme caché derriere un panneau qui dit bonjour"
-                     width="456"
-                     height="264" itemprop="image"/>
+                <img id="gifPlaceholder" src="img/video-intro/hello.webp" data-gif="img/video-intro/hello.gif" data-static="img/video-intro/hello.webp" alt="Un homme caché derrière un panneau qui dit bonjour" width="456" height="264" itemprop="image"/>
                 <img src="img/video-intro/frame.webp" alt="" width="460" height="264" itemprop="image"/>
-                <svg width="96" height="96" xmlns="http://www.w3.org/2000/svg" aria-label="Mettre en pause">
+
+                <svg id="playButton" width="96" height="96" xmlns="http://www.w3.org/2000/svg" aria-label="Mettre en pause">
                     <title>Mettre en pause</title>
                     <desc>Un bouton pause qui permet de stopper la vidéo</desc>
                     <g fill="#fff">
@@ -90,51 +84,61 @@
         <div id="disponible" itemscope itemtype="https://schema.org/WebPage">
             <!-- Bloc Disponible sur -->
             <p>
-                <img class="line" src="img/utilitaire/main-line-left.png" alt=""
-                     itemprop="image"/><span>Disponible sur</span><img class="line"
-                                                                       src="img/utilitaire/main-line-right.png" alt=""
-                                                                       itemprop="image"/>
+                <img class="line" src="img/utilitaire/main-line-left.png" alt="Ligne décorative gauche" itemprop="image"/>
+                <span>Disponible sur</span>
+                <img class="line" src="img/utilitaire/main-line-right.png" alt="Ligne décorative droite" itemprop="image"/>
             </p>
             <ul>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
-                    <a href="https://www.linkedin.com/in/gauthier-delvenne" target="_blank" itemprop="url"
-                       class="a__link"><span
-                            class="sro">Lien vers le profil LinkedIn de Gauthier Delvenne, développeur web</span></a>
-                    <img src="img/compte/linkedin.svg" alt="Profil LinkedIn de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Linkedin"
-                         itemprop="logo"/>
+                    <a href="https://www.linkedin.com/in/gauthier-delvenne" target="_blank" itemprop="url" class="a__link"><span class="sro">Lien vers le profil LinkedIn de Gauthier Delvenne, développeur web</span></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.27 159.12">
+                        <title>LinkedIn</title>
+                        <desc>Profil LinkedIn de Gauthier Delvenne, développeur web</desc>
+                        <path d="M134.78,22.05C89.8-20.77,15.14,2.03,1.91,62.37c-13.18,60.1,44.01,111.79,102.61,92.73,56.82-18.48,73.64-91.74,30.26-133.05ZM53.08,127.07h-19.71v-63.07h19.71v63.07ZM42.42,54.55c-13.45-.91-13.47-20.92-1.28-22.57,17.45-2.36,17.37,23.66,1.28,22.57ZM127.33,127.07h-19.17v-36.25c0-12.16-20.36-14.64-24.38-1.69-.18.58-.73,2.59-.73,3.04v34.91h-19.17v-63.07h18.09v8.9c4.15-5.17,10.6-8.93,17.22-9.9,8.96-1.32,19.24,2.14,24.04,10.09,1.43,2.37,4.1,8.62,4.1,11.27v42.72Z"
+                              style="fill: #0066c7;"/>
+                    </svg>
                     <p itemprop="name">Linkedin</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
-                    <a href="https://github.com/GauthierDelvenne" target="_blank" itemprop="url" class="a__link"><span
-                            class="sro">Lien vers le profil Github de Gauthier Delvenne, développeur web</span></a>
-                    <img src="img/compte/github.svg" alt="Profil Github de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Github"
-                         itemprop="logo"/>
+                    <a href="https://github.com/GauthierDelvenne" target="_blank" itemprop="url" class="a__link"><span class="sro">Lien vers le profil Github de Gauthier Delvenne, développeur web</span></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 998.74">
+                        <title>Github</title>
+                        <desc>Profil Github de Gauthier Delvenne, développeur web</desc>
+                        <path d="M512,0C229.12,0,0,229.12,0,512c0,226.56,146.56,417.92,350.08,485.76,25.6,4.48,35.2-10.88,35.2-24.32,0-12.16-.64-52.48-.64-95.36-128.64,23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92,40.32-.64,69.12,37.12,78.72,52.48,46.08,77.44,119.68,55.68,149.12,42.24,4.48-33.28,17.92-55.68,32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8,0-55.68,19.84-101.76,52.48-137.6-5.12-12.8-23.04-65.28,5.12-135.68,0,0,42.88-13.44,140.8,52.48,40.96-11.52,84.48-17.28,128-17.28s87.04,5.76,128,17.28c97.92-66.56,140.8-52.48,140.8-52.48,28.16,70.4,10.24,122.88,5.12,135.68,32.64,35.84,52.48,81.28,52.48,137.6,0,196.48-119.68,240-233.6,252.8,18.56,16,34.56,46.72,34.56,94.72,0,68.48-.64,123.52-.64,140.8,0,13.44,9.6,29.44,35.2,24.32,202.24-67.84,348.8-259.84,348.8-485.76C1024,229.12,794.88,0,512,0Z"
+                              style="fill: #1b1f23;"/>
+                    </svg>
                     <p itemprop="name">Github</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
-                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier" target="_blank"
-                       itemprop="url" class="a__link"><span class="sro">Lien vers le profil Stack Overflow de Gauthier Delvenne, développeur web</span></a>
-                    <img src="img/compte/stack-overflow.svg"
-                         alt="Profil Stack Overflow de Gauthier Delvenne, développeur web" width="58"
-                         aria-label="Stack Overflow" itemprop="logo"/>
+                    <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier" target="_blank" itemprop="url" class="a__link"><span class="sro">Lien vers le profil Stack Overflow de Gauthier Delvenne, développeur web</span></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.17 144.2">
+                        <title>Stack Overflow</title>
+                        <desc>Profil Stack Overflow de Gauthier Delvenne, développeur web</desc>
+                        <path d="M68.29.09c.6-.12,1.24-.11,1.83,0,1.21-.12,2.45-.12,3.66,0,.5-.11,1.04-.12,1.55,0,.17-.11.39-.11.56,0,8.5-.24,17.11,2.07,24.86,5.47,19.6,8.6,33.99,24.6,40.49,44.93,1.86,5.81,3.11,11.9,2.79,18.01.04.64.08,1.3.14,1.97v3.1c-.06.67-.1,1.33-.14,1.97.31,6.42-1.11,12.84-3.1,18.93-7.7,23.62-27.2,41.76-51.33,47.78-5.17,1.29-10.48,2.08-15.82,1.85-1.16.13-2.36.13-3.52,0-5.34.22-10.65-.59-15.82-1.9-25.12-6.37-45.3-25.95-52.12-51C.94,86.14-.04,80.74.15,75.55c-.16-2.34-.24-4.71,0-7.04-.3-3.96.36-8.05,1.2-11.94C6.94,30.82,27.49,9.02,52.94,2.09,57.93.73,63.1-.14,68.29.09ZM107.26,55.4l-22.08-29.91-5.78,4.23,21.9,29.79.26.11,5.71-4.22ZM71.4,37.27l-4.66,5.55,28.79,24c1.34-1.73,2.94-3.28,4.29-5,.16-.21.48-.53.37-.77l-28.78-23.78ZM91.09,75.27l2.9-6.48-.08-.35-33.72-15.56-2.89,6.69,33.78,15.7ZM90.39,84.14l.29-6.69-37.31-7.1-1.27,8.31,38.29,5.49ZM45.34,78.36h-8.45v30.97h67.71v-30.97h-8.45v22.52h-50.82v-22.52ZM90.39,86.81h-39.42v8.45h39.42v-8.45Z"
+                              style="fill: #f37f24;"/>
+                    </svg>
                     <p itemprop="name">Stack Overflow</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
-                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit" target="_blank" itemprop="url"
-                       class="a__link"><span
-                            class="sro">Lien vers le profil X de Gauthier Delvenne, développeur web</span></a>
-                    <img src="img/compte/x.svg" alt="Profil X de Gauthier Delvenne, développeur web" width="58"
-                         aria-label="X" itemprop="logo"/>
+                    <a href="https://about.x.com/fr/who-we-are/brand-toolkit" target="_blank" itemprop="url" class="a__link"><span class="sro">Lien vers le profil X de Gauthier Delvenne, développeur web</span></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.54 145.59">
+                        <title>X</title>
+                        <desc>Profil X de Gauthier Delvenne, développeur web</desc>
+                        <path d="M146.54,72.8c0,40.2-32.8,72.8-73.27,72.8S0,113,0,72.8,32.8,0,73.27,0s73.27,32.59,73.27,72.8ZM54.89,30.76h-26.33l33.76,45.87-33.76,38.02,8.5-.92,29.75-31.62,24.84,32.56h26.33l-35.78-48.88,31.8-35.01c-2.06.16-4.45-.36-6.44.01-3.47.66-19.5,20.15-23.34,24.19-1.07,1.13-5.12,5.62-6.38,5.36l-22.96-29.57Z"/>
+                        <path d="M54.89,30.76l22.96,29.57c1.26.26,5.31-4.23,6.38-5.36,3.84-4.04,19.87-23.53,23.34-24.19,1.99-.38,4.37.14,6.44-.01l-31.8,35.01,35.78,48.88h-26.33l-24.84-32.56-29.75,31.62-8.5.92,33.76-38.02L28.56,30.76h26.33ZM106.04,109.72c.68-1.21-2.69-5.61-3.55-6.82-15.64-22.02-33.36-42.78-49.01-64.82-3.41-2.72-8.79-.93-12.99-1.39l52.15,70.08c3.33,5.13,8.62,1.93,13.41,2.95Z"
+                              style="fill: #fff;"/>
+                        <path d="M106.04,109.72c-4.8-1.02-10.08,2.18-13.41-2.95L40.48,36.69c4.2.46,9.58-1.33,12.99,1.39,15.65,22.04,33.37,42.8,49.01,64.82.86,1.22,4.24,5.61,3.55,6.82Z"/>
+                    </svg>
                     <p itemprop="name">X</p>
                 </li>
                 <li class="container__link li__element" itemscope itemtype="https://schema.org/Organization">
-                    <a href="https://www.facebook.com/gauthier.delvenne" target="_blank" itemprop="url" class="a__link"><span
-                            class="sro">Lien vers le profil Facebook de Gauthier Delvenne, développeur web</span></a>
-                    <img src="img/compte/facebook.svg" alt="Profil Facebook de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Facebook"
-                         itemprop="logo"/>
+                    <a href="https://www.facebook.com/gauthier.delvenne" target="_blank" itemprop="url" class="a__link"><span class="sro">Lien vers le profil Facebook de Gauthier Delvenne, développeur web</span></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.78 142.86">
+                        <title>Facebook</title>
+                        <desc>Profil Facebook de Gauthier Delvenne, développeur web</desc>
+                        <path d="M83.12,142.86v-50.22h16.8l3.14-20.75h-19.94v-14.15c.33-6.71,4.32-10.23,10.91-10.55,3.23-.16,6.6.13,9.84,0v-17.7c-2.22-.34-4.46-.67-6.69-.9-9.48-.95-19.3-1.18-27.16,4.99-6.33,4.97-9,12.79-9.36,20.65v17.66s-18.23,0-18.23,0v20.75h18.24v50.22c-18.83-2.75-36.04-13.6-47.11-28.94C-5.5,87.52-4.35,51.44,16.28,26.3,40.98-3.79,85.32-8.85,116.13,15.21c31.19,24.35,36.9,69.51,12.48,100.87-11.06,14.2-27.58,24.14-45.49,26.78Z"
+                              style="fill: #1877f1;"/>
+                    </svg>
                     <p itemprop="name">Facebook</p>
                 </li>
             </ul>
@@ -152,30 +156,71 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/ai.svg" aria-label="Logo d'Adobe Illustrator"
-                                 alt="Logo d'Adobe Illustrator, logiciel de création graphique vectorielle"
-                                 width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.41 143.3">
+                                <title>Adobe Illustrator</title>
+                                <desc>Logo d'Adobe Illustrator, logiciel de création graphique vectorielle</desc>
+                                <path d="M124.91,0c.11.03.21.06.3.1,1.8-.09,3.58.43,5.25,1.05,9.51,3.54,16.65,13.33,16.95,23.49v93.62c-.52,13.71-12.18,24.86-25.85,25.04-31.87,0-63.74,0-95.62,0C11.56,142.99-.13,131.21,0,116.76V25.97C0,15.03,6.85,4.96,17.16,1.19c1.61-.59,3.32-1.13,5.05-1.09.12-.04.25-.08.4-.1h102.3Z" style="fill: #300;"/>
+                                <path d="M22.61,0c-.12.14-.27.08-.4.1v-.1h.4Z" style="fill: #baa;"/>
+                                <path d="M125.21,0v.1c-.11-.01-.25.04-.3-.1h.3Z" style="fill: #bfafaf;"/>
+                                <path d="M110.88,52.23c.12.11.23.54.23.72l-.05,47.46c-.08.29-.26.6-.6.6l-12.58-.03-.39-.41c-.16-15.98-.05-32.01-.05-48,.11-.51.69-.54,1.12-.58,3.67-.28,7.7.22,11.41,0,.21.02.79.11.92.23Z" style="fill: #ff9a00;"/>
+                                <path d="M109.87,44.77c-3.92,3.99-11.25,2.45-12.87-3.11-1.91-6.58,3.9-11.74,10.28-9.68,5.17,1.66,6.19,9.12,2.59,12.79Z" style="fill: #ff9a00;"/>
+                                <path d="M71.49,85.81h-22.72s-.15.15-.15.15l-4.51,14.09c-.13.38-.32.74-.7.9l-12.26.05c-1.09-.14-.17-1.99.05-2.66,6.16-18.73,13.21-37.18,19.4-55.9.65-1.83.65-3.77.82-5.68.07-.22.42-.27.63-.27h15.71c.3,0,.59.1.72.38l22.42,63.38c.03.38.02.73-.45.75h-13.11s-.54-.16-.54-.16l-5.32-15.03Z" style="fill: #ff9a00;"/>
+                                <path d="M67.81,73.3h-15.5c2.63-8.46,5.69-16.83,7.6-25.5l7.9,25.5Z" style="fill: #300;"/>
+                            </svg>
                             <abbr lang="en" title="Adobe Illustrator" itemprop="name">ai</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/ps.svg" aria-label="Logo de Photoshop"
-                                 alt="Logo de Photoshop, logiciel de retouche et de création d'images" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1051 1025">
+                                <title>Photoshop</title>
+                                <desc>Logo de Photoshop, logiciel de retouche et de création d'images</desc>
+                                <path d="M175,0c2.24.84,4.76.84,7,0h687c2.24.84,4.76.84,7,0h6c87.88,4.05,164.98,81.16,169,169v3l-1,2c.41.31.74.97,1,2v673l-1,2c.41.31.74.97,1,2v4c-4.66,87.63-82.06,164.64-170,168h-7c-1.58-.79-3.41-.8-5,0H182c-1.9-.82-4.09-.82-6,0h-8C80.95,1020.36,4.65,944.04,0,857v-5c.55-1.03.55-1.97,0-3V176c.55-1.03.55-1.97,0-3v-5C4.68,81,80.87,4.59,168,0h7Z"
+                                      style="fill: #001e36;"/>
+                                <path d="M332,578v141.5c0,1.9-5.02,6.11-7.48,5.52-25.73-1.52-53.59,1.95-79.06.01-5.37-.41-8.95-.58-9.19-6.81l-.31-446.77c.2-3.57,1.01-8.52,5.49-8.51,85.36,3.52,189.5-20.7,264.27,30.83,82.07,56.56,83.07,191.66,2.61,250.05-50.14,36.39-116.86,36.16-176.33,34.17h0Z"
+                                      style="fill: #31a7fe;"/>
+                                <path d="M742.79,369.29c27.18-1.3,77.32,1.86,101.89,13.52,5.21,2.47,5.82,3.92,6.35,9.65,2.08,22.55-1.67,48.2.01,71.09-3.62,11.48-14.55,2-21.38-.72-27.87-11.13-76.69-20.36-105.68-12.33-16.11,4.46-23.82,20.66-11.99,34,14.3,16.12,60.68,29.21,81.67,39.33,45.63,21.99,78.79,50.14,75.32,105.66-6.95,111.03-155.23,119.56-235.51,90.53-6.01-2.17-17.34-5.55-19.01-11.99.82-24.5-2.71-52.45-.52-76.58.3-3.27.81-7.56,5.06-6.03,35.85,20.29,86,33.8,127.22,27.3,15.6-2.46,34.91-12.65,25.97-31.43-7.81-16.41-52.92-29.62-69.87-37.13-56.68-25.1-102.63-65.83-83.04-134.39,15.98-55.94,69.67-77.92,123.51-80.49h0Z"
+                                      style="fill: #31a7fe;"/>
+                                <path d="M332,495v-147c2.21-.15,4.22-.88,6.46-1.04,60-4.38,138.43-.05,133.59,79.59-4.3,70.64-86.44,72.37-140.05,68.45Z"
+                                      style="fill: #001e36;"/>
+                            </svg>
                             <abbr lang="en" title="Photoshop" itemprop="name">ps</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/css.svg" aria-label="Logo de Cascading Style Sheets"
-                                 alt="Logo de CSS, langage de mise en forme pour les pages web" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.65 150.2">
+                                <title>Cascading Style Sheets</title>
+                                <desc>Logo de CSS, langage de mise en forme pour les pages web</desc>
+                                <polygon points="134.65 0 122.76 134.08 122.18 134.61 67.48 150.2 12.46 134.61 11.88 134.08 0 0 134.65 0" style="fill: #0277bc;"/>
+                                <path d="M31.07,31.82l36.25-.37V11.84h54.01l-9.79,113.23-44.22,12.57-.37-18.87c.1-.32.23-.32.37,0l.43-.92,29.67-9.64c1.87-24.83,3.6-50.84,4.77-75.65H31.53s-.45-.74-.45-.74Z" style="fill: #039ae4;"/>
+                                <path d="M84.71,79.18l-1.15,17.72-15.5,5.22h-.74v-22.94c5.79-.15,11.59-.15,17.39,0Z" style="fill: #039ae4;"/>
+                                <path d="M32.18,47.36h54.38s-1.11,15.91-1.11,15.91c-6.04,0-12.09-.01-18.13,0-.01-5.17,0-10.37,0-15.54l-35.14-.37Z" style="fill: #039ae4;"/>
+                                <path d="M31.07,31.82h72.13s-4.89,76.88-4.89,76.88l-31,10.07-.68-1.33-.17-12.79c-.24-1.75.28-2.59,1.58-2.52v-.78s14.8-5.04,14.8-5.04l1.08-16.73.77-.39-17.73-.18c-.73-5.22-.57-10.54.34-15.73,5.78-.82,11.61-.83,17.44-.72l1-14.3c-5.91-.19-11.92-.24-18.02-.15l-.53-.56-35.03-.18-1.11-15.54Z" style="fill: #fdfdfd;"/>
+                                <path d="M66.95,118.77l-30.63-10.07-1.19-21.75h15.54l.41,9.95,16.24,5.22c.12-.98.46-.94.74,0-.71.35-.7.52-.77,1.26-.4,4.92.35,10.41.03,15.39h-.37Z" style="fill: #ededed;"/>
+                                <path d="M67.32,63.27c.01,5.17,0,10.37,0,15.54l17.39.37c-5.79,0-11.6.01-17.39,0s-11.6,0-17.39,0l-.74-15.91c6.04,0,12.09.01,18.13,0Z" style="fill: #ededed;"/>
+                            </svg>
                             <abbr lang="en" title="Cascading Style Sheets" itemprop="name">css</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/html.svg" aria-label="Logo de HyperText Markup Language"
-                                 alt="Logo de HTML, langage de balisage pour structurer les pages web" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.98 144.99">
+                                <title>HyperText Markup Language</title>
+                                <desc>Logo de HTML, langage de balisage pour structurer les pages web</desc>
+                                <polygon points="128.98 0 117.86 131.12 64.78 144.99 11.49 131.1 0 0 128.98 0" style="fill: #d0382b;"/>
+                                <path d="M64.31,27.16c13.53-.79,27.07-.95,40.61-.46l.46.75-1.03,15.07-.5.86c-13.18.4-26.39.44-39.55-.49-7.4.78-14.84.97-22.27.45l.53.12,1.33,14.66-.67.48,20.64.06c.18-.36.36-.65.54-.65,12.65-.17,25.63.06,38.06.5l.39.76c-1.36,16.7-2.86,33.36-4.5,50-11.05,3.18-22.2,6.14-33.46,8.89l-.6-.58-32.47-8.63-2.19-26.4h16.44l1.59,13.6c.51.79,14.6,3.39,16.63,3.92l.18-.77,16.98-3.49,2.5-19.76c-6.61.39-13.16.18-19.66-.64-11.91-.07-23.8-.35-35.71-.38l-4.21-47.35,1.14-.54c12.93.03,25.86.02,38.78.02Z" style="fill: #fefefe;"/>
+                                <path d="M64.31,27.16V11.08h54.66l-9.45,110.81-45.21,11.78v-16.08s33.54-8.62,33.54-8.62l4.33-49.99-58.95-.36.33-.71h19.83c.25-4.78.32-9.65.21-14.59l.71-.42c13.1-.02,26.21.01,39.3,0l1.07-15.73c-13.45,0-26.92,0-40.38,0Z" style="fill: #e83e30;"/>
+                                <path d="M64.31,75.41c6.61.04,13.23-.02,19.84,0l.54.54-2.58,20.48-17.8,3.64v-24.66Z" style="fill: #e83e30;"/>
+                                <path d="M64.31,42.89v15.73s-21.08,0-21.08,0l-1.43-15.73c7.5,0,15.01.01,22.51,0Z" style="fill: #d0382b;"/>
+                            </svg>
                             <abbr lang="en" title="HyperText Markup Language" itemprop="name">html</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/indd.svg" aria-label="Logo d'InDesign"
-                                 alt="Logo d'InDesign, logiciel de mise en page"
-                                 width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.99">
+                                <title>InDesign</title>
+                                <desc>Logo d'InDesign, logiciel de mise en page</desc>
+                                <path d="M432,0c41.64,1.48,78.21,38.45,80,79.91v330.63c-.82,1.89-.82,4.09,0,5.99v3c-2.46,43.69-43.77,82.67-88,78.91-23.82,1.3-47.76,1.51-71.64,1.55-89.2-1.49-177.65-1.67-265.36-.55h-1c-43.72.02-83.49-35.91-86-79.91V78.91C1.66,39.23,39.69.08,80,0h352Z"
+                                      style="fill: #49021f;"/>
+                                <path d="M139,127.86h45.5c.11,0,1.5,1.39,1.5,1.5v221.75c0,.17-1.54,1.76-2.02,1.98-1.96.91-37.26,1.08-41.54.57-2.74-.33-3.52-.99-4.22-3.78l-.27-216.58,1.05-5.45h0Z"
+                                      style="fill: #fe3366;"/>
+                                <path d="M378.05,110.55c-.33-1.4-4.27-1.63-5.5-1.71-5.17-.35-38.08-.58-40.53.56-.47.21-1.93,1.65-2.02,1.98h.02v67.43h-27.5c-4.89,0-18.83,4.15-24.02,5.98-47.58,16.72-68.55,66.44-55.2,114.1,16.98,60.65,88.49,64.94,139.48,49,2.93-.92,15.33-4.73,16.07-6.92l-.8-230.42ZM330.01,313.65h-.01c-24.59,4.02-50.74-.96-59.04-27.43-7.95-25.35-1.11-52.36,24.37-63.65,10.3-4.56,24.39-6.8,34.68-2.32v93.4Z"
+                                      style="fill: #fe3366;"/>
+                            </svg>
                             <abbr lang="en" title="InDesign" itemprop="name">ind</abbr>
                         </li>
                     </ul>
@@ -192,30 +237,72 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/js.svg" aria-label="Logo de JavaScript"
-                                 alt="Logo de JavaScript, langage de programmation pour le web dynamique" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.28 143.38">
+                                <title>JavaScript</title>
+                                <desc>Logo de JavaScript, langage de programmation pour le web dynamique</desc>
+                                <path d="M.01.12C41.99-.02,84.01-.04,126.07.06c.13.28.2.58.2.91-3.78,42.57-7.64,85.13-11.58,127.69l-.35.23-51.48,14.49-51.07-14.29c-.13-.08-.41-.26-.41-.28C7.61,88.95,4,49.06.47,9.17c.1-2.63.05-5.19-.46-7.53C-.03,1.15.04.62.01.12Z" style="fill: #d2b52a;"/>
+                                <polygon points="58.18 27.59 58.18 111.9 21.37 101.98 21.37 86.91 45.59 93.4 45.79 27.59 58.18 27.59" style="fill: #eaeded;"/>
+                                <polygon points="114.64 11.37 104.88 121.32 63.42 132.71 63.16 132.67 62.94 131.27 62.94 12.8 63.14 11.37 114.64 11.37" style="fill: #fad625;"/>
+                                <path d="M80.5,64.6l24.99-2.67-3.33,41.02-33.86,8.76-.18-14.87,24.4-6.31c.22-4.07.26-8.14.39-12.2l-24.41,4.01-.38-54.56,40.25-.09-1.15,14.78-26.7.19v21.94Z" style="fill: #fefefe;"/>
+                            </svg>
                             <abbr lang="en" title="JavaScript" itemprop="name">js</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/mysql.svg" aria-label="Logo de MySQL"
-                                 alt="Logo de MySQL, système de gestion de base de données relationnelle" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.4 132.87">
+                                <desc>Logo de MySQL, système de gestion de base de données relationnelle</desc>
+                                <title>MySQL</title>
+                                <path d="M24.9.2c6.7-.8,12.6,4.5,18.2,7.4,4,.5,7.7.5,11.3,2,24.8,10.4,34.6,30.5,44.7,53.8,2.2,8.5,12,8,17.6,13.3,17.8,13.7,16.5,11.8-3.4,16.3,3.1,5.1,9.9,6.3,13.6,11,2.7,2.3,10.5,11.9,3.5,6.1-7-6-17.4-7.6-22.5-16-5.7-7.7,14.4-5.8,16.6-7.4-3.6-3.7-8.6-6-12.7-9.2-5.4-3.1-13.2-2.6-15.8-9.1-6.6-13.1-10.7-27.4-21.1-38.7-8.6-8.6-19-17.5-31.7-17.8-4.7,0-7.9-4.8-12.4-6.1-10-4.9-8.7,3.3-3.1,8.8,5.3,5.8,6.3,13.4,9.2,20.4.9,3.8,6,5.9,5.5,9.9-3.5,10.5-6.6,23.3,2.3,32.4,3.1-3.1.6-11.9,5.6-15.4,2.2-4.8,3.8,6.1,5.4,7.8,2.8,5.5,6.5,11.3,9.8,16.1,1.4,2.4-3.4-1.8-4-2.4-4.7-3.3-7.1-9.9-9.9-13.5-1.9,25.7-18.5,3.1-15.7-9.9-1.2-4.8,3-11.5,2.7-16.4-2.4-2.4-4.1-5.7-5.4-8.7-2.6-5.1-2.8-10.9-6.3-15.5C22,13.8,15.1,3.1,24.9.2Z" fill="#00608b"/>
+                                <path d="M45.7,19.5c3,.7,3.8,7,.8,6.8-.6-2.9-7.3-8.2-.8-6.8Z" fill="#00608c"/>
+                                <path d="M4.2,105.8h.8c1.6.1,2.8.9,3.6,2.4l6.2,14.4.5.9,6.8-15.2c.8-1.4,1.9-2.2,3.5-2.3h.8c1.9,0,4.1.8,4.3,3,0,6,0,12-.1,17.9h-4.3c0-5.6,0-11.2,0-16.9,0-.4-.1-.5-.2-.3-2,5.3-4.9,10.6-7.1,15.8-1,2.1-5.3,2.2-6.8.7-3-5.2-5-11.1-7.6-16.5h-.1c0,5.6,0,11.4,0,17.2-1.4,0-2.8,0-4.3,0,0-5.9,0-11.8,0-17.8-.2-2.2,2.3-2.9,4.1-3.1h0Z" fill="#00608b"/>
+                                <path d="M97.2,106.3c2.9.2,5.9,1.4,6.2,4.6,0,3.7,0,7.4,0,11.2-.1,1.9-.9,3-2.6,3.7,1.4,1.2,2.7,2.6,4.1,3.7,0,0,0,0,0,0-1.6,0-3.3.1-4.9,0-.1,0-.3-.1-.4-.2l-3.1-2.8c-.2,0-.4,0-.6,0-.8,0-1.7,0-2.5.1-1.9,0-3.8,0-5.7,0-2.8-.1-6-1.3-6.2-4.5-.2-3.8-.2-7.7,0-11.5.2-3.1,3.3-4.3,6-4.5,3.2,0,6.5,0,9.8.1h0ZM88.9,109.2c-1.2,0-2.4.6-2.7,1.9.2,3.3-.3,7,0,10.3.2,1.8,1.4,2.3,3,2.4h4.2l-3.5-3.3h5.1l3.1,2.8c.8-.3,1-.9,1.2-1.7,0,0,.2-.2.1-.4-.3-3.1.5-7.2-.1-10.1-.3-1.4-1.3-1.9-2.6-2h-7.7,0Z" fill="#e58e00"/>
+                                <path d="M55.4,112.4c0,1.2,0,2.6,0,3.8,0,2.4,0,4.8,0,7.3,0,1.6,0,3.2.1,4.7-.2,3.3-3.4,4.4-6.3,4.6h-14.7c0-.9-.1-1.9,0-2.9,4.7,0,9.3,0,14-.1,1-.1,2.1-.3,2.4-1.5,0-.6,0-1.3,0-1.9-3.2,0-6.3,0-9.5,0-2.7,0-6.5-.7-7.1-3.9-.1-.7,0-1.5,0-2.2v-7.9c1.5,0,2.9,0,4.3,0v1.7c0,2.7,0,5.5.1,8.2.2,1.1.8,1.2,1.8,1.4h10.4s.1-11.4.1-11.4c1.4,0,2.9,0,4.3,0h0Z" fill="#00608b"/>
+                                <path d="M78.7,106.2c.1.9.1,2,0,2.9h-12.5c-1.3.3-2.4,0-2.8,1.5,0,.8,0,1.7,0,2.5.2,1.2.7,1.7,2,1.8.2,0,.4,0,.5.1,1.9,0,3.7,0,5.6,0,2.2,0,6.7.9,7.1,3.7,0,1.1,0,2.4,0,3.6-.2,3-3.7,4.3-6.3,4.4-4.3,0-8.8,0-13.3-.1-.1-.9-.1-1.9,0-2.8,4.2,0,8.3,0,12.5-.1,1.1,0,2.2-.4,2.5-1.6,0-.9,0-1.9,0-2.8-.4-1.2-1.7-1.3-2.7-1.5-1.8,0-3.5,0-5.3-.1-.2,0-.4,0-.6,0-2.3,0-6.2-1.1-6.5-3.9,0-1.1,0-2.1,0-3.2.3-3.4,3.6-4.3,6.5-4.4,4.4-.2,8.9.2,13.3,0h0Z" fill="#e58e00"/>
+                                <path d="M113.5,126.8c-2.3-.1-5.8-.8-6.9-3.1,0-.2-.4-1.1-.4-1.2v-16.3h4.4v15.8c0,.5.4,1.1.8,1.3.6.4,1.2.4,1.8.4,4.2,0,8.4,0,12.5.1,0,.1,0,2.7,0,2.8-4.1,0-8.2.1-12.3.1h0Z" fill="#e58e00"/>
+                                <path d="M130.9,120.4c.2,0,.4,0,.6,0,4,.4,3.9,6.4-.1,6.5-4.4.2-4.6-6.3-.5-6.5h0ZM130.9,126.2s.1.1.3.1.2-.1.3-.1c.7-.1.8-.2,1.4-.6,2.1-1.8.3-5.3-2.5-4.3-2.3.8-2.2,4.5.6,5h0Z" fill="#e58f00"/>
+                                <path d="M132.6,122.5c0,.2,0,.4,0,.6-.2.6-.3.5-.9.8,0,.2.7,1.1.9,1.4.1.2-.4.2-.6.1-.3-.2-.8-1.5-1-1.6,0,0-.4,0-.5,0,0,.5,0,1.1-.1,1.6-.2,0-.4.1-.5,0,0-1.2,0-2.4,0-3.7.9,0,2.3-.3,2.7.7h0ZM130.5,123.4c2,.3,2-1.3,0-1.1-.2.2-.2.8,0,1.1Z" fill="#e58f00"/>
+                            </svg>
                             <abbr lang="en" title="My Structured Query Language" itemprop="name">MySQL</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/php.svg" aria-label="Logo de PHP"
-                                 alt="Logo de PHP, langage de programmation pour le développement web" width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.49 72.46">
+                                <title>PHP</title>
+                                <desc>Logo de PHP, langage de programmation pour le développement web</desc>
+                                <path d="M68.8,71c-17.9,0-34.7-3.5-47.3-9.9C8.4,54.6,1.3,45.7,1.3,36.2s7.2-18.3,20.1-24.9C34.1,5,50.9,1.5,68.8,1.5s34.7,3.5,47.3,9.9c13,6.6,20.1,15.4,20.1,24.9s-7.2,18.3-20.1,24.9c-12.7,6.4-29.5,9.9-47.3,9.9Z" fill="#777bb2"/>
+                                <path d="M116.7,10c-6.9-3.5-15.1-6.1-23.9-7.8-1.2.8-2.6,1.5-3.7,2.4,26.5,4.3,45.6,16.9,45.6,31.7s-29.5,33.3-66,33.3-8.6-.2-12.7-.6c-1,.9-1.9,1.9-3,2.7,5.1.6,10.4.9,15.7.9,18.1,0,35.1-3.6,48-10.1,13.5-6.8,21-16.1,21-26.2s-7.4-19.4-21-26.2Z" fill="#484c88"/>
+                                <path d="M2.8,36.2C2.8,17.9,32.3,3,68.8,3s13.9.6,20.3,1.6c1.2-.9,2.5-1.6,3.7-2.4C85.2.7,77.1,0,68.8,0,50.7,0,33.6,3.5,20.8,10,7.2,16.9-.2,26.2-.2,36.2s7.4,19.4,21,26.2c9.1,4.6,20.2,7.7,32.3,9.1,1.2-.7,2.1-1.7,3-2.7C25.7,65.9,2.8,52.5,2.8,36.2Z" fill="#999dc5"/>
+                                <path d="M109.4,46.7c-4.8,2.2-10,1.5-15.1,1.7-.3.3-1.2,7.2-1.6,8.4-.2.4-.4.9-.8,1.1-.7.3-7.1.2-8.2.2s-1.1,0-1.4-.3c-1.2-1.2,1.2-7.5,1-9.3h-9.3c-.2,0-1-1.1-.9-1.5l3.4-17.5c0-1.6-.5-1.6-1.9-1.7-2-.2-4.3.1-6.3,0-.4,2.5-3.2,19.7-4.2,20.3-.4.3-.8.3-1.3.3-1.1,0-7.6,0-8.2-.2-.4-.2-.8-.9-.8-1.3,0-1,.8-4.5,1-5.8,0-.5,0-.6-.3-.3h0c-5.6,7.9-12.9,7.7-21.8,7.7-.5.4-1.2,7.2-1.7,8.5-.2.4-.3.7-.7.9-.8.3-6.9.3-8.1.2-1.3,0-2.1-.5-1.9-1.9l6.9-35.7c.1-.8.6-1.5,1.4-1.5,8.3.9,22.4-3,27.5,5.6l1.4,3.3,3.4-17.4c.2-1,1-1,1.8-1.1,1.7-.2,5.6-.2,7.3,0,1.1.1,1.7.6,1.7,1.7,0,2.2-1.5,5.6-1.6,7.9h8.5c.5,0,3.2.7,3.9.9,2.9,1,4.7,3.3,5.2,6.3.4,0,.6-6.9,2.2-7.2,6.3.4,13.9-.9,20,.3,14.6,2.9,10.6,22.4-.4,27.4h0Z" fill="#fefefe"/>
+                                <path d="M70.1,10.8l-1.9,9.4c25-1.9,17.6,9.3,14.1,26.8h-7.7l3.2-16.8c1.1-6-7-3.6-10.5-4.1l-4.2,20.9h-7.8l7-36.2h7.8Z"/>
+                                <path d="M49.7,21.1c-6.7-1.9-13.9-.6-20.8-1l-7.1,36.2h7.8l1.9-9.3c7.6-.2,15.2.8,20.6-5.5,5.1-5.9,6.5-17.4-2.4-20.4h0ZM44.4,39.4c-2.5,2.2-8.9,1.6-11.9,1.7l3.1-15c3.2.4,9.4-1.1,11.5,1.9,1.9,2.8,0,9.5-2.7,11.5h0Z"/>
+                                <path d="M104.9,20.2c-4.7-.2-9.7.1-14.4.1l-7.2,36.1h8.1l1.6-9.4c5.6-.2,12.1.6,17.1-2.4,11.3-6.8,10.6-25.5-5.1-24.5h0ZM108.8,35c-1.3,6.7-9.3,6.2-14.5,6l2.7-15c7.6,0,15.1-1.5,11.8,9Z"/>
+                                <path d="M34.4,39.7l2.5-12.3c6,0,11.5-1.1,9,7-1,5.3-7.2,5.5-11.5,5.3h0Z" fill="#777bb2"/>
+                                <path d="M96.1,39.7l2.3-12.3c2.3.2,9-.7,9.5,2.3.8,8-4.6,10.8-11.8,10h0Z" fill="#777bb2"/>
+                            </svg>
                             <abbr lang="en" title="Hypertext Preprocessor" itemprop="name">php</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/wordpress.svg" aria-label="Logo de WordPress"
-                                 alt="Logo de WordPress, système de gestion de contenu pour créer des sites web"
-                                 width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.56 143.22">
+                                <title>WordPress</title>
+                                <desc>Logo de WordPress, système de gestion de contenu pour créer des sites web</desc>
+                                <path d="M68.03.09c57.49-2.87,95.31,60.27,64.55,109.47-28.23,45.15-94.18,44.79-122.01-.57C-17.83,62.7,14.24,2.78,68.03.09ZM114.88,24.1c-15.51-14.39-37.92-19.88-58.53-14.84-13.06,3.19-25.39,10.88-33.95,21.2-1.06,1.27-3.42,4.05-4.07,5.4-.09.19-.14.34-.1.56.67-.42,1.29-.02,1.98,0,3.96.15,8.51-.19,12.51-.39,2.09-.1,4.61-.58,6.63-.57,2.46.02,3.67,2.93,2.07,4.73-.63.71-1.56.82-2.46.96-1.92.29-4.11.28-6.06.38l-.39.18-.05.25,23.09,68.74.38-.47,13.77-41.29-9.83-26.91-.64-.5c-1.88-.25-5.89,0-7.47-.87-2.18-1.21-1.29-5.18,1.6-5.2,3.17-.02,6.96.63,10.23.77,5.83.25,11.62.08,17.44-.2,2.09-.1,4.61-.58,6.63-.57,2.84.02,3.82,3.88,1.56,5.16-1.74.98-5.93.65-8,.91l-.46.28,23.3,68.32c0-.26.01-.52.09-.76,3.15-10.55,7.17-21.75,9.71-32.36,2.35-9.82,1.3-16.63-3.51-25.37-2.48-4.5-6.35-9.27-6.83-14.58-.62-6.84,4.25-13.14,11.35-12.96ZM104.46,126.82c.17.17,3.44-2.03,3.85-2.31,19.35-13.29,29.95-36.45,27.4-59.92-.88-8.03-3.35-15.69-6.99-22.86-.31-.05-.2.46-.2.67.27,7.33.23,14.06-2.17,21.12-7.38,21.07-14.79,42.14-21.89,63.3ZM43.43,129.29L12.74,45.9c-1.51,4.03-2.99,8.09-3.89,12.32-5.12,24.22,4.08,49.34,23.62,64.32,3.41,2.61,7.1,4.89,10.97,6.75ZM72.81,77.55l-19.13,55.62c.04.38,5.83,1.57,6.61,1.71,9.26,1.64,18.81,1.29,27.9-1.1.66-.17,4.62-1.24,4.69-1.57l-20.08-54.66Z" style="fill: #464442;"/>
+                            </svg>
                             <abbr lang="en" title="WordPress" itemprop="name">wp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/figma.svg" aria-label="Logo de Figma"
-                                 alt="Logo de Figma, outil de design collaboratif"
-                                 width="128"loading="lazy"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.01 150.48">
+                                <title>Figma</title>
+                                <desc>Logo de Figma, outil de design collaboratif</desc>
+                                <rect width="151.01" height="150.48" rx="33.78" ry="33.78" style="fill: #2e3139;"/>
+                                <path d="M95.61,56.08l-.27.32h-2.87s-.27-.32-.27-.32c-5.2.37-10.43.48-15.68.34-.54.1-.86-.01-.98-.34-.33-12.23-.33-24.46,0-36.68,7.29,0,20.46-1.18,26.7,1.95,15.23,7.62,12.41,30.6-4.29,34.28-.78.17-1.59.22-2.35.46Z"
+                                      style="fill: #fe7262;"/>
+                                <path d="M75.55,19.39v36.68l-.46.23c-6.2-.04-12.44-.05-18.67.04-.15,0-.31-.04-.46-.08s-.31-.11-.47-.19c-11.54-1.32-19.26-12.44-15.85-23.74,2.14-7.11,8.81-12.45,16.27-12.95,6.19-.41,13.34,0,19.64,0Z"
+                                      style="fill: #f14e1e;"/>
+                                <path d="M75.55,56.08c.13,0,.34.03.34.12.21,5.34.04,11.04-.34,16.36l.32.27v3.04s-.32.27-.32.27v16.64l-.12.34h-19.74l-.21-.34c-13.33-1.51-21-15.93-14.08-27.73,2.83-4.82,8.44-8.47,14.08-8.95,6.12-.52,13.76,0,20.06,0Z"
+                                      style="fill: #a159fe;"/>
+                                <path d="M75.55,92.76c0,6.3.46,13.61,0,19.78-1.18,15.98-21.52,22.82-32.13,10.71-10-11.42-2.71-28.87,12.07-30.49h20.06Z"
+                                      style="fill: #0ace82;"/>
+                                <path d="M95.61,56.08c15.8,1.35,22.5,21.58,10.46,32.1-11.25,9.84-29.26,2.73-30.52-12.06-.08-.96-.09-2.61,0-3.57.07-8.44,8.23-16.46,16.66-16.47.93-.08,2.47-.08,3.4,0Z"
+                                      style="fill: #1abbfd;"/>
+                            </svg>
                             <span lang="en" itemprop="name">Figma</span>
                         </li>
                     </ul>
@@ -232,28 +319,47 @@
                 <div>
                     <ul class="acquis__ul__liste">
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel"
-                                 alt="Logo de Laravel, framework PHP pour le développement web" width="128"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.91 147.12">
+                                <title>Laravel</title>
+                                <desc>Logo de Laravel, framework PHP pour le développement web</desc>
+                                <path d="M30.55,0l28.21,16.21c.45.19,1.16,1.15,1.16,1.6v59.53l23-13.21.08-30.92c.26-.68.71-1.18,1.35-1.53l27.25-15.67c.78-.46,1.59-.55,2.41-.12,8.68,5.25,17.74,9.93,26.41,15.2,1.15.7,2.35,1.13,2.49,2.67-.07,10.76.11,21.55-.09,32.3-.17.62-.58,1.06-1.08,1.44l-26.48,15.25c-.19,10.3.09,20.63-.14,30.91-.19.66-.6,1.11-1.2,1.44-18.66,10.6-37.14,21.56-55.88,32.01-1.24.21-2.53-.8-3.59-1.39-18.1-10.04-35.8-20.89-53.82-31.07-.28-.35-.53-.73-.63-1.17L.02,17.62c.21-.82.78-1.25,1.47-1.65L29.23,0h1.32ZM52.85,18.11c-7.72-4.19-15.22-8.84-22.94-13.04L7.73,17.77l-.68.52,22.84,13.13,22.81-13.04.15-.27ZM89.9,33.93l22.96,13.15,22.96-13.21-22.96-13.21-22.96,13.27ZM55.25,140.77v-26.44l-26.34-14.9c-1.01-.67-1.28-1.25-1.36-2.48l-.02-61.37L4.65,22.3v89.27l50.6,29.2ZM55.25,80.1V22.3l-23.02,13.25v57.73l23.02-13.19ZM110.52,51.08l-22.9-13.07v26.08l22.9,13.13v-26.14ZM138.22,38.01l-23.02,13.25v26.08l23.02-13.19v-26.14ZM85.07,68.25l-50.01,28.78-.32.28,21.86,12.43,1.07.44,50.32-28.7v-.23s-22.29-12.84-22.29-12.84c-.2-.12-.39-.22-.63-.15ZM110.52,85.49l-50.6,28.84v26.44l50.6-29.2v-26.08Z" style="fill: #fe2d20;"/>
+                            </svg>
                             <span itemprop="name">Laravel</span>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
-                                 alt="Logo de Typescript, surensemble JavaScript avec typage statique" width="128"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.02 150.02">
+                                <title>Typescript</title>
+                                <desc>Logo de Typescript, surensemble JavaScript avec typage statique</desc>
+                                <path d="M13.32.1C53.83-.03,96.21-.03,136.75.1c6.72-.23,13.47,6.43,13.18,13.18.13,40.5.13,82.88,0,123.43.34,6.6-6.09,13.07-12.59,13.18-.18.05-.38.1-.59.15H13.32c-.21-.05-.4-.1-.59-.15-4.55.05-9-3.48-11.12-7.37-.83-1.53-1.65-3.52-1.33-5.23-.08-.28-.18-.58-.29-.88V13.57l.15-.29c-.13-.13-.11-.43,0-.59C.36,6.26,6.8-.13,13.32.1Z" style="fill: #3178c5;"/>
+                                <path d="M134.85,85.89c-3.79-2.4-8.18-3.92-12.67-4.39-4.07-.42-11.84.01-13.58,4.57-2.71,7.09,9.52,10.71,14.15,12.87,9.71,4.54,16.17,10.1,14.88,21.87-1.8,16.39-21.18,18.17-34.16,16.3-3.58-.51-7.29-1.42-10.49-3.12v-14.57c5.47,4.58,12.67,7.02,19.85,6.59,4.35-.26,9.91-2.17,9.28-7.53s-11.18-8.76-15.56-10.8c-7.1-3.31-13.31-8.3-13.86-16.74-1.27-19.43,19.32-22.8,34.32-20.7,2.6.36,5.47,1.02,7.85,2.1v13.54Z" style="fill: #fff;"/>
+                                <polygon points="87.12 71.25 87.12 83.26 68.23 83.26 68.23 136.85 53.44 136.85 53.44 83.26 34.7 83.26 34.7 71.25 87.12 71.25" style="fill: #fff;"/>
+                            </svg>
                             <abbr lang="en" title="Typescript" itemprop="name">tp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel"
-                                 alt="Logo de Laravel, framework PHP pour le développement web" width="128"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.91 147.12">
+                                <title>Laravel</title>
+                                <desc>Logo de Laravel, framework PHP pour le développement web</desc>
+                                <path d="M30.55,0l28.21,16.21c.45.19,1.16,1.15,1.16,1.6v59.53l23-13.21.08-30.92c.26-.68.71-1.18,1.35-1.53l27.25-15.67c.78-.46,1.59-.55,2.41-.12,8.68,5.25,17.74,9.93,26.41,15.2,1.15.7,2.35,1.13,2.49,2.67-.07,10.76.11,21.55-.09,32.3-.17.62-.58,1.06-1.08,1.44l-26.48,15.25c-.19,10.3.09,20.63-.14,30.91-.19.66-.6,1.11-1.2,1.44-18.66,10.6-37.14,21.56-55.88,32.01-1.24.21-2.53-.8-3.59-1.39-18.1-10.04-35.8-20.89-53.82-31.07-.28-.35-.53-.73-.63-1.17L.02,17.62c.21-.82.78-1.25,1.47-1.65L29.23,0h1.32ZM52.85,18.11c-7.72-4.19-15.22-8.84-22.94-13.04L7.73,17.77l-.68.52,22.84,13.13,22.81-13.04.15-.27ZM89.9,33.93l22.96,13.15,22.96-13.21-22.96-13.21-22.96,13.27ZM55.25,140.77v-26.44l-26.34-14.9c-1.01-.67-1.28-1.25-1.36-2.48l-.02-61.37L4.65,22.3v89.27l50.6,29.2ZM55.25,80.1V22.3l-23.02,13.25v57.73l23.02-13.19ZM110.52,51.08l-22.9-13.07v26.08l22.9,13.13v-26.14ZM138.22,38.01l-23.02,13.25v26.08l23.02-13.19v-26.14ZM85.07,68.25l-50.01,28.78-.32.28,21.86,12.43,1.07.44,50.32-28.7v-.23s-22.29-12.84-22.29-12.84c-.2-.12-.39-.22-.63-.15ZM110.52,85.49l-50.6,28.84v26.44l50.6-29.2v-26.08Z" style="fill: #fe2d20;"/>
+                            </svg>
                             <span itemprop="name">Laravel</span>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/typescript.svg" aria-label="Logo de Typescript"
-                                 alt="Logo de Typescript, surensemble JavaScript avec typage statique" width="128"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.02 150.02">
+                                <title>Typescript</title>
+                                <desc>Logo de Typescript, surensemble JavaScript avec typage statique</desc>
+                                <path d="M13.32.1C53.83-.03,96.21-.03,136.75.1c6.72-.23,13.47,6.43,13.18,13.18.13,40.5.13,82.88,0,123.43.34,6.6-6.09,13.07-12.59,13.18-.18.05-.38.1-.59.15H13.32c-.21-.05-.4-.1-.59-.15-4.55.05-9-3.48-11.12-7.37-.83-1.53-1.65-3.52-1.33-5.23-.08-.28-.18-.58-.29-.88V13.57l.15-.29c-.13-.13-.11-.43,0-.59C.36,6.26,6.8-.13,13.32.1Z" style="fill: #3178c5;"/>
+                                <path d="M134.85,85.89c-3.79-2.4-8.18-3.92-12.67-4.39-4.07-.42-11.84.01-13.58,4.57-2.71,7.09,9.52,10.71,14.15,12.87,9.71,4.54,16.17,10.1,14.88,21.87-1.8,16.39-21.18,18.17-34.16,16.3-3.58-.51-7.29-1.42-10.49-3.12v-14.57c5.47,4.58,12.67,7.02,19.85,6.59,4.35-.26,9.91-2.17,9.28-7.53s-11.18-8.76-15.56-10.8c-7.1-3.31-13.31-8.3-13.86-16.74-1.27-19.43,19.32-22.8,34.32-20.7,2.6.36,5.47,1.02,7.85,2.1v13.54Z" style="fill: #fff;"/>
+                                <polygon points="87.12 71.25 87.12 83.26 68.23 83.26 68.23 136.85 53.44 136.85 53.44 83.26 34.7 83.26 34.7 71.25 87.12 71.25" style="fill: #fff;"/>
+                            </svg>
                             <abbr lang="en" title="Typescript" itemprop="name">tp</abbr>
                         </li>
                         <li class="acquis" itemprop="keywords">
-                            <img src="/img/logiciel/laravel.svg" aria-label="Logo de Laravel"
-                                 alt="Logo de Laravel, framework PHP pour le développement web" width="128"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.91 147.12">
+                                <title>Laravel</title>
+                                <desc>Logo de Laravel, framework PHP pour le développement web</desc>
+                                <path d="M30.55,0l28.21,16.21c.45.19,1.16,1.15,1.16,1.6v59.53l23-13.21.08-30.92c.26-.68.71-1.18,1.35-1.53l27.25-15.67c.78-.46,1.59-.55,2.41-.12,8.68,5.25,17.74,9.93,26.41,15.2,1.15.7,2.35,1.13,2.49,2.67-.07,10.76.11,21.55-.09,32.3-.17.62-.58,1.06-1.08,1.44l-26.48,15.25c-.19,10.3.09,20.63-.14,30.91-.19.66-.6,1.11-1.2,1.44-18.66,10.6-37.14,21.56-55.88,32.01-1.24.21-2.53-.8-3.59-1.39-18.1-10.04-35.8-20.89-53.82-31.07-.28-.35-.53-.73-.63-1.17L.02,17.62c.21-.82.78-1.25,1.47-1.65L29.23,0h1.32ZM52.85,18.11c-7.72-4.19-15.22-8.84-22.94-13.04L7.73,17.77l-.68.52,22.84,13.13,22.81-13.04.15-.27ZM89.9,33.93l22.96,13.15,22.96-13.21-22.96-13.21-22.96,13.27ZM55.25,140.77v-26.44l-26.34-14.9c-1.01-.67-1.28-1.25-1.36-2.48l-.02-61.37L4.65,22.3v89.27l50.6,29.2ZM55.25,80.1V22.3l-23.02,13.25v57.73l23.02-13.19ZM110.52,51.08l-22.9-13.07v26.08l22.9,13.13v-26.14ZM138.22,38.01l-23.02,13.25v26.08l23.02-13.19v-26.14ZM85.07,68.25l-50.01,28.78-.32.28,21.86,12.43,1.07.44,50.32-28.7v-.23s-22.29-12.84-22.29-12.84c-.2-.12-.39-.22-.63-.15ZM110.52,85.49l-50.6,28.84v26.44l50.6-29.2v-26.08Z" style="fill: #fe2d20;"/>
+                            </svg>
                             <span itemprop="name">Laravel</span>
                         </li>
                     </ul>
@@ -271,7 +377,7 @@
         </div>
     </section>
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="parcours" itemscope itemtype="https://schema.org/Person">
         <h2>Parcours scolaire</h2>
@@ -283,7 +389,7 @@
                 </a>
                 <img src="img/parcours-scolaire/secondaire.webp"
                      alt="Logo de l'Athénée Royal Charles Rogier"
-                     srcset="" width="386"/>
+                     srcset="" width="386" loading="lazy"/>
                 <p>De
                     <time datetime="2013">2013</time>
                     à
@@ -298,7 +404,7 @@
                 </a>
                 <img src="img/parcours-scolaire/design.webp"
                      alt="Illustration domaine d'études du design graphique à la HEPL"
-                     srcset="" width="386"/>
+                     srcset="" width="386" loading="lazy"/>
                 <p>De
                     <time datetime="2021">2021</time>
                     à
@@ -313,7 +419,7 @@
                 </a>
                 <img src="img/parcours-scolaire/web-design.webp"
                      alt="Illustration domaine d'études du design web à la HEPL"
-                     srcset="" width="386"/>
+                     srcset="" width="386" loading="lazy"/>
                 <p>De
                     <time datetime="2024">2024</time>
                     jusqu’à
@@ -325,7 +431,7 @@
         </ul>
     </section>
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="experience" itemscope itemtype="https://schema.org/Person">
         <h2>Expériences professionnelles</h2>
@@ -334,7 +440,7 @@
                 <!-- PART 1 -->
                 <div class="container__link exp_pro">
                     <a href="https://jobs.delhaize.be/be/fr/home" class="a__link"><span class="sro">Lien vers le site du Delhaize</span></a>
-                    <img src="img/experience-pro/delhaize.svg" alt="Logo de Delhaize" srcset="" width="160"/>
+                    <img src="img/experience-pro/delhaize.svg" alt="Logo de Delhaize" srcset="" width="160" loading="lazy"/>
                 </div>
 
                 <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
@@ -362,7 +468,7 @@
 
                     <a href="https://wallonie.events/series/piscine-dembourg/" class="a__link"><span class="sro">Lien vers le site de la piscine d’Embourg</span></a>
                     <img src="img/experience-pro/embourg.webp" alt="Photo de la piscine d’Embourg" srcset=""
-                         width="255"/>
+                         width="255" loading="lazy"/>
 
                 </div>
                 <article itemprop="hasOccupation" itemscope itemtype="https://schema.org/OrganizationRole">
@@ -392,7 +498,7 @@
             <div class="exp__noActive div__exp">
                 <div class="container__link  exp_pro">
                     <a href="https://travaillerchez.jysk.be/" class="a__link"><span class="sro">Lien vers le site de JYSK</span></a>
-                    <img src="img/experience-pro/jysk.svg" alt="Logo de JYSK" srcset="" width="255"/>
+                    <img src="img/experience-pro/jysk.svg" alt="Logo de JYSK" srcset="" width="255" loading="lazy"/>
                 </div>
                 <article class="exp" itemprop="hasOccupation" itemscope
                          itemtype="https://schema.org/OrganizationRole">
@@ -425,7 +531,7 @@
     </section>
 
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="competence" itemscope itemtype="https://schema.org/Person">
         <h2>Compétences</h2>
@@ -433,31 +539,124 @@
             nombreuses compétences.</p>
         <ul>
             <li itemprop="skills" class="actif__li">
-                <img src="img/logiciel/ai.svg" alt="Logo d’Illustrator" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.41 143.3">
+                    <title>Adobe Illustrator</title>
+                    <desc>Logo d'Adobe Illustrator, logiciel de création graphique vectorielle</desc>
+                    <path d="M124.91,0c.11.03.21.06.3.1,1.8-.09,3.58.43,5.25,1.05,9.51,3.54,16.65,13.33,16.95,23.49v93.62c-.52,13.71-12.18,24.86-25.85,25.04-31.87,0-63.74,0-95.62,0C11.56,142.99-.13,131.21,0,116.76V25.97C0,15.03,6.85,4.96,17.16,1.19c1.61-.59,3.32-1.13,5.05-1.09.12-.04.25-.08.4-.1h102.3Z" style="fill: #300;"/>
+                    <path d="M22.61,0c-.12.14-.27.08-.4.1v-.1h.4Z" style="fill: #baa;"/>
+                    <path d="M125.21,0v.1c-.11-.01-.25.04-.3-.1h.3Z" style="fill: #bfafaf;"/>
+                    <path d="M110.88,52.23c.12.11.23.54.23.72l-.05,47.46c-.08.29-.26.6-.6.6l-12.58-.03-.39-.41c-.16-15.98-.05-32.01-.05-48,.11-.51.69-.54,1.12-.58,3.67-.28,7.7.22,11.41,0,.21.02.79.11.92.23Z" style="fill: #ff9a00;"/>
+                    <path d="M109.87,44.77c-3.92,3.99-11.25,2.45-12.87-3.11-1.91-6.58,3.9-11.74,10.28-9.68,5.17,1.66,6.19,9.12,2.59,12.79Z" style="fill: #ff9a00;"/>
+                    <path d="M71.49,85.81h-22.72s-.15.15-.15.15l-4.51,14.09c-.13.38-.32.74-.7.9l-12.26.05c-1.09-.14-.17-1.99.05-2.66,6.16-18.73,13.21-37.18,19.4-55.9.65-1.83.65-3.77.82-5.68.07-.22.42-.27.63-.27h15.71c.3,0,.59.1.72.38l22.42,63.38c.03.38.02.73-.45.75h-13.11s-.54-.16-.54-.16l-5.32-15.03Z" style="fill: #ff9a00;"/>
+                    <path d="M67.81,73.3h-15.5c2.63-8.46,5.69-16.83,7.6-25.5l7.9,25.5Z" style="fill: #300;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/ps.svg" alt="Logo de Photoshop" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1051 1025">
+                    <title>Photoshop</title>
+                    <desc>Logo de Photoshop, logiciel de retouche et de création d'images</desc>
+                    <path d="M175,0c2.24.84,4.76.84,7,0h687c2.24.84,4.76.84,7,0h6c87.88,4.05,164.98,81.16,169,169v3l-1,2c.41.31.74.97,1,2v673l-1,2c.41.31.74.97,1,2v4c-4.66,87.63-82.06,164.64-170,168h-7c-1.58-.79-3.41-.8-5,0H182c-1.9-.82-4.09-.82-6,0h-8C80.95,1020.36,4.65,944.04,0,857v-5c.55-1.03.55-1.97,0-3V176c.55-1.03.55-1.97,0-3v-5C4.68,81,80.87,4.59,168,0h7Z"
+                          style="fill: #001e36;"/>
+                    <path d="M332,578v141.5c0,1.9-5.02,6.11-7.48,5.52-25.73-1.52-53.59,1.95-79.06.01-5.37-.41-8.95-.58-9.19-6.81l-.31-446.77c.2-3.57,1.01-8.52,5.49-8.51,85.36,3.52,189.5-20.7,264.27,30.83,82.07,56.56,83.07,191.66,2.61,250.05-50.14,36.39-116.86,36.16-176.33,34.17h0Z"
+                          style="fill: #31a7fe;"/>
+                    <path d="M742.79,369.29c27.18-1.3,77.32,1.86,101.89,13.52,5.21,2.47,5.82,3.92,6.35,9.65,2.08,22.55-1.67,48.2.01,71.09-3.62,11.48-14.55,2-21.38-.72-27.87-11.13-76.69-20.36-105.68-12.33-16.11,4.46-23.82,20.66-11.99,34,14.3,16.12,60.68,29.21,81.67,39.33,45.63,21.99,78.79,50.14,75.32,105.66-6.95,111.03-155.23,119.56-235.51,90.53-6.01-2.17-17.34-5.55-19.01-11.99.82-24.5-2.71-52.45-.52-76.58.3-3.27.81-7.56,5.06-6.03,35.85,20.29,86,33.8,127.22,27.3,15.6-2.46,34.91-12.65,25.97-31.43-7.81-16.41-52.92-29.62-69.87-37.13-56.68-25.1-102.63-65.83-83.04-134.39,15.98-55.94,69.67-77.92,123.51-80.49h0Z"
+                          style="fill: #31a7fe;"/>
+                    <path d="M332,495v-147c2.21-.15,4.22-.88,6.46-1.04,60-4.38,138.43-.05,133.59,79.59-4.3,70.64-86.44,72.37-140.05,68.45Z"
+                          style="fill: #001e36;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/indd.svg" alt="Logo d'InDesign" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.99">
+                    <title>InDesign</title>
+                    <desc>Logo d'InDesign, logiciel de mise en page</desc>
+                    <path d="M432,0c41.64,1.48,78.21,38.45,80,79.91v330.63c-.82,1.89-.82,4.09,0,5.99v3c-2.46,43.69-43.77,82.67-88,78.91-23.82,1.3-47.76,1.51-71.64,1.55-89.2-1.49-177.65-1.67-265.36-.55h-1c-43.72.02-83.49-35.91-86-79.91V78.91C1.66,39.23,39.69.08,80,0h352Z"
+                          style="fill: #49021f;"/>
+                    <path d="M139,127.86h45.5c.11,0,1.5,1.39,1.5,1.5v221.75c0,.17-1.54,1.76-2.02,1.98-1.96.91-37.26,1.08-41.54.57-2.74-.33-3.52-.99-4.22-3.78l-.27-216.58,1.05-5.45h0Z"
+                          style="fill: #fe3366;"/>
+                    <path d="M378.05,110.55c-.33-1.4-4.27-1.63-5.5-1.71-5.17-.35-38.08-.58-40.53.56-.47.21-1.93,1.65-2.02,1.98h.02v67.43h-27.5c-4.89,0-18.83,4.15-24.02,5.98-47.58,16.72-68.55,66.44-55.2,114.1,16.98,60.65,88.49,64.94,139.48,49,2.93-.92,15.33-4.73,16.07-6.92l-.8-230.42ZM330.01,313.65h-.01c-24.59,4.02-50.74-.96-59.04-27.43-7.95-25.35-1.11-52.36,24.37-63.65,10.3-4.56,24.39-6.8,34.68-2.32v93.4Z"
+                          style="fill: #fe3366;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/html.svg" alt="Logo de HTML" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.98 144.99">
+                    <title>HyperText Markup Language</title>
+                    <desc>Logo de HTML, langage de balisage pour structurer les pages web</desc>
+                    <polygon points="128.98 0 117.86 131.12 64.78 144.99 11.49 131.1 0 0 128.98 0" style="fill: #d0382b;"/>
+                    <path d="M64.31,27.16c13.53-.79,27.07-.95,40.61-.46l.46.75-1.03,15.07-.5.86c-13.18.4-26.39.44-39.55-.49-7.4.78-14.84.97-22.27.45l.53.12,1.33,14.66-.67.48,20.64.06c.18-.36.36-.65.54-.65,12.65-.17,25.63.06,38.06.5l.39.76c-1.36,16.7-2.86,33.36-4.5,50-11.05,3.18-22.2,6.14-33.46,8.89l-.6-.58-32.47-8.63-2.19-26.4h16.44l1.59,13.6c.51.79,14.6,3.39,16.63,3.92l.18-.77,16.98-3.49,2.5-19.76c-6.61.39-13.16.18-19.66-.64-11.91-.07-23.8-.35-35.71-.38l-4.21-47.35,1.14-.54c12.93.03,25.86.02,38.78.02Z" style="fill: #fefefe;"/>
+                    <path d="M64.31,27.16V11.08h54.66l-9.45,110.81-45.21,11.78v-16.08s33.54-8.62,33.54-8.62l4.33-49.99-58.95-.36.33-.71h19.83c.25-4.78.32-9.65.21-14.59l.71-.42c13.1-.02,26.21.01,39.3,0l1.07-15.73c-13.45,0-26.92,0-40.38,0Z" style="fill: #e83e30;"/>
+                    <path d="M64.31,75.41c6.61.04,13.23-.02,19.84,0l.54.54-2.58,20.48-17.8,3.64v-24.66Z" style="fill: #e83e30;"/>
+                    <path d="M64.31,42.89v15.73s-21.08,0-21.08,0l-1.43-15.73c7.5,0,15.01.01,22.51,0Z" style="fill: #d0382b;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/css.svg" alt="Logo de CSS" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.65 150.2">
+                    <title>Cascading Style Sheets</title>
+                    <desc>Logo de CSS, langage de mise en forme pour les pages web</desc>
+                    <polygon points="134.65 0 122.76 134.08 122.18 134.61 67.48 150.2 12.46 134.61 11.88 134.08 0 0 134.65 0" style="fill: #0277bc;"/>
+                    <path d="M31.07,31.82l36.25-.37V11.84h54.01l-9.79,113.23-44.22,12.57-.37-18.87c.1-.32.23-.32.37,0l.43-.92,29.67-9.64c1.87-24.83,3.6-50.84,4.77-75.65H31.53s-.45-.74-.45-.74Z" style="fill: #039ae4;"/>
+                    <path d="M84.71,79.18l-1.15,17.72-15.5,5.22h-.74v-22.94c5.79-.15,11.59-.15,17.39,0Z" style="fill: #039ae4;"/>
+                    <path d="M32.18,47.36h54.38s-1.11,15.91-1.11,15.91c-6.04,0-12.09-.01-18.13,0-.01-5.17,0-10.37,0-15.54l-35.14-.37Z" style="fill: #039ae4;"/>
+                    <path d="M31.07,31.82h72.13s-4.89,76.88-4.89,76.88l-31,10.07-.68-1.33-.17-12.79c-.24-1.75.28-2.59,1.58-2.52v-.78s14.8-5.04,14.8-5.04l1.08-16.73.77-.39-17.73-.18c-.73-5.22-.57-10.54.34-15.73,5.78-.82,11.61-.83,17.44-.72l1-14.3c-5.91-.19-11.92-.24-18.02-.15l-.53-.56-35.03-.18-1.11-15.54Z" style="fill: #fdfdfd;"/>
+                    <path d="M66.95,118.77l-30.63-10.07-1.19-21.75h15.54l.41,9.95,16.24,5.22c.12-.98.46-.94.74,0-.71.35-.7.52-.77,1.26-.4,4.92.35,10.41.03,15.39h-.37Z" style="fill: #ededed;"/>
+                    <path d="M67.32,63.27c.01,5.17,0,10.37,0,15.54l17.39.37c-5.79,0-11.6.01-17.39,0s-11.6,0-17.39,0l-.74-15.91c6.04,0,12.09.01,18.13,0Z" style="fill: #ededed;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/js.svg" alt="Logo de JavaScript" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.28 143.38">
+                    <title>JavaScript</title>
+                    <desc>Logo de JavaScript, langage de programmation pour le web dynamique</desc>
+                    <path d="M.01.12C41.99-.02,84.01-.04,126.07.06c.13.28.2.58.2.91-3.78,42.57-7.64,85.13-11.58,127.69l-.35.23-51.48,14.49-51.07-14.29c-.13-.08-.41-.26-.41-.28C7.61,88.95,4,49.06.47,9.17c.1-2.63.05-5.19-.46-7.53C-.03,1.15.04.62.01.12Z" style="fill: #d2b52a;"/>
+                    <polygon points="58.18 27.59 58.18 111.9 21.37 101.98 21.37 86.91 45.59 93.4 45.79 27.59 58.18 27.59" style="fill: #eaeded;"/>
+                    <polygon points="114.64 11.37 104.88 121.32 63.42 132.71 63.16 132.67 62.94 131.27 62.94 12.8 63.14 11.37 114.64 11.37" style="fill: #fad625;"/>
+                    <path d="M80.5,64.6l24.99-2.67-3.33,41.02-33.86,8.76-.18-14.87,24.4-6.31c.22-4.07.26-8.14.39-12.2l-24.41,4.01-.38-54.56,40.25-.09-1.15,14.78-26.7.19v21.94Z" style="fill: #fefefe;"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/mysql.svg" alt="Logo de MySQL" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.4 132.87">
+                    <desc>Logo de MySQL, système de gestion de base de données relationnelle</desc>
+                    <title>MySQL</title>
+                    <path d="M24.9.2c6.7-.8,12.6,4.5,18.2,7.4,4,.5,7.7.5,11.3,2,24.8,10.4,34.6,30.5,44.7,53.8,2.2,8.5,12,8,17.6,13.3,17.8,13.7,16.5,11.8-3.4,16.3,3.1,5.1,9.9,6.3,13.6,11,2.7,2.3,10.5,11.9,3.5,6.1-7-6-17.4-7.6-22.5-16-5.7-7.7,14.4-5.8,16.6-7.4-3.6-3.7-8.6-6-12.7-9.2-5.4-3.1-13.2-2.6-15.8-9.1-6.6-13.1-10.7-27.4-21.1-38.7-8.6-8.6-19-17.5-31.7-17.8-4.7,0-7.9-4.8-12.4-6.1-10-4.9-8.7,3.3-3.1,8.8,5.3,5.8,6.3,13.4,9.2,20.4.9,3.8,6,5.9,5.5,9.9-3.5,10.5-6.6,23.3,2.3,32.4,3.1-3.1.6-11.9,5.6-15.4,2.2-4.8,3.8,6.1,5.4,7.8,2.8,5.5,6.5,11.3,9.8,16.1,1.4,2.4-3.4-1.8-4-2.4-4.7-3.3-7.1-9.9-9.9-13.5-1.9,25.7-18.5,3.1-15.7-9.9-1.2-4.8,3-11.5,2.7-16.4-2.4-2.4-4.1-5.7-5.4-8.7-2.6-5.1-2.8-10.9-6.3-15.5C22,13.8,15.1,3.1,24.9.2Z" fill="#00608b"/>
+                    <path d="M45.7,19.5c3,.7,3.8,7,.8,6.8-.6-2.9-7.3-8.2-.8-6.8Z" fill="#00608c"/>
+                    <path d="M4.2,105.8h.8c1.6.1,2.8.9,3.6,2.4l6.2,14.4.5.9,6.8-15.2c.8-1.4,1.9-2.2,3.5-2.3h.8c1.9,0,4.1.8,4.3,3,0,6,0,12-.1,17.9h-4.3c0-5.6,0-11.2,0-16.9,0-.4-.1-.5-.2-.3-2,5.3-4.9,10.6-7.1,15.8-1,2.1-5.3,2.2-6.8.7-3-5.2-5-11.1-7.6-16.5h-.1c0,5.6,0,11.4,0,17.2-1.4,0-2.8,0-4.3,0,0-5.9,0-11.8,0-17.8-.2-2.2,2.3-2.9,4.1-3.1h0Z" fill="#00608b"/>
+                    <path d="M97.2,106.3c2.9.2,5.9,1.4,6.2,4.6,0,3.7,0,7.4,0,11.2-.1,1.9-.9,3-2.6,3.7,1.4,1.2,2.7,2.6,4.1,3.7,0,0,0,0,0,0-1.6,0-3.3.1-4.9,0-.1,0-.3-.1-.4-.2l-3.1-2.8c-.2,0-.4,0-.6,0-.8,0-1.7,0-2.5.1-1.9,0-3.8,0-5.7,0-2.8-.1-6-1.3-6.2-4.5-.2-3.8-.2-7.7,0-11.5.2-3.1,3.3-4.3,6-4.5,3.2,0,6.5,0,9.8.1h0ZM88.9,109.2c-1.2,0-2.4.6-2.7,1.9.2,3.3-.3,7,0,10.3.2,1.8,1.4,2.3,3,2.4h4.2l-3.5-3.3h5.1l3.1,2.8c.8-.3,1-.9,1.2-1.7,0,0,.2-.2.1-.4-.3-3.1.5-7.2-.1-10.1-.3-1.4-1.3-1.9-2.6-2h-7.7,0Z" fill="#e58e00"/>
+                    <path d="M55.4,112.4c0,1.2,0,2.6,0,3.8,0,2.4,0,4.8,0,7.3,0,1.6,0,3.2.1,4.7-.2,3.3-3.4,4.4-6.3,4.6h-14.7c0-.9-.1-1.9,0-2.9,4.7,0,9.3,0,14-.1,1-.1,2.1-.3,2.4-1.5,0-.6,0-1.3,0-1.9-3.2,0-6.3,0-9.5,0-2.7,0-6.5-.7-7.1-3.9-.1-.7,0-1.5,0-2.2v-7.9c1.5,0,2.9,0,4.3,0v1.7c0,2.7,0,5.5.1,8.2.2,1.1.8,1.2,1.8,1.4h10.4s.1-11.4.1-11.4c1.4,0,2.9,0,4.3,0h0Z" fill="#00608b"/>
+                    <path d="M78.7,106.2c.1.9.1,2,0,2.9h-12.5c-1.3.3-2.4,0-2.8,1.5,0,.8,0,1.7,0,2.5.2,1.2.7,1.7,2,1.8.2,0,.4,0,.5.1,1.9,0,3.7,0,5.6,0,2.2,0,6.7.9,7.1,3.7,0,1.1,0,2.4,0,3.6-.2,3-3.7,4.3-6.3,4.4-4.3,0-8.8,0-13.3-.1-.1-.9-.1-1.9,0-2.8,4.2,0,8.3,0,12.5-.1,1.1,0,2.2-.4,2.5-1.6,0-.9,0-1.9,0-2.8-.4-1.2-1.7-1.3-2.7-1.5-1.8,0-3.5,0-5.3-.1-.2,0-.4,0-.6,0-2.3,0-6.2-1.1-6.5-3.9,0-1.1,0-2.1,0-3.2.3-3.4,3.6-4.3,6.5-4.4,4.4-.2,8.9.2,13.3,0h0Z" fill="#e58e00"/>
+                    <path d="M113.5,126.8c-2.3-.1-5.8-.8-6.9-3.1,0-.2-.4-1.1-.4-1.2v-16.3h4.4v15.8c0,.5.4,1.1.8,1.3.6.4,1.2.4,1.8.4,4.2,0,8.4,0,12.5.1,0,.1,0,2.7,0,2.8-4.1,0-8.2.1-12.3.1h0Z" fill="#e58e00"/>
+                    <path d="M130.9,120.4c.2,0,.4,0,.6,0,4,.4,3.9,6.4-.1,6.5-4.4.2-4.6-6.3-.5-6.5h0ZM130.9,126.2s.1.1.3.1.2-.1.3-.1c.7-.1.8-.2,1.4-.6,2.1-1.8.3-5.3-2.5-4.3-2.3.8-2.2,4.5.6,5h0Z" fill="#e58f00"/>
+                    <path d="M132.6,122.5c0,.2,0,.4,0,.6-.2.6-.3.5-.9.8,0,.2.7,1.1.9,1.4.1.2-.4.2-.6.1-.3-.2-.8-1.5-1-1.6,0,0-.4,0-.5,0,0,.5,0,1.1-.1,1.6-.2,0-.4.1-.5,0,0-1.2,0-2.4,0-3.7.9,0,2.3-.3,2.7.7h0ZM130.5,123.4c2,.3,2-1.3,0-1.1-.2.2-.2.8,0,1.1Z" fill="#e58f00"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/php.svg" alt="Logo de PHP" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.49 72.46">
+                    <title>PHP</title>
+                    <desc>Logo de PHP, langage de programmation pour le développement web</desc>
+                    <path d="M68.8,71c-17.9,0-34.7-3.5-47.3-9.9C8.4,54.6,1.3,45.7,1.3,36.2s7.2-18.3,20.1-24.9C34.1,5,50.9,1.5,68.8,1.5s34.7,3.5,47.3,9.9c13,6.6,20.1,15.4,20.1,24.9s-7.2,18.3-20.1,24.9c-12.7,6.4-29.5,9.9-47.3,9.9Z" fill="#777bb2"/>
+                    <path d="M116.7,10c-6.9-3.5-15.1-6.1-23.9-7.8-1.2.8-2.6,1.5-3.7,2.4,26.5,4.3,45.6,16.9,45.6,31.7s-29.5,33.3-66,33.3-8.6-.2-12.7-.6c-1,.9-1.9,1.9-3,2.7,5.1.6,10.4.9,15.7.9,18.1,0,35.1-3.6,48-10.1,13.5-6.8,21-16.1,21-26.2s-7.4-19.4-21-26.2Z" fill="#484c88"/>
+                    <path d="M2.8,36.2C2.8,17.9,32.3,3,68.8,3s13.9.6,20.3,1.6c1.2-.9,2.5-1.6,3.7-2.4C85.2.7,77.1,0,68.8,0,50.7,0,33.6,3.5,20.8,10,7.2,16.9-.2,26.2-.2,36.2s7.4,19.4,21,26.2c9.1,4.6,20.2,7.7,32.3,9.1,1.2-.7,2.1-1.7,3-2.7C25.7,65.9,2.8,52.5,2.8,36.2Z" fill="#999dc5"/>
+                    <path d="M109.4,46.7c-4.8,2.2-10,1.5-15.1,1.7-.3.3-1.2,7.2-1.6,8.4-.2.4-.4.9-.8,1.1-.7.3-7.1.2-8.2.2s-1.1,0-1.4-.3c-1.2-1.2,1.2-7.5,1-9.3h-9.3c-.2,0-1-1.1-.9-1.5l3.4-17.5c0-1.6-.5-1.6-1.9-1.7-2-.2-4.3.1-6.3,0-.4,2.5-3.2,19.7-4.2,20.3-.4.3-.8.3-1.3.3-1.1,0-7.6,0-8.2-.2-.4-.2-.8-.9-.8-1.3,0-1,.8-4.5,1-5.8,0-.5,0-.6-.3-.3h0c-5.6,7.9-12.9,7.7-21.8,7.7-.5.4-1.2,7.2-1.7,8.5-.2.4-.3.7-.7.9-.8.3-6.9.3-8.1.2-1.3,0-2.1-.5-1.9-1.9l6.9-35.7c.1-.8.6-1.5,1.4-1.5,8.3.9,22.4-3,27.5,5.6l1.4,3.3,3.4-17.4c.2-1,1-1,1.8-1.1,1.7-.2,5.6-.2,7.3,0,1.1.1,1.7.6,1.7,1.7,0,2.2-1.5,5.6-1.6,7.9h8.5c.5,0,3.2.7,3.9.9,2.9,1,4.7,3.3,5.2,6.3.4,0,.6-6.9,2.2-7.2,6.3.4,13.9-.9,20,.3,14.6,2.9,10.6,22.4-.4,27.4h0Z" fill="#fefefe"/>
+                    <path d="M70.1,10.8l-1.9,9.4c25-1.9,17.6,9.3,14.1,26.8h-7.7l3.2-16.8c1.1-6-7-3.6-10.5-4.1l-4.2,20.9h-7.8l7-36.2h7.8Z"/>
+                    <path d="M49.7,21.1c-6.7-1.9-13.9-.6-20.8-1l-7.1,36.2h7.8l1.9-9.3c7.6-.2,15.2.8,20.6-5.5,5.1-5.9,6.5-17.4-2.4-20.4h0ZM44.4,39.4c-2.5,2.2-8.9,1.6-11.9,1.7l3.1-15c3.2.4,9.4-1.1,11.5,1.9,1.9,2.8,0,9.5-2.7,11.5h0Z"/>
+                    <path d="M104.9,20.2c-4.7-.2-9.7.1-14.4.1l-7.2,36.1h8.1l1.6-9.4c5.6-.2,12.1.6,17.1-2.4,11.3-6.8,10.6-25.5-5.1-24.5h0ZM108.8,35c-1.3,6.7-9.3,6.2-14.5,6l2.7-15c7.6,0,15.1-1.5,11.8,9Z"/>
+                    <path d="M34.4,39.7l2.5-12.3c6,0,11.5-1.1,9,7-1,5.3-7.2,5.5-11.5,5.3h0Z" fill="#777bb2"/>
+                    <path d="M96.1,39.7l2.3-12.3c2.3.2,9-.7,9.5,2.3.8,8-4.6,10.8-11.8,10h0Z" fill="#777bb2"/>
+                </svg>
             </li>
             <li itemprop="skills">
-                <img src="img/logiciel/figma.svg" alt="Logo de Figma" width="115"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.01 150.48">
+                    <title>Figma</title>
+                    <desc>Logo de Figma, outil de design collaboratif</desc>
+                    <rect width="151.01" height="150.48" rx="33.78" ry="33.78" style="fill: #2e3139;"/>
+                    <path d="M95.61,56.08l-.27.32h-2.87s-.27-.32-.27-.32c-5.2.37-10.43.48-15.68.34-.54.1-.86-.01-.98-.34-.33-12.23-.33-24.46,0-36.68,7.29,0,20.46-1.18,26.7,1.95,15.23,7.62,12.41,30.6-4.29,34.28-.78.17-1.59.22-2.35.46Z"
+                          style="fill: #fe7262;"/>
+                    <path d="M75.55,19.39v36.68l-.46.23c-6.2-.04-12.44-.05-18.67.04-.15,0-.31-.04-.46-.08s-.31-.11-.47-.19c-11.54-1.32-19.26-12.44-15.85-23.74,2.14-7.11,8.81-12.45,16.27-12.95,6.19-.41,13.34,0,19.64,0Z"
+                          style="fill: #f14e1e;"/>
+                    <path d="M75.55,56.08c.13,0,.34.03.34.12.21,5.34.04,11.04-.34,16.36l.32.27v3.04s-.32.27-.32.27v16.64l-.12.34h-19.74l-.21-.34c-13.33-1.51-21-15.93-14.08-27.73,2.83-4.82,8.44-8.47,14.08-8.95,6.12-.52,13.76,0,20.06,0Z"
+                          style="fill: #a159fe;"/>
+                    <path d="M75.55,92.76c0,6.3.46,13.61,0,19.78-1.18,15.98-21.52,22.82-32.13,10.71-10-11.42-2.71-28.87,12.07-30.49h20.06Z"
+                          style="fill: #0ace82;"/>
+                    <path d="M95.61,56.08c15.8,1.35,22.5,21.58,10.46,32.1-11.25,9.84-29.26,2.73-30.52-12.06-.08-.96-.09-2.61,0-3.57.07-8.44,8.23-16.46,16.66-16.47.93-.08,2.47-.08,3.4,0Z"
+                          style="fill: #1abbfd;"/>
+                </svg>
             </li>
         </ul>
 
@@ -484,7 +683,17 @@
                     éléments visuels, Illustrator est un outil que je maîtrise avec assurance et que j’exploite pour
                     donner vie à des designs percutants.</p>
             </div>
-            <img src="img/logiciel/ai.svg" alt="Logo d’Illustrator" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.41 143.3">
+                <title>Adobe Illustrator</title>
+                <desc>Logo d'Adobe Illustrator, logiciel de création graphique vectorielle</desc>
+                <path d="M124.91,0c.11.03.21.06.3.1,1.8-.09,3.58.43,5.25,1.05,9.51,3.54,16.65,13.33,16.95,23.49v93.62c-.52,13.71-12.18,24.86-25.85,25.04-31.87,0-63.74,0-95.62,0C11.56,142.99-.13,131.21,0,116.76V25.97C0,15.03,6.85,4.96,17.16,1.19c1.61-.59,3.32-1.13,5.05-1.09.12-.04.25-.08.4-.1h102.3Z" style="fill: #300;"/>
+                <path d="M22.61,0c-.12.14-.27.08-.4.1v-.1h.4Z" style="fill: #baa;"/>
+                <path d="M125.21,0v.1c-.11-.01-.25.04-.3-.1h.3Z" style="fill: #bfafaf;"/>
+                <path d="M110.88,52.23c.12.11.23.54.23.72l-.05,47.46c-.08.29-.26.6-.6.6l-12.58-.03-.39-.41c-.16-15.98-.05-32.01-.05-48,.11-.51.69-.54,1.12-.58,3.67-.28,7.7.22,11.41,0,.21.02.79.11.92.23Z" style="fill: #ff9a00;"/>
+                <path d="M109.87,44.77c-3.92,3.99-11.25,2.45-12.87-3.11-1.91-6.58,3.9-11.74,10.28-9.68,5.17,1.66,6.19,9.12,2.59,12.79Z" style="fill: #ff9a00;"/>
+                <path d="M71.49,85.81h-22.72s-.15.15-.15.15l-4.51,14.09c-.13.38-.32.74-.7.9l-12.26.05c-1.09-.14-.17-1.99.05-2.66,6.16-18.73,13.21-37.18,19.4-55.9.65-1.83.65-3.77.82-5.68.07-.22.42-.27.63-.27h15.71c.3,0,.59.1.72.38l22.42,63.38c.03.38.02.73-.45.75h-13.11s-.54-.16-.54-.16l-5.32-15.03Z" style="fill: #ff9a00;"/>
+                <path d="M67.81,73.3h-15.5c2.63-8.46,5.69-16.83,7.6-25.5l7.9,25.5Z" style="fill: #300;"/>
+            </svg>
         </article>
 
         <!-- Photoshop -->
@@ -510,7 +719,19 @@
                     identité forte et marquante. C’est un outil que je maîtrise avec assurance pour transformer des
                     idées en créations visuelles impactantes.</p>
             </div>
-            <img src="img/logiciel/ps.svg" alt="Logo de Photoshop" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1051 1025">
+                <title>Photoshop</title>
+                <desc>Logo de Photoshop, logiciel de retouche et de création d'images</desc>
+                <path d="M175,0c2.24.84,4.76.84,7,0h687c2.24.84,4.76.84,7,0h6c87.88,4.05,164.98,81.16,169,169v3l-1,2c.41.31.74.97,1,2v673l-1,2c.41.31.74.97,1,2v4c-4.66,87.63-82.06,164.64-170,168h-7c-1.58-.79-3.41-.8-5,0H182c-1.9-.82-4.09-.82-6,0h-8C80.95,1020.36,4.65,944.04,0,857v-5c.55-1.03.55-1.97,0-3V176c.55-1.03.55-1.97,0-3v-5C4.68,81,80.87,4.59,168,0h7Z"
+                      style="fill: #001e36;"/>
+                <path d="M332,578v141.5c0,1.9-5.02,6.11-7.48,5.52-25.73-1.52-53.59,1.95-79.06.01-5.37-.41-8.95-.58-9.19-6.81l-.31-446.77c.2-3.57,1.01-8.52,5.49-8.51,85.36,3.52,189.5-20.7,264.27,30.83,82.07,56.56,83.07,191.66,2.61,250.05-50.14,36.39-116.86,36.16-176.33,34.17h0Z"
+                      style="fill: #31a7fe;"/>
+                <path d="M742.79,369.29c27.18-1.3,77.32,1.86,101.89,13.52,5.21,2.47,5.82,3.92,6.35,9.65,2.08,22.55-1.67,48.2.01,71.09-3.62,11.48-14.55,2-21.38-.72-27.87-11.13-76.69-20.36-105.68-12.33-16.11,4.46-23.82,20.66-11.99,34,14.3,16.12,60.68,29.21,81.67,39.33,45.63,21.99,78.79,50.14,75.32,105.66-6.95,111.03-155.23,119.56-235.51,90.53-6.01-2.17-17.34-5.55-19.01-11.99.82-24.5-2.71-52.45-.52-76.58.3-3.27.81-7.56,5.06-6.03,35.85,20.29,86,33.8,127.22,27.3,15.6-2.46,34.91-12.65,25.97-31.43-7.81-16.41-52.92-29.62-69.87-37.13-56.68-25.1-102.63-65.83-83.04-134.39,15.98-55.94,69.67-77.92,123.51-80.49h0Z"
+                      style="fill: #31a7fe;"/>
+                <path d="M332,495v-147c2.21-.15,4.22-.88,6.46-1.04,60-4.38,138.43-.05,133.59,79.59-4.3,70.64-86.44,72.37-140.05,68.45Z"
+                      style="fill: #001e36;"/>
+            </svg>
+
         </article>
 
         <!-- InDesign -->
@@ -536,7 +757,16 @@
                     standards professionnels du design éditorial. Avec InDesign, je donne vie aux contenus en leur
                     offrant une présentation soignée et percutante.</p>
             </div>
-            <img src="img/logiciel/indd.svg" alt="Logo d'InDesign" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.99">
+                <title>InDesign</title>
+                <desc>Logo d'InDesign, logiciel de mise en page</desc>
+                <path d="M432,0c41.64,1.48,78.21,38.45,80,79.91v330.63c-.82,1.89-.82,4.09,0,5.99v3c-2.46,43.69-43.77,82.67-88,78.91-23.82,1.3-47.76,1.51-71.64,1.55-89.2-1.49-177.65-1.67-265.36-.55h-1c-43.72.02-83.49-35.91-86-79.91V78.91C1.66,39.23,39.69.08,80,0h352Z"
+                      style="fill: #49021f;"/>
+                <path d="M139,127.86h45.5c.11,0,1.5,1.39,1.5,1.5v221.75c0,.17-1.54,1.76-2.02,1.98-1.96.91-37.26,1.08-41.54.57-2.74-.33-3.52-.99-4.22-3.78l-.27-216.58,1.05-5.45h0Z"
+                      style="fill: #fe3366;"/>
+                <path d="M378.05,110.55c-.33-1.4-4.27-1.63-5.5-1.71-5.17-.35-38.08-.58-40.53.56-.47.21-1.93,1.65-2.02,1.98h.02v67.43h-27.5c-4.89,0-18.83,4.15-24.02,5.98-47.58,16.72-68.55,66.44-55.2,114.1,16.98,60.65,88.49,64.94,139.48,49,2.93-.92,15.33-4.73,16.07-6.92l-.8-230.42ZM330.01,313.65h-.01c-24.59,4.02-50.74-.96-59.04-27.43-7.95-25.35-1.11-52.36,24.37-63.65,10.3-4.56,24.39-6.8,34.68-2.32v93.4Z"
+                      style="fill: #fe3366;"/>
+            </svg>
         </article>
 
         <!-- HTML -->
@@ -562,7 +792,15 @@
                     contenu dynamique ou optimiser un site pour le référencement, <abbr lang="en" title="HyperText Markup Language">HTML</abbr> est un langage que je maîtrise et
                     exploite pour donner vie à des interfaces web fonctionnelles et bien construites.</p>
             </div>
-            <img src="img/logiciel/html.svg" alt="Logo de HTML" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.98 144.99">
+                <title>HyperText Markup Language</title>
+                <desc>Logo de HTML, langage de balisage pour structurer les pages web</desc>
+                <polygon points="128.98 0 117.86 131.12 64.78 144.99 11.49 131.1 0 0 128.98 0" style="fill: #d0382b;"/>
+                <path d="M64.31,27.16c13.53-.79,27.07-.95,40.61-.46l.46.75-1.03,15.07-.5.86c-13.18.4-26.39.44-39.55-.49-7.4.78-14.84.97-22.27.45l.53.12,1.33,14.66-.67.48,20.64.06c.18-.36.36-.65.54-.65,12.65-.17,25.63.06,38.06.5l.39.76c-1.36,16.7-2.86,33.36-4.5,50-11.05,3.18-22.2,6.14-33.46,8.89l-.6-.58-32.47-8.63-2.19-26.4h16.44l1.59,13.6c.51.79,14.6,3.39,16.63,3.92l.18-.77,16.98-3.49,2.5-19.76c-6.61.39-13.16.18-19.66-.64-11.91-.07-23.8-.35-35.71-.38l-4.21-47.35,1.14-.54c12.93.03,25.86.02,38.78.02Z" style="fill: #fefefe;"/>
+                <path d="M64.31,27.16V11.08h54.66l-9.45,110.81-45.21,11.78v-16.08s33.54-8.62,33.54-8.62l4.33-49.99-58.95-.36.33-.71h19.83c.25-4.78.32-9.65.21-14.59l.71-.42c13.1-.02,26.21.01,39.3,0l1.07-15.73c-13.45,0-26.92,0-40.38,0Z" style="fill: #e83e30;"/>
+                <path d="M64.31,75.41c6.61.04,13.23-.02,19.84,0l.54.54-2.58,20.48-17.8,3.64v-24.66Z" style="fill: #e83e30;"/>
+                <path d="M64.31,42.89v15.73s-21.08,0-21.08,0l-1.43-15.73c7.5,0,15.01.01,22.51,0Z" style="fill: #d0382b;"/>
+            </svg>
         </article>
 
         <!-- CSS -->
@@ -589,7 +827,17 @@
                     est un outil que je maîtrise pour concevoir des expériences numériques à la fois fonctionnelles et
                     attractives.</p>
             </div>
-            <img src="img/logiciel/css.svg" alt="Logo de CSS" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.65 150.2">
+                <title>Cascading Style Sheets</title>
+                <desc>Logo de CSS, langage de mise en forme pour les pages web</desc>
+                <polygon points="134.65 0 122.76 134.08 122.18 134.61 67.48 150.2 12.46 134.61 11.88 134.08 0 0 134.65 0" style="fill: #0277bc;"/>
+                <path d="M31.07,31.82l36.25-.37V11.84h54.01l-9.79,113.23-44.22,12.57-.37-18.87c.1-.32.23-.32.37,0l.43-.92,29.67-9.64c1.87-24.83,3.6-50.84,4.77-75.65H31.53s-.45-.74-.45-.74Z" style="fill: #039ae4;"/>
+                <path d="M84.71,79.18l-1.15,17.72-15.5,5.22h-.74v-22.94c5.79-.15,11.59-.15,17.39,0Z" style="fill: #039ae4;"/>
+                <path d="M32.18,47.36h54.38s-1.11,15.91-1.11,15.91c-6.04,0-12.09-.01-18.13,0-.01-5.17,0-10.37,0-15.54l-35.14-.37Z" style="fill: #039ae4;"/>
+                <path d="M31.07,31.82h72.13s-4.89,76.88-4.89,76.88l-31,10.07-.68-1.33-.17-12.79c-.24-1.75.28-2.59,1.58-2.52v-.78s14.8-5.04,14.8-5.04l1.08-16.73.77-.39-17.73-.18c-.73-5.22-.57-10.54.34-15.73,5.78-.82,11.61-.83,17.44-.72l1-14.3c-5.91-.19-11.92-.24-18.02-.15l-.53-.56-35.03-.18-1.11-15.54Z" style="fill: #fdfdfd;"/>
+                <path d="M66.95,118.77l-30.63-10.07-1.19-21.75h15.54l.41,9.95,16.24,5.22c.12-.98.46-.94.74,0-.71.35-.7.52-.77,1.26-.4,4.92.35,10.41.03,15.39h-.37Z" style="fill: #ededed;"/>
+                <path d="M67.32,63.27c.01,5.17,0,10.37,0,15.54l17.39.37c-5.79,0-11.6.01-17.39,0s-11.6,0-17.39,0l-.74-15.91c6.04,0,12.09.01,18.13,0Z" style="fill: #ededed;"/>
+            </svg>
         </article>
 
         <!-- JavaScript -->
@@ -611,7 +859,14 @@
                     Object Model">DOM</abbr> et
                     pour interagir avec les <abbr lang="en" title="Application Programming Interface">API</abbr> afin de rendre l'expérience utilisateur plus fluide et plus riche.</p>
             </div>
-            <img src="img/logiciel/js.svg" alt="Logo de JavaScript" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.28 143.38">
+                <title>JavaScript</title>
+                <desc>Logo de JavaScript, langage de programmation pour le web dynamique</desc>
+                <path d="M.01.12C41.99-.02,84.01-.04,126.07.06c.13.28.2.58.2.91-3.78,42.57-7.64,85.13-11.58,127.69l-.35.23-51.48,14.49-51.07-14.29c-.13-.08-.41-.26-.41-.28C7.61,88.95,4,49.06.47,9.17c.1-2.63.05-5.19-.46-7.53C-.03,1.15.04.62.01.12Z" style="fill: #d2b52a;"/>
+                <polygon points="58.18 27.59 58.18 111.9 21.37 101.98 21.37 86.91 45.59 93.4 45.79 27.59 58.18 27.59" style="fill: #eaeded;"/>
+                <polygon points="114.64 11.37 104.88 121.32 63.42 132.71 63.16 132.67 62.94 131.27 62.94 12.8 63.14 11.37 114.64 11.37" style="fill: #fad625;"/>
+                <path d="M80.5,64.6l24.99-2.67-3.33,41.02-33.86,8.76-.18-14.87,24.4-6.31c.22-4.07.26-8.14.39-12.2l-24.41,4.01-.38-54.56,40.25-.09-1.15,14.78-26.7.19v21.94Z" style="fill: #fefefe;"/>
+            </svg>
         </article>
 
         <!-- MySQL -->
@@ -633,7 +888,19 @@
                     applications robustes et efficaces, que ce soit pour des sites web dynamiques ou des systèmes
                     d’information plus complexes.</p>
             </div>
-            <img src="img/logiciel/mysql.svg" alt="Logo de MySQL" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134.4 132.87">
+                <desc>Logo de MySQL, système de gestion de base de données relationnelle</desc>
+                <title>MySQL</title>
+                <path d="M24.9.2c6.7-.8,12.6,4.5,18.2,7.4,4,.5,7.7.5,11.3,2,24.8,10.4,34.6,30.5,44.7,53.8,2.2,8.5,12,8,17.6,13.3,17.8,13.7,16.5,11.8-3.4,16.3,3.1,5.1,9.9,6.3,13.6,11,2.7,2.3,10.5,11.9,3.5,6.1-7-6-17.4-7.6-22.5-16-5.7-7.7,14.4-5.8,16.6-7.4-3.6-3.7-8.6-6-12.7-9.2-5.4-3.1-13.2-2.6-15.8-9.1-6.6-13.1-10.7-27.4-21.1-38.7-8.6-8.6-19-17.5-31.7-17.8-4.7,0-7.9-4.8-12.4-6.1-10-4.9-8.7,3.3-3.1,8.8,5.3,5.8,6.3,13.4,9.2,20.4.9,3.8,6,5.9,5.5,9.9-3.5,10.5-6.6,23.3,2.3,32.4,3.1-3.1.6-11.9,5.6-15.4,2.2-4.8,3.8,6.1,5.4,7.8,2.8,5.5,6.5,11.3,9.8,16.1,1.4,2.4-3.4-1.8-4-2.4-4.7-3.3-7.1-9.9-9.9-13.5-1.9,25.7-18.5,3.1-15.7-9.9-1.2-4.8,3-11.5,2.7-16.4-2.4-2.4-4.1-5.7-5.4-8.7-2.6-5.1-2.8-10.9-6.3-15.5C22,13.8,15.1,3.1,24.9.2Z" fill="#00608b"/>
+                <path d="M45.7,19.5c3,.7,3.8,7,.8,6.8-.6-2.9-7.3-8.2-.8-6.8Z" fill="#00608c"/>
+                <path d="M4.2,105.8h.8c1.6.1,2.8.9,3.6,2.4l6.2,14.4.5.9,6.8-15.2c.8-1.4,1.9-2.2,3.5-2.3h.8c1.9,0,4.1.8,4.3,3,0,6,0,12-.1,17.9h-4.3c0-5.6,0-11.2,0-16.9,0-.4-.1-.5-.2-.3-2,5.3-4.9,10.6-7.1,15.8-1,2.1-5.3,2.2-6.8.7-3-5.2-5-11.1-7.6-16.5h-.1c0,5.6,0,11.4,0,17.2-1.4,0-2.8,0-4.3,0,0-5.9,0-11.8,0-17.8-.2-2.2,2.3-2.9,4.1-3.1h0Z" fill="#00608b"/>
+                <path d="M97.2,106.3c2.9.2,5.9,1.4,6.2,4.6,0,3.7,0,7.4,0,11.2-.1,1.9-.9,3-2.6,3.7,1.4,1.2,2.7,2.6,4.1,3.7,0,0,0,0,0,0-1.6,0-3.3.1-4.9,0-.1,0-.3-.1-.4-.2l-3.1-2.8c-.2,0-.4,0-.6,0-.8,0-1.7,0-2.5.1-1.9,0-3.8,0-5.7,0-2.8-.1-6-1.3-6.2-4.5-.2-3.8-.2-7.7,0-11.5.2-3.1,3.3-4.3,6-4.5,3.2,0,6.5,0,9.8.1h0ZM88.9,109.2c-1.2,0-2.4.6-2.7,1.9.2,3.3-.3,7,0,10.3.2,1.8,1.4,2.3,3,2.4h4.2l-3.5-3.3h5.1l3.1,2.8c.8-.3,1-.9,1.2-1.7,0,0,.2-.2.1-.4-.3-3.1.5-7.2-.1-10.1-.3-1.4-1.3-1.9-2.6-2h-7.7,0Z" fill="#e58e00"/>
+                <path d="M55.4,112.4c0,1.2,0,2.6,0,3.8,0,2.4,0,4.8,0,7.3,0,1.6,0,3.2.1,4.7-.2,3.3-3.4,4.4-6.3,4.6h-14.7c0-.9-.1-1.9,0-2.9,4.7,0,9.3,0,14-.1,1-.1,2.1-.3,2.4-1.5,0-.6,0-1.3,0-1.9-3.2,0-6.3,0-9.5,0-2.7,0-6.5-.7-7.1-3.9-.1-.7,0-1.5,0-2.2v-7.9c1.5,0,2.9,0,4.3,0v1.7c0,2.7,0,5.5.1,8.2.2,1.1.8,1.2,1.8,1.4h10.4s.1-11.4.1-11.4c1.4,0,2.9,0,4.3,0h0Z" fill="#00608b"/>
+                <path d="M78.7,106.2c.1.9.1,2,0,2.9h-12.5c-1.3.3-2.4,0-2.8,1.5,0,.8,0,1.7,0,2.5.2,1.2.7,1.7,2,1.8.2,0,.4,0,.5.1,1.9,0,3.7,0,5.6,0,2.2,0,6.7.9,7.1,3.7,0,1.1,0,2.4,0,3.6-.2,3-3.7,4.3-6.3,4.4-4.3,0-8.8,0-13.3-.1-.1-.9-.1-1.9,0-2.8,4.2,0,8.3,0,12.5-.1,1.1,0,2.2-.4,2.5-1.6,0-.9,0-1.9,0-2.8-.4-1.2-1.7-1.3-2.7-1.5-1.8,0-3.5,0-5.3-.1-.2,0-.4,0-.6,0-2.3,0-6.2-1.1-6.5-3.9,0-1.1,0-2.1,0-3.2.3-3.4,3.6-4.3,6.5-4.4,4.4-.2,8.9.2,13.3,0h0Z" fill="#e58e00"/>
+                <path d="M113.5,126.8c-2.3-.1-5.8-.8-6.9-3.1,0-.2-.4-1.1-.4-1.2v-16.3h4.4v15.8c0,.5.4,1.1.8,1.3.6.4,1.2.4,1.8.4,4.2,0,8.4,0,12.5.1,0,.1,0,2.7,0,2.8-4.1,0-8.2.1-12.3.1h0Z" fill="#e58e00"/>
+                <path d="M130.9,120.4c.2,0,.4,0,.6,0,4,.4,3.9,6.4-.1,6.5-4.4.2-4.6-6.3-.5-6.5h0ZM130.9,126.2s.1.1.3.1.2-.1.3-.1c.7-.1.8-.2,1.4-.6,2.1-1.8.3-5.3-2.5-4.3-2.3.8-2.2,4.5.6,5h0Z" fill="#e58f00"/>
+                <path d="M132.6,122.5c0,.2,0,.4,0,.6-.2.6-.3.5-.9.8,0,.2.7,1.1.9,1.4.1.2-.4.2-.6.1-.3-.2-.8-1.5-1-1.6,0,0-.4,0-.5,0,0,.5,0,1.1-.1,1.6-.2,0-.4.1-.5,0,0-1.2,0-2.4,0-3.7.9,0,2.3-.3,2.7.7h0ZM130.5,123.4c2,.3,2-1.3,0-1.1-.2.2-.2.8,0,1.1Z" fill="#e58f00"/>
+            </svg>
         </article>
 
         <!-- PHP -->
@@ -654,7 +921,19 @@
                     via des formulaires et des traitements de données.
                 </p>
             </div>
-            <img src="img/logiciel/php.svg" alt="Logo de PHP" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.49 72.46">
+                <title>PHP</title>
+                <desc>Logo de PHP, langage de programmation pour le développement web</desc>
+                <path d="M68.8,71c-17.9,0-34.7-3.5-47.3-9.9C8.4,54.6,1.3,45.7,1.3,36.2s7.2-18.3,20.1-24.9C34.1,5,50.9,1.5,68.8,1.5s34.7,3.5,47.3,9.9c13,6.6,20.1,15.4,20.1,24.9s-7.2,18.3-20.1,24.9c-12.7,6.4-29.5,9.9-47.3,9.9Z" fill="#777bb2"/>
+                <path d="M116.7,10c-6.9-3.5-15.1-6.1-23.9-7.8-1.2.8-2.6,1.5-3.7,2.4,26.5,4.3,45.6,16.9,45.6,31.7s-29.5,33.3-66,33.3-8.6-.2-12.7-.6c-1,.9-1.9,1.9-3,2.7,5.1.6,10.4.9,15.7.9,18.1,0,35.1-3.6,48-10.1,13.5-6.8,21-16.1,21-26.2s-7.4-19.4-21-26.2Z" fill="#484c88"/>
+                <path d="M2.8,36.2C2.8,17.9,32.3,3,68.8,3s13.9.6,20.3,1.6c1.2-.9,2.5-1.6,3.7-2.4C85.2.7,77.1,0,68.8,0,50.7,0,33.6,3.5,20.8,10,7.2,16.9-.2,26.2-.2,36.2s7.4,19.4,21,26.2c9.1,4.6,20.2,7.7,32.3,9.1,1.2-.7,2.1-1.7,3-2.7C25.7,65.9,2.8,52.5,2.8,36.2Z" fill="#999dc5"/>
+                <path d="M109.4,46.7c-4.8,2.2-10,1.5-15.1,1.7-.3.3-1.2,7.2-1.6,8.4-.2.4-.4.9-.8,1.1-.7.3-7.1.2-8.2.2s-1.1,0-1.4-.3c-1.2-1.2,1.2-7.5,1-9.3h-9.3c-.2,0-1-1.1-.9-1.5l3.4-17.5c0-1.6-.5-1.6-1.9-1.7-2-.2-4.3.1-6.3,0-.4,2.5-3.2,19.7-4.2,20.3-.4.3-.8.3-1.3.3-1.1,0-7.6,0-8.2-.2-.4-.2-.8-.9-.8-1.3,0-1,.8-4.5,1-5.8,0-.5,0-.6-.3-.3h0c-5.6,7.9-12.9,7.7-21.8,7.7-.5.4-1.2,7.2-1.7,8.5-.2.4-.3.7-.7.9-.8.3-6.9.3-8.1.2-1.3,0-2.1-.5-1.9-1.9l6.9-35.7c.1-.8.6-1.5,1.4-1.5,8.3.9,22.4-3,27.5,5.6l1.4,3.3,3.4-17.4c.2-1,1-1,1.8-1.1,1.7-.2,5.6-.2,7.3,0,1.1.1,1.7.6,1.7,1.7,0,2.2-1.5,5.6-1.6,7.9h8.5c.5,0,3.2.7,3.9.9,2.9,1,4.7,3.3,5.2,6.3.4,0,.6-6.9,2.2-7.2,6.3.4,13.9-.9,20,.3,14.6,2.9,10.6,22.4-.4,27.4h0Z" fill="#fefefe"/>
+                <path d="M70.1,10.8l-1.9,9.4c25-1.9,17.6,9.3,14.1,26.8h-7.7l3.2-16.8c1.1-6-7-3.6-10.5-4.1l-4.2,20.9h-7.8l7-36.2h7.8Z"/>
+                <path d="M49.7,21.1c-6.7-1.9-13.9-.6-20.8-1l-7.1,36.2h7.8l1.9-9.3c7.6-.2,15.2.8,20.6-5.5,5.1-5.9,6.5-17.4-2.4-20.4h0ZM44.4,39.4c-2.5,2.2-8.9,1.6-11.9,1.7l3.1-15c3.2.4,9.4-1.1,11.5,1.9,1.9,2.8,0,9.5-2.7,11.5h0Z"/>
+                <path d="M104.9,20.2c-4.7-.2-9.7.1-14.4.1l-7.2,36.1h8.1l1.6-9.4c5.6-.2,12.1.6,17.1-2.4,11.3-6.8,10.6-25.5-5.1-24.5h0ZM108.8,35c-1.3,6.7-9.3,6.2-14.5,6l2.7-15c7.6,0,15.1-1.5,11.8,9Z"/>
+                <path d="M34.4,39.7l2.5-12.3c6,0,11.5-1.1,9,7-1,5.3-7.2,5.5-11.5,5.3h0Z" fill="#777bb2"/>
+                <path d="M96.1,39.7l2.3-12.3c2.3.2,9-.7,9.5,2.3.8,8-4.6,10.8-11.8,10h0Z" fill="#777bb2"/>
+            </svg>
         </article>
 
         <!-- Figma -->
@@ -673,12 +952,26 @@
                     interactions tout en optimisant le flux de travail. C’est un outil que j’utilise pour produire des
                     designs efficaces, modernes et facilement partageables avec les parties prenantes.</p>
             </div>
-            <img src="img/logiciel/figma.svg" alt="Logo de Figma" width="515" itemprop="image"/>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.01 150.48">
+                <title>Figma</title>
+                <desc>Logo de Figma, outil de design collaboratif</desc>
+                <rect width="151.01" height="150.48" rx="33.78" ry="33.78" style="fill: #2e3139;"/>
+                <path d="M95.61,56.08l-.27.32h-2.87s-.27-.32-.27-.32c-5.2.37-10.43.48-15.68.34-.54.1-.86-.01-.98-.34-.33-12.23-.33-24.46,0-36.68,7.29,0,20.46-1.18,26.7,1.95,15.23,7.62,12.41,30.6-4.29,34.28-.78.17-1.59.22-2.35.46Z"
+                      style="fill: #fe7262;"/>
+                <path d="M75.55,19.39v36.68l-.46.23c-6.2-.04-12.44-.05-18.67.04-.15,0-.31-.04-.46-.08s-.31-.11-.47-.19c-11.54-1.32-19.26-12.44-15.85-23.74,2.14-7.11,8.81-12.45,16.27-12.95,6.19-.41,13.34,0,19.64,0Z"
+                      style="fill: #f14e1e;"/>
+                <path d="M75.55,56.08c.13,0,.34.03.34.12.21,5.34.04,11.04-.34,16.36l.32.27v3.04s-.32.27-.32.27v16.64l-.12.34h-19.74l-.21-.34c-13.33-1.51-21-15.93-14.08-27.73,2.83-4.82,8.44-8.47,14.08-8.95,6.12-.52,13.76,0,20.06,0Z"
+                      style="fill: #a159fe;"/>
+                <path d="M75.55,92.76c0,6.3.46,13.61,0,19.78-1.18,15.98-21.52,22.82-32.13,10.71-10-11.42-2.71-28.87,12.07-30.49h20.06Z"
+                      style="fill: #0ace82;"/>
+                <path d="M95.61,56.08c15.8,1.35,22.5,21.58,10.46,32.1-11.25,9.84-29.26,2.73-30.52-12.06-.08-.96-.09-2.61,0-3.57.07-8.44,8.23-16.46,16.66-16.47.93-.08,2.47-.08,3.4,0Z"
+                      style="fill: #1abbfd;"/>
+            </svg>
         </article>
     </section>
 
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="hobbies" itemscope itemtype="https://schema.org/Thing">
         <h2>Mes hobbies</h2>
@@ -687,7 +980,7 @@
         <article class="hobbies_article show" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
                 <img src="img/hobbies-structure/games.webp"
-                     alt="Photo avec plein de personnages principaux de jeux vidéo" srcset="" width="1188"/>
+                     alt="Photo avec plein de personnages principaux de jeux vidéo" srcset="" width="1188" loading="lazy"/>
                 <h3 itemprop="name">Jeux vidéos</h3>
             </div>
             <p itemprop="description">J'aime les jeux vidéo, car ils offrent une évasion immersive, me permettant de
@@ -700,7 +993,7 @@
         <article class="hobbies_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
                 <img src="img/hobbies-structure/peinture.webp"
-                     alt="Photo d’une armée de Votann, dans l'univers Warhammer" srcset="" width="1188"/>
+                     alt="Photo d’une armée de Votann, dans l'univers Warhammer" srcset="" width="1188" loading="lazy"/>
                 <h3 itemprop="name">Peinture de figurine</h3>
             </div>
             <p itemprop="description">J'aime la peinture de figurine, car elle combine créativité et minutie, me
@@ -713,7 +1006,7 @@
         <article class="hobbies_article hidden" itemscope itemtype="https://schema.org/CreativeWork">
             <div>
                 <img src="img/hobbies-structure/photographie.webp" alt="Photo d'un appareil photo devant la mer"
-                     srcset="" width="1188"/>
+                     srcset="" width="1188" loading="lazy"/>
                 <h3 itemprop="name">PHhotographie</h3>
             </div>
             <p itemprop="description">J'aime la photographie parce qu'elle me permet de capturer l'instant, de figer des
@@ -722,14 +1015,14 @@
                 forme d'expression artistique qui me connecte à mon environnement et nourrit ma créativité.</p>
         </article>
         <div class="container__hobbies__button">
-            <span id="button__hobbies1" role="button" aria-label="Page 1"><img src="img/utilitaire/arrow-left.webp" alt=""></span>
+            <span id="button__hobbies1" role="button" aria-label="Page 1"><img src="img/utilitaire/arrow-left.webp" alt="" loading="lazy"></span>
             <span id="button__hobbies2" role="button" aria-label="Page 2"><img src="img/utilitaire/arrow-right.webp"
-                                                                               alt=""></span>
+                                                                               alt="" loading="lazy"></span>
         </div>
     </section>
 
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="qualites">
         <h2>Qualités et défauts</h2>
@@ -738,42 +1031,42 @@
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/autonome.webp"
                          alt="Qualité : Personne autonome, capable de prendre des décisions seules" itemprop="image"
-                         width="605"/>
+                         width="605" loading="lazy"/>
                     <meta itemprop="name" content="Qualité autonome"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/anxieux.webp"
-                         alt="Défaut : Personne anxieuse, souvent préoccupée et stressée" itemprop="image" width="605"/>
+                         alt="Défaut : Personne anxieuse, souvent préoccupée et stressée" itemprop="image" width="605" loading="lazy"/>
                     <meta itemprop="name" content="Défaut anxieux"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/curieux.webp"
                          alt="Qualité : curieux, toujours en quête de nouvelles connaissances"
-                         itemprop="image" width="605"/>
+                         itemprop="image" width="605" loading="lazy"/>
                     <meta itemprop="name" content="Qualité curieux"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/impatient.webp"
                          alt="Défaut : impatient" itemprop="image"
-                         width="605"/>
+                         width="605" loading="lazy"/>
                     <meta itemprop="name" content="Défaut impatient"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/organise.webp"
                          alt="Qualité : organisée, capable de planifier"
-                         itemprop="image" width="605"/>
+                         itemprop="image" width="605" loading="lazy"/>
                     <meta itemprop="name" content="Qualité organisé"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/indecis.webp"
                          alt="Défaut : indécis, dur de prendre des décisions" itemprop="image"
-                         width="605"/>
+                         width="605" loading="lazy"/>
                     <meta itemprop="name" content="Défaut indécis"/>
                 </div>
                 <div itemscope itemtype="http://schema.org/Thing" class="slider-item">
                     <img src="img/qualites-defauts/rigueur.webp"
                          alt="Qualité : rigoureux, appliquant des règles strictes et minutieuses"
-                         itemprop="image" width="605"/>
+                         itemprop="image" width="605" loading="lazy"/>
                     <meta itemprop="name" content="Qualité rigueur"/>
                 </div>
             </div>
@@ -781,7 +1074,7 @@
     </section>
 
 
-    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440"/></div>
+    <div class="divider"><img src="img/utilitaire/divider.webp" alt="division entre les sections" width="1440" loading="lazy"/></div>
 
     <section id="formulaire" itemscope itemtype="http://schema.org/ContactPage">
         <div class="formulaire_item">
@@ -826,56 +1119,75 @@
             <div class="container__link">
                 <a href="#header" class="a__link"><span class="sro">Lien vers le haut de la page</span></a>
                 <img class="monLogo" src="img/utilitaire/logo.svg" alt="Logo de Delvenne Gauthier, développeur web" width="399"
-                     height="162"/>
+                     height="162" loading="lazy"/>
             </div>
 
             <div class="container__link">
                 <a href="https://www.hepl.be/fr" itemprop="brand"><span class="sro">Lien vers la Haute Ecole de la Province de Liège</span></a>
                 <img src="img/utilitaire/hepl.svg" alt="Logo de la Haute Ecole de la Province de Liège (HEPL)"
-                     width="190"/>
+                     width="190" loading="lazy"/>
             </div>
         </div>
         <ul>
             <li>
                 <div class="container__link">
-
                     <a href="https://www.linkedin.com/in/gauthier-delvenne/" itemprop="sameAs" class="a__link"><span
                             class="sro">Lien vers le profil LinkedIn de Gauthier Delvenne</span></a>
-                    <img src="img/compte/linkedin.svg" alt="Profil LinkedIn de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Linkedin"/>
-
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.27 159.12">
+                        <title>LinkedIn</title>
+                        <desc>Profil LinkedIn de Gauthier Delvenne, développeur web</desc>
+                        <path d="M134.78,22.05C89.8-20.77,15.14,2.03,1.91,62.37c-13.18,60.1,44.01,111.79,102.61,92.73,56.82-18.48,73.64-91.74,30.26-133.05ZM53.08,127.07h-19.71v-63.07h19.71v63.07ZM42.42,54.55c-13.45-.91-13.47-20.92-1.28-22.57,17.45-2.36,17.37,23.66,1.28,22.57ZM127.33,127.07h-19.17v-36.25c0-12.16-20.36-14.64-24.38-1.69-.18.58-.73,2.59-.73,3.04v34.91h-19.17v-63.07h18.09v8.9c4.15-5.17,10.6-8.93,17.22-9.9,8.96-1.32,19.24,2.14,24.04,10.09,1.43,2.37,4.1,8.62,4.1,11.27v42.72Z"
+                              style="fill: #0066c7;"/>
+                    </svg>
                 </div>
             </li>
             <li>
                 <div class="container__link">
                     <a href="https://github.com/GauthierDelvenne" itemprop="sameAs" class="a__link"><span class="sro">Lien vers le profil Github de Gauthier Delvenne</span></a>
-                    <img src="img/compte/github.svg" alt="Profil GitHub de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Github"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 998.74">
+                        <title>Github</title>
+                        <desc>Profil Github de Gauthier Delvenne, développeur web</desc>
+                        <path d="M512,0C229.12,0,0,229.12,0,512c0,226.56,146.56,417.92,350.08,485.76,25.6,4.48,35.2-10.88,35.2-24.32,0-12.16-.64-52.48-.64-95.36-128.64,23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92,40.32-.64,69.12,37.12,78.72,52.48,46.08,77.44,119.68,55.68,149.12,42.24,4.48-33.28,17.92-55.68,32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8,0-55.68,19.84-101.76,52.48-137.6-5.12-12.8-23.04-65.28,5.12-135.68,0,0,42.88-13.44,140.8,52.48,40.96-11.52,84.48-17.28,128-17.28s87.04,5.76,128,17.28c97.92-66.56,140.8-52.48,140.8-52.48,28.16,70.4,10.24,122.88,5.12,135.68,32.64,35.84,52.48,81.28,52.48,137.6,0,196.48-119.68,240-233.6,252.8,18.56,16,34.56,46.72,34.56,94.72,0,68.48-.64,123.52-.64,140.8,0,13.44,9.6,29.44,35.2,24.32,202.24-67.84,348.8-259.84,348.8-485.76C1024,229.12,794.88,0,512,0Z"
+                              style="fill: #1b1f23;"/>
+                    </svg>
                 </div>
             </li>
             <li>
                 <div class="container__link">
                     <a href="https://stackoverflow.com/users/29573750/delvenne-gauthier" itemprop="sameAs"
                        class="a__link"><span class="sro">Lien vers le profil Stack Overflow de Gauthier Delvenne</span></a>
-                    <img src="img/compte/stack-overflow.svg"
-                         alt="Profil Stack Overflow de Gauthier Delvenne, développeur web" width="58"
-                         aria-label="Stack Overflow"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.17 144.2">
+                        <title>Stack Overflow</title>
+                        <desc>Profil Stack Overflow de Gauthier Delvenne, développeur web</desc>
+                        <path d="M68.29.09c.6-.12,1.24-.11,1.83,0,1.21-.12,2.45-.12,3.66,0,.5-.11,1.04-.12,1.55,0,.17-.11.39-.11.56,0,8.5-.24,17.11,2.07,24.86,5.47,19.6,8.6,33.99,24.6,40.49,44.93,1.86,5.81,3.11,11.9,2.79,18.01.04.64.08,1.3.14,1.97v3.1c-.06.67-.1,1.33-.14,1.97.31,6.42-1.11,12.84-3.1,18.93-7.7,23.62-27.2,41.76-51.33,47.78-5.17,1.29-10.48,2.08-15.82,1.85-1.16.13-2.36.13-3.52,0-5.34.22-10.65-.59-15.82-1.9-25.12-6.37-45.3-25.95-52.12-51C.94,86.14-.04,80.74.15,75.55c-.16-2.34-.24-4.71,0-7.04-.3-3.96.36-8.05,1.2-11.94C6.94,30.82,27.49,9.02,52.94,2.09,57.93.73,63.1-.14,68.29.09ZM107.26,55.4l-22.08-29.91-5.78,4.23,21.9,29.79.26.11,5.71-4.22ZM71.4,37.27l-4.66,5.55,28.79,24c1.34-1.73,2.94-3.28,4.29-5,.16-.21.48-.53.37-.77l-28.78-23.78ZM91.09,75.27l2.9-6.48-.08-.35-33.72-15.56-2.89,6.69,33.78,15.7ZM90.39,84.14l.29-6.69-37.31-7.1-1.27,8.31,38.29,5.49ZM45.34,78.36h-8.45v30.97h67.71v-30.97h-8.45v22.52h-50.82v-22.52ZM90.39,86.81h-39.42v8.45h39.42v-8.45Z"
+                              style="fill: #f37f24;"/>
+                    </svg>
                 </div>
             </li>
             <li>
                 <div class="container__link">
                     <a href="https://about.x.com/fr/who-we-are/brand-toolkit" itemprop="sameAs" class="a__link"><span
                             class="sro">Lien vers le profil X de Gauthier Delvenne</span></a>
-                    <img src="img/compte/x.svg" alt="Profil X de Gauthier Delvenne, développeur web" width="58"
-                         aria-label="X"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.54 145.59">
+                        <title>X</title>
+                        <desc>Profil X de Gauthier Delvenne, développeur web</desc>
+                        <path d="M146.54,72.8c0,40.2-32.8,72.8-73.27,72.8S0,113,0,72.8,32.8,0,73.27,0s73.27,32.59,73.27,72.8ZM54.89,30.76h-26.33l33.76,45.87-33.76,38.02,8.5-.92,29.75-31.62,24.84,32.56h26.33l-35.78-48.88,31.8-35.01c-2.06.16-4.45-.36-6.44.01-3.47.66-19.5,20.15-23.34,24.19-1.07,1.13-5.12,5.62-6.38,5.36l-22.96-29.57Z"/>
+                        <path d="M54.89,30.76l22.96,29.57c1.26.26,5.31-4.23,6.38-5.36,3.84-4.04,19.87-23.53,23.34-24.19,1.99-.38,4.37.14,6.44-.01l-31.8,35.01,35.78,48.88h-26.33l-24.84-32.56-29.75,31.62-8.5.92,33.76-38.02L28.56,30.76h26.33ZM106.04,109.72c.68-1.21-2.69-5.61-3.55-6.82-15.64-22.02-33.36-42.78-49.01-64.82-3.41-2.72-8.79-.93-12.99-1.39l52.15,70.08c3.33,5.13,8.62,1.93,13.41,2.95Z"
+                              style="fill: #fff;"/>
+                        <path d="M106.04,109.72c-4.8-1.02-10.08,2.18-13.41-2.95L40.48,36.69c4.2.46,9.58-1.33,12.99,1.39,15.65,22.04,33.37,42.8,49.01,64.82.86,1.22,4.24,5.61,3.55,6.82Z"/>
+                    </svg>
                 </div>
             </li>
             <li>
                 <div class="container__link">
                     <a href="https://www.facebook.com/gauthier.delvenne" itemprop="sameAs" class="a__link"><span
                             class="sro">Lien vers le profil Facebook de Gauthier Delvenne</span></a>
-                    <img src="img/compte/facebook.svg" alt="Profil Facebook de Gauthier Delvenne, développeur web"
-                         width="58" aria-label="Facebook"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.78 142.86">
+                        <title>Facebook</title>
+                        <desc>Profil Facebook de Gauthier Delvenne, développeur web</desc>
+                        <path d="M83.12,142.86v-50.22h16.8l3.14-20.75h-19.94v-14.15c.33-6.71,4.32-10.23,10.91-10.55,3.23-.16,6.6.13,9.84,0v-17.7c-2.22-.34-4.46-.67-6.69-.9-9.48-.95-19.3-1.18-27.16,4.99-6.33,4.97-9,12.79-9.36,20.65v17.66s-18.23,0-18.23,0v20.75h18.24v50.22c-18.83-2.75-36.04-13.6-47.11-28.94C-5.5,87.52-4.35,51.44,16.28,26.3,40.98-3.79,85.32-8.85,116.13,15.21c31.19,24.35,36.9,69.51,12.48,100.87-11.06,14.2-27.58,24.14-45.49,26.78Z"
+                              style="fill: #1877f1;"/>
+                    </svg>
                 </div>
             </li>
         </ul>
