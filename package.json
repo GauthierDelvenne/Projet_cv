@@ -1,0 +1,23 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "C'est un projet réalisé dans le cadre du cours de **Design web**. Au cours de l'année 2024-2025 à l'HEPL.",
+  "homepage": "https://github.com/GauthierDelvenne/Projet_cv#readme",
+  "bugs": {
+    "url": "https://github.com/GauthierDelvenne/Projet_cv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GauthierDelvenne/Projet_cv.git"
+  },
+  "license": "ISC",
+  "author": "Delvenne Gauthier",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "vite": "^6.2.1"
+  }
+}

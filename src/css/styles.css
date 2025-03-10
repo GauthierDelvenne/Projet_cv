@@ -74,9 +74,10 @@ abbr {
     text-decoration: none;
 }
 
-.divider img {
-    height: 79px;
+.divider {
+    background: url('../../img/background/divider.webp')repeat center;
     width: 100%;
+    height: 75px;
 }
 
 body {
@@ -354,10 +355,10 @@ h2 {
 }
 
 #parcours img {
-    max-height: 229.5px;
     object-fit: cover;
     margin-bottom: 30px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -657,6 +658,7 @@ footer {
     padding: 92px 120px 29px;
 }
 footer svg {
+    width: 58px;
     width: 58px;
 }
 
