@@ -99,6 +99,72 @@ document.documentElement.classList.add('js-enabled');
         };
         gifLoader.init();
     })();
+(
+    function (){
+        const swapEdition = {
+             editionElements : document.querySelectorAll('.art-edition'),
+             buttonEditionElements : document.querySelectorAll('.button__edition'),
+            init(){
+                this.addEventListener();
+                this.resize();
+            },
+            addEventListener(){
+                this.buttonEditionElements[0].addEventListener('click', () => {
+                    if (window.innerWidth <= 767) {
+                        this.editionElements[1].classList.add('second');
+                        this.editionElements[2].classList.add('third');
+                        this.editionElements[0].classList.remove('hidden');
+                    } else {
+                        this.editionElements[0].classList.remove('hidden');
+                        this.editionElements[2].classList.add('third');
+                        this.editionElements[1].style.gridColumn = "4 / 6";
+                    }
+                });
+
+                this.buttonEditionElements[1].addEventListener('click', () => {
+                    if (window.innerWidth <= 767) {
+                        this.editionElements[0].classList.add('hidden');
+                        this.editionElements[2].classList.add('third');
+                        this.editionElements[1].classList.remove('second');
+                        this.editionElements[1].style.gridColumn = "3 / 5";
+                    } else {
+                        this.editionElements[0].classList.add('hidden');
+                        this.editionElements[2].classList.remove('third');
+                        this.editionElements[1].style.gridColumn = "2 / 4";
+                        this.editionElements[2].style.gridColumn = "4 / 6";
+                    }
+                });
+
+                this.buttonEditionElements[2].addEventListener('click', () => {
+                    this.editionElements[1].classList.add('second');
+                    this.editionElements[0].classList.add('hidden');
+                    this.editionElements[2].classList.remove('third');
+                    this.editionElements[2].style.gridColumn = "3 / 5";
+                });
+            },
+            resize(){
+                window.addEventListener('resize', ()=>{
+                    if (window.innerWidth >= 1279){
+                        this.editionElements[2].removeAttribute('style');
+                        this.editionElements[1].removeAttribute('style');
+                    } else if(window.innerWidth > 766 && window.innerWidth < 830) {
+                        this.editionElements[2].classList.add('third');
+                        this.editionElements[0].classList.remove('hidden');
+                        this.editionElements[2].removeAttribute('style');
+                        this.editionElements[1].removeAttribute('style');
+                    } else if(window.innerWidth <= 767){
+                        this.editionElements[2].classList.add('third');
+                        this.editionElements[1].classList.add('second');
+                        this.editionElements[0].classList.remove('hidden');
+                    }
+                })
+            }
+        }
+        swapEdition.init();
+    }
+)();
+
+
 
 
 

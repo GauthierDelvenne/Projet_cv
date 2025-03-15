@@ -707,7 +707,7 @@ a {
 }
 
 @media (max-width: 1279px) {
-    .troisieme {
+    .third {
         position: absolute;
         overflow: hidden;
         clip: rect(0 0 0 0);
@@ -716,6 +716,13 @@ a {
         margin: -1px;
         padding: 0;
         border: 0;
+    }
+    .art-edition:nth-of-type(1) {
+        grid-column: 2/4;
+    }
+
+    .art-edition:nth-of-type(2) {
+        grid-column: 4/6;
     }
 
     #disponible ul {
@@ -739,20 +746,15 @@ a {
         height: auto;
     }
 
-    .edition {
-        grid-template-columns: repeat(4, 11.25rem);
-        grid-template-rows: 12.5rem 41.938rem 1.875rem;
-    }
-
     .edition div {
         grid-row: 3/4;
-        grid-column: 2/4;
+        grid-column: 3/5;
         display: flex;
         justify-content: center;
         gap: 0.625rem;
     }
 
-    #button__edition1, #button__edition2, #button__edition3 {
+    .button__edition {
         width: 0.625rem;
         height: 0.625rem;
         display: block;
@@ -909,6 +911,9 @@ a {
 }
 
 @media (max-width: 874px) {
+    .edition{
+        grid-template-columns: repeat(6, 10.625rem);
+    }
     .container__hobbies__button {
         display: flex;
         justify-content: center;
@@ -920,7 +925,10 @@ a {
 }
 
 @media (max-width: 767px) {
-    #button__edition3 {
+    .art-edition:nth-of-type(1) {
+        grid-column: 3 / 5;
+    }
+    .button__edition:last-of-type {
         position: static;
         overflow: visible;
         clip: auto;
@@ -929,7 +937,7 @@ a {
         border: none;
     }
 
-    .art-edition:nth-of-type(2) {
+    .second {
         position: absolute;
         overflow: hidden;
         clip: rect(0 0 0 0);
@@ -940,14 +948,6 @@ a {
         border: 0;
     }
 
-    .edition {
-        grid-template-columns: repeat(2, 11.25rem);
-    }
-
-    .edition div {
-        grid-row: 3/4;
-        grid-column: 1/3;
-    }
 
     .parcours__ul__liste {
         flex-wrap: wrap;
