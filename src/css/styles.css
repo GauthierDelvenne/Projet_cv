@@ -315,6 +315,10 @@ select {
     text-transform: uppercase;
 }
 
+.third .button {
+    opacity: 60%;
+}
+
 .acquis {
     text-align: center;
     height: 10rem;
@@ -326,6 +330,7 @@ select {
 
 .acquis svg {
     width: 8rem;
+    height: 7.813rem;
 }
 
 h2 {
@@ -379,7 +384,7 @@ h2 {
 
 #experience {
     padding: 4.063rem 1.875rem;
-    background: url("../../img/background/experience-bg.webp") no-repeat;
+    background: url("../../img/background/experience-bg.webp") repeat;
     background-size: auto;
 }
 
@@ -531,7 +536,8 @@ h3 {
 
 #hobbies span {
     position: absolute;
-    top: 50%; /* Positionne l'élément au centre verticalement */
+    top: 34.135rem;
+
 }
 
 #hobbies span img {
@@ -717,6 +723,7 @@ a {
         padding: 0;
         border: 0;
     }
+
     .art-edition:nth-of-type(1) {
         grid-column: 2/4;
     }
@@ -911,9 +918,10 @@ a {
 }
 
 @media (max-width: 874px) {
-    .edition{
+    .edition {
         grid-template-columns: repeat(6, 10.625rem);
     }
+
     .container__hobbies__button {
         display: flex;
         justify-content: center;
@@ -928,6 +936,7 @@ a {
     .art-edition:nth-of-type(1) {
         grid-column: 3 / 5;
     }
+
     .button__edition:last-of-type {
         position: static;
         overflow: visible;
@@ -1019,22 +1028,30 @@ a {
         width: 100vw;
         height: 60vh;
     }
+
+    #experience .div__exp {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 500px) {
     #disponible ul {
         gap: 0.313rem;
     }
+    .line{
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 410px) {
     .monLogo {
         width: 100%;
-    }
-
-    .edition {
-        grid-template-columns: 6.25rem 9.375rem;
-        padding: 0.625rem;
     }
 
     footer {
